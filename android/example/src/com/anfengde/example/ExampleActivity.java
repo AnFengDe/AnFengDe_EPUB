@@ -143,48 +143,48 @@ public class ExampleActivity extends Activity {
         buttonEPubInit.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
         		String cachePath = new String("/mnt/sdcard/epub");
-        		int init_ret = clsEpub.epubInit(cachePath);
+        		int init_ret = clsEpub.initEpubEnv(cachePath);
                 tv.setText("epubInit return value ="+String.valueOf(init_ret));
         	}
         });
         
         buttonEPubOpen.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		int handle = clsEpub.epubOpen(bookPath);
+        		int handle = clsEpub.openEpubBook(bookPath);
                 tv.setText("epubOpen return value ="+String.valueOf(handle));
         	}
         }); 
 
         buttonClose.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		int handle = clsEpub.epubOpen(bookPath);
-        		int ret = clsEpub.epubClose(handle);
+        		int handle = clsEpub.openEpubBook(bookPath);
+        		int ret = clsEpub.closeEpubBook(handle);
         		tv.setText("epubClose return value ="+String.valueOf(ret));
         	}
         }); 
 
         buttonEPubGetMetadata.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		int handle = clsEpub.epubOpen(bookPath);
+        		int handle = clsEpub.openEpubBook(bookPath);
         		EPub_metadata metadata = new EPub_metadata();
-        		int ret= clsEpub.epubGetMetadata(handle, metadata);
+        		int ret= clsEpub.getEpubMetadata(metadata, handle);
         		tv.setText("epubGetMetadata return value ="+String.valueOf(ret));
         	}
         }); 
 
         buttonEPubGetRoot.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		int handle = clsEpub.epubOpen(bookPath);
-        		String bookRootDir = clsEpub.epubGetDocRoot(handle);
+        		int handle = clsEpub.openEpubBook(bookPath);
+        		String bookRootDir = clsEpub.getEpubBookRootFolder(handle);
         		tv.setText("bookRootDir = "+ bookRootDir);
         	}
         });         
         
         buttonEPubGetChapterCount.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		int handle = clsEpub.epubOpen(bookPath);
+        		int handle = clsEpub.openEpubBook(bookPath);
         		//get the chapter number
-        		int chapterNumber = clsEpub.epubGetChapterCount(handle);
+        		int chapterNumber = clsEpub.getEpubChapterCount(handle);
         		tv.setText("chapterNumber = "+String.valueOf(chapterNumber));
         	}
         });         
@@ -192,9 +192,9 @@ public class ExampleActivity extends Activity {
         buttonEPubGetChapter.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
         		String titleList = "";
-        		int handle = clsEpub.epubOpen(bookPath);
+        		int handle = clsEpub.openEpubBook(bookPath);
         		//get the chapter number
-        		int chapterNumber = clsEpub.epubGetChapterCount(handle);
+        		int chapterNumber = clsEpub.getEpubChapterCount(handle);
         		if (chapterNumber > 0)
         		{
             		EPub_chapter[] chapterArray = new EPub_chapter[chapterNumber];
@@ -202,7 +202,7 @@ public class ExampleActivity extends Activity {
             		for (i = 0; i < chapterNumber; i++)
             		{
             			chapterArray[i] = new EPub_chapter();
-            			int next_handle = clsEpub.epubGetChapter(current_handle, chapterArray[i], i);
+            			int next_handle = clsEpub.getEpubChapter(chapterArray[i], current_handle, i);
             			current_handle = next_handle;
             			titleList = titleList + chapterArray[i].title + "\n";
             		}
@@ -215,15 +215,15 @@ public class ExampleActivity extends Activity {
  
         buttonEPubCleanCache.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		int handle = clsEpub.epubOpen(bookPath);
-        		int ret = clsEpub.epubCleanCache(handle);
+        		int handle = clsEpub.openEpubBook(bookPath);
+        		int ret = clsEpub.cleanEpubBookCache(handle);
         		tv.setText("epubCleanCache return value = "+String.valueOf(ret));        		
         	}
         });        
         
         buttonCleanup.setOnClickListener(new Button.OnClickListener(){
         	public void onClick(View v){
-        		clsEpub.epubCleanup();
+        		clsEpub.cleanUpEpubEnv();
         		tv.setText("clean up");        		
         	}
         });
