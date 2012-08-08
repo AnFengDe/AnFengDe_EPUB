@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/afd_bookView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/afd_contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+	    <ViewFlipper
+	        android:id="@+id/viewFlipper1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" >
+	    </ViewFlipper>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/afd_llTopMenu"
+        android:background="@drawable/afd_topmenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dip" >
+
+        <RelativeLayout
+            android:layout_alignParentLeft="true"
+            android:layout_width="100dip"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:background="#00000000"
+                android:src="@drawable/afd_back" 
+                android:layout_alignParentLeft="true"
+                android:id="@+id/afd_backBtn"
+                android:layout_width="50dip"
+                android:layout_height="48dip"
+                android:layout_centerVertical="true"/>
+            <ImageButton
+                android:background="#00000000"
+                android:src="@drawable/afd_tablecontentsbtn"
+                android:id="@+id/afd_tableContentsBtn"
+                android:layout_toRightOf="@+id/afd_backBtn"
+                android:layout_width="50dip"
+                android:layout_height="48dip"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+
+            <TextView
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="23dip"
+                android:maxLines="1"
+                android:layout_width="100dip"
+                android:ellipsize="end"
+                android:id="@+id/afd_tvBookName"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+
+
+        <RelativeLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="100dip"
+            android:layout_height="match_parent" >
+
+            <ImageButton      
+                android:layout_marginRight="20dip"
+                android:src="@drawable/afd_fontsize"
+                android:background="#00000000"       
+                android:id="@+id/afd_fontSizeBtn"
+                android:layout_width="50dip"
+                android:layout_height="48dip"
+                android:layout_alignParentRight="true"                
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+   
+</FrameLayout>
