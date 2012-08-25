@@ -9,11 +9,16 @@
 
 #import <UIKit/UIKit.h>
 #import "EPubBook.h"
+#import "GADBannerViewDelegate.h"
 
+@class GADBannerView, GADRequest;
 @class EPubContentsViewController;
 
-@interface EPubRootViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate>{
+@interface EPubRootViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate,GADBannerViewDelegate>{
+    GADBannerView *adBanner_;
     EPubBook *epubBook;
+
+@private
     UIWebView *afd_webView;
     UIView *afd_topMenu;
     UIButton *afd_backBtn;
@@ -28,7 +33,6 @@
     BOOL loadedView;
 /** the current font size of the text */
     NSUInteger textFontSize;
-@private
     NSMutableArray *customRootConfig_;
 }
 
@@ -54,6 +58,10 @@
 
 @property (strong, nonatomic) EPubContentsViewController *contentsViewController;
 @property (nonatomic, readonly) NSMutableArray *customRootConfig;
+
+@property (nonatomic, retain) GADBannerView *adBanner;
+
+- (GADRequest *)createRequest;
 
 /**
   Initialize a new nib file

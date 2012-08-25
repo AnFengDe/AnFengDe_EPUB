@@ -5,11 +5,16 @@ import java.util.Calendar;
 
 import com.anfengde.epub.core.value.Constants;
 import com.anfengde.epub.ui.BookView;
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 public class CallEPubUIActivity extends Activity {
 	public BookView bookView;
@@ -26,9 +31,11 @@ public class CallEPubUIActivity extends Activity {
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //LinearLayout linearLayout1 = (LinearLayout) findViewById(R.id.linearLayout1);
        bookView = (BookView) findViewById(R.id.bookView1);
-       bookView.setPath(Constants.CACHE_PAHT, "/mnt/sdcard/epubtest/Creative Commons - A Shared Culture.epub");
+       bookView.setPath(Constants.CACHE_PAHT, "/mnt/sdcard/epub/testBook.epub");
        bookView.initBook();
        bookView.openBook();
+       
+		
 //       bookView.setBackBtnBackgroundImage(R.drawable.ic_launcher);
 //       bookView.setTableContentsBtnBackgroundImage(R.drawable.ic_launcher);
 //       bookView.setBookTitleFontColor(Color.BLUE);

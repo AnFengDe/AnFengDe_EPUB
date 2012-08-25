@@ -44,5 +44,6 @@
 #define AFD_EPUB_ERR_DEL_FILE		    -24
 #define AFD_EPUB_ERR_GET_CACHE_BOOK     -25
 #define AFD_EPUB_ERR_UNZIP_FILE			-26
+#define AFD_EPUB_ERR_GET_CHAPTER_SIZE   -27
 
 #endif

@@ -7,42 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F91079215D258C500806115 /* AnFengDe_EPUB_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91078315D258C500806115 /* AnFengDe_EPUB_SDK.framework */; };
-		4F91079315D258C500806115 /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91078515D258C500806115 /* AnFengDe_EPUB_UI.framework */; };
-		4F91079415D258C500806115 /* afd_backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078715D258C500806115 /* afd_backBtn.png */; };
-		4F91079515D258C500806115 /* afd_continueReadingBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078815D258C500806115 /* afd_continueReadingBtn.png */; };
-		4F91079615D258C500806115 /* afd_font_zoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078915D258C500806115 /* afd_font_zoomIn.png */; };
-		4F91079715D258C500806115 /* afd_font_zoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078A15D258C500806115 /* afd_font_zoomOut.png */; };
-		4F91079815D258C500806115 /* afd_fontsize.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078B15D258C500806115 /* afd_fontsize.png */; };
-		4F91079915D258C500806115 /* afd_tableContentsBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078C15D258C500806115 /* afd_tableContentsBg.png */; };
-		4F91079A15D258C500806115 /* afd_tableContentsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078D15D258C500806115 /* afd_tableContentsBtn.png */; };
-		4F91079B15D258C500806115 /* afd_topMenuBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078E15D258C500806115 /* afd_topMenuBg.png */; };
-		4F91079C15D258C500806115 /* EPubContentsViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 4F91078F15D258C500806115 /* EPubContentsViewController.nib */; };
-		4F91079D15D258C500806115 /* EPubRootViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = 4F91079015D258C500806115 /* EPubRootViewController.nib */; };
-		4F91079E15D258C500806115 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F91079115D258C500806115 /* icon.png */; };
+		4F8BA0B415E5D8B5004B7B96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */; };
+		4F8BA0B715E5D8BE004B7B96 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */; };
+		4F8BA0B915E5D8CA004B7B96 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */; };
+		4F8BA0BB15E5D8D4004B7B96 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */; };
 		4FD8095615C93E270065448B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8095515C93E270065448B /* UIKit.framework */; };
 		4FD8095815C93E270065448B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8095715C93E270065448B /* Foundation.framework */; };
 		4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8095915C93E270065448B /* CoreGraphics.framework */; };
 		4FD8096015C93E270065448B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8095E15C93E270065448B /* InfoPlist.strings */; };
 		4FD8096215C93E270065448B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096115C93E270065448B /* main.m */; };
 		4FD8096615C93E270065448B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096515C93E270065448B /* AppDelegate.m */; };
-		4FD8099F15C943B20065448B /* testBook.epub in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8099E15C943B20065448B /* testBook.epub */; };
+		CCD4BE3115E8630F00B0B40F /* testBook.epub in Resources */ = {isa = PBXBuildFile; fileRef = CCD4BE3015E8630F00B0B40F /* testBook.epub */; };
+		CCF995E115E7647B00E61755 /* AnFengDe_EPUB_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF995E015E7647B00E61755 /* AnFengDe_EPUB_SDK.framework */; };
+		CCF995F015E7648A00E61755 /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF995E315E7648A00E61755 /* AnFengDe_EPUB_UI.framework */; };
+		CCF995F115E7648A00E61755 /* afd_backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995E515E7648A00E61755 /* afd_backBtn.png */; };
+		CCF995F215E7648A00E61755 /* afd_continueReadingBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995E615E7648A00E61755 /* afd_continueReadingBtn.png */; };
+		CCF995F315E7648A00E61755 /* afd_font_zoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995E715E7648A00E61755 /* afd_font_zoomIn.png */; };
+		CCF995F415E7648A00E61755 /* afd_font_zoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995E815E7648A00E61755 /* afd_font_zoomOut.png */; };
+		CCF995F515E7648A00E61755 /* afd_fontsize.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995E915E7648A00E61755 /* afd_fontsize.png */; };
+		CCF995F615E7648A00E61755 /* afd_tableContentsBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995EA15E7648A00E61755 /* afd_tableContentsBg.png */; };
+		CCF995F715E7648A00E61755 /* afd_tableContentsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995EB15E7648A00E61755 /* afd_tableContentsBtn.png */; };
+		CCF995F815E7648A00E61755 /* afd_topMenuBg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995EC15E7648A00E61755 /* afd_topMenuBg.png */; };
+		CCF995F915E7648A00E61755 /* EPubContentsViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = CCF995ED15E7648A00E61755 /* EPubContentsViewController.nib */; };
+		CCF995FA15E7648A00E61755 /* EPubRootViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = CCF995EE15E7648A00E61755 /* EPubRootViewController.nib */; };
+		CCF995FB15E7648A00E61755 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF995EF15E7648A00E61755 /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4F91078315D258C500806115 /* AnFengDe_EPUB_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnFengDe_EPUB_SDK.framework; path = ../lib/AnFengDe_EPUB_SDK.framework; sourceTree = "<group>"; };
-		4F91078515D258C500806115 /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
-		4F91078715D258C500806115 /* afd_backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_backBtn.png; sourceTree = "<group>"; };
-		4F91078815D258C500806115 /* afd_continueReadingBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_continueReadingBtn.png; sourceTree = "<group>"; };
-		4F91078915D258C500806115 /* afd_font_zoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomIn.png; sourceTree = "<group>"; };
-		4F91078A15D258C500806115 /* afd_font_zoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomOut.png; sourceTree = "<group>"; };
-		4F91078B15D258C500806115 /* afd_fontsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_fontsize.png; sourceTree = "<group>"; };
-		4F91078C15D258C500806115 /* afd_tableContentsBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tableContentsBg.png; sourceTree = "<group>"; };
-		4F91078D15D258C500806115 /* afd_tableContentsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tableContentsBtn.png; sourceTree = "<group>"; };
-		4F91078E15D258C500806115 /* afd_topMenuBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_topMenuBg.png; sourceTree = "<group>"; };
-		4F91078F15D258C500806115 /* EPubContentsViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubContentsViewController.nib; sourceTree = "<group>"; };
-		4F91079015D258C500806115 /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubRootViewController.nib; sourceTree = "<group>"; };
-		4F91079115D258C500806115 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4FD8095115C93E270065448B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD8095515C93E270065448B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4FD8095715C93E270065448B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,7 +48,20 @@
 		4FD8096315C93E270065448B /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
 		4FD8096415C93E270065448B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FD8096515C93E270065448B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4FD8099E15C943B20065448B /* testBook.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = testBook.epub; sourceTree = "<group>"; };
+		CCD4BE3015E8630F00B0B40F /* testBook.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = testBook.epub; sourceTree = "<group>"; };
+		CCF995E015E7647B00E61755 /* AnFengDe_EPUB_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnFengDe_EPUB_SDK.framework; path = ../lib/AnFengDe_EPUB_SDK.framework; sourceTree = "<group>"; };
+		CCF995E315E7648A00E61755 /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
+		CCF995E515E7648A00E61755 /* afd_backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_backBtn.png; sourceTree = "<group>"; };
+		CCF995E615E7648A00E61755 /* afd_continueReadingBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_continueReadingBtn.png; sourceTree = "<group>"; };
+		CCF995E715E7648A00E61755 /* afd_font_zoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomIn.png; sourceTree = "<group>"; };
+		CCF995E815E7648A00E61755 /* afd_font_zoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomOut.png; sourceTree = "<group>"; };
+		CCF995E915E7648A00E61755 /* afd_fontsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_fontsize.png; sourceTree = "<group>"; };
+		CCF995EA15E7648A00E61755 /* afd_tableContentsBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tableContentsBg.png; sourceTree = "<group>"; };
+		CCF995EB15E7648A00E61755 /* afd_tableContentsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tableContentsBtn.png; sourceTree = "<group>"; };
+		CCF995EC15E7648A00E61755 /* afd_topMenuBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_topMenuBg.png; sourceTree = "<group>"; };
+		CCF995ED15E7648A00E61755 /* EPubContentsViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubContentsViewController.nib; sourceTree = "<group>"; };
+		CCF995EE15E7648A00E61755 /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubRootViewController.nib; sourceTree = "<group>"; };
+		CCF995EF15E7648A00E61755 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,49 +69,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8BA0BB15E5D8D4004B7B96 /* MediaPlayer.framework in Frameworks */,
+				4F8BA0B915E5D8CA004B7B96 /* MessageUI.framework in Frameworks */,
+				4F8BA0B715E5D8BE004B7B96 /* SystemConfiguration.framework in Frameworks */,
+				4F8BA0B415E5D8B5004B7B96 /* AudioToolbox.framework in Frameworks */,
 				4FD8095615C93E270065448B /* UIKit.framework in Frameworks */,
 				4FD8095815C93E270065448B /* Foundation.framework in Frameworks */,
 				4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */,
-				4F91079215D258C500806115 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
-				4F91079315D258C500806115 /* AnFengDe_EPUB_UI.framework in Frameworks */,
+				CCF995E115E7647B00E61755 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
+				CCF995F015E7648A00E61755 /* AnFengDe_EPUB_UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F91078415D258C500806115 /* AnFengDe_EPUB_UI.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				4F91078515D258C500806115 /* AnFengDe_EPUB_UI.framework */,
-				4F91078615D258C500806115 /* Resources */,
-			);
-			name = AnFengDe_EPUB_UI.embeddedframework;
-			path = ../lib/AnFengDe_EPUB_UI.embeddedframework;
-			sourceTree = "<group>";
-		};
-		4F91078615D258C500806115 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				4F91078715D258C500806115 /* afd_backBtn.png */,
-				4F91078815D258C500806115 /* afd_continueReadingBtn.png */,
-				4F91078915D258C500806115 /* afd_font_zoomIn.png */,
-				4F91078A15D258C500806115 /* afd_font_zoomOut.png */,
-				4F91078B15D258C500806115 /* afd_fontsize.png */,
-				4F91078C15D258C500806115 /* afd_tableContentsBg.png */,
-				4F91078D15D258C500806115 /* afd_tableContentsBtn.png */,
-				4F91078E15D258C500806115 /* afd_topMenuBg.png */,
-				4F91078F15D258C500806115 /* EPubContentsViewController.nib */,
-				4F91079015D258C500806115 /* EPubRootViewController.nib */,
-				4F91079115D258C500806115 /* icon.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		4FD8094615C93E270065448B = {
 			isa = PBXGroup;
 			children = (
-				4FD8099E15C943B20065448B /* testBook.epub */,
+				CCD4BE3015E8630F00B0B40F /* testBook.epub */,
 				4FD8095B15C93E270065448B /* Example */,
 				4FD8095415C93E270065448B /* Frameworks */,
 				4FD8095215C93E270065448B /* Products */,
@@ -121,8 +105,12 @@
 		4FD8095415C93E270065448B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4F91078315D258C500806115 /* AnFengDe_EPUB_SDK.framework */,
-				4F91078415D258C500806115 /* AnFengDe_EPUB_UI.embeddedframework */,
+				CCF995E215E7648A00E61755 /* AnFengDe_EPUB_UI.embeddedframework */,
+				CCF995E015E7647B00E61755 /* AnFengDe_EPUB_SDK.framework */,
+				4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */,
+				4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */,
+				4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */,
+				4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */,
 				4FD8095515C93E270065448B /* UIKit.framework */,
 				4FD8095715C93E270065448B /* Foundation.framework */,
 				4FD8095915C93E270065448B /* CoreGraphics.framework */,
@@ -149,6 +137,34 @@
 				4FD8096315C93E270065448B /* Example-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCF995E215E7648A00E61755 /* AnFengDe_EPUB_UI.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				CCF995E315E7648A00E61755 /* AnFengDe_EPUB_UI.framework */,
+				CCF995E415E7648A00E61755 /* Resources */,
+			);
+			name = AnFengDe_EPUB_UI.embeddedframework;
+			path = ../lib/AnFengDe_EPUB_UI.embeddedframework;
+			sourceTree = "<group>";
+		};
+		CCF995E415E7648A00E61755 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCF995E515E7648A00E61755 /* afd_backBtn.png */,
+				CCF995E615E7648A00E61755 /* afd_continueReadingBtn.png */,
+				CCF995E715E7648A00E61755 /* afd_font_zoomIn.png */,
+				CCF995E815E7648A00E61755 /* afd_font_zoomOut.png */,
+				CCF995E915E7648A00E61755 /* afd_fontsize.png */,
+				CCF995EA15E7648A00E61755 /* afd_tableContentsBg.png */,
+				CCF995EB15E7648A00E61755 /* afd_tableContentsBtn.png */,
+				CCF995EC15E7648A00E61755 /* afd_topMenuBg.png */,
+				CCF995ED15E7648A00E61755 /* EPubContentsViewController.nib */,
+				CCF995EE15E7648A00E61755 /* EPubRootViewController.nib */,
+				CCF995EF15E7648A00E61755 /* icon.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,18 +218,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD8096015C93E270065448B /* InfoPlist.strings in Resources */,
-				4FD8099F15C943B20065448B /* testBook.epub in Resources */,
-				4F91079415D258C500806115 /* afd_backBtn.png in Resources */,
-				4F91079515D258C500806115 /* afd_continueReadingBtn.png in Resources */,
-				4F91079615D258C500806115 /* afd_font_zoomIn.png in Resources */,
-				4F91079715D258C500806115 /* afd_font_zoomOut.png in Resources */,
-				4F91079815D258C500806115 /* afd_fontsize.png in Resources */,
-				4F91079915D258C500806115 /* afd_tableContentsBg.png in Resources */,
-				4F91079A15D258C500806115 /* afd_tableContentsBtn.png in Resources */,
-				4F91079B15D258C500806115 /* afd_topMenuBg.png in Resources */,
-				4F91079C15D258C500806115 /* EPubContentsViewController.nib in Resources */,
-				4F91079D15D258C500806115 /* EPubRootViewController.nib in Resources */,
-				4F91079E15D258C500806115 /* icon.png in Resources */,
+				CCF995F115E7648A00E61755 /* afd_backBtn.png in Resources */,
+				CCF995F215E7648A00E61755 /* afd_continueReadingBtn.png in Resources */,
+				CCF995F315E7648A00E61755 /* afd_font_zoomIn.png in Resources */,
+				CCF995F415E7648A00E61755 /* afd_font_zoomOut.png in Resources */,
+				CCF995F515E7648A00E61755 /* afd_fontsize.png in Resources */,
+				CCF995F615E7648A00E61755 /* afd_tableContentsBg.png in Resources */,
+				CCF995F715E7648A00E61755 /* afd_tableContentsBtn.png in Resources */,
+				CCF995F815E7648A00E61755 /* afd_topMenuBg.png in Resources */,
+				CCF995F915E7648A00E61755 /* EPubContentsViewController.nib in Resources */,
+				CCF995FA15E7648A00E61755 /* EPubRootViewController.nib in Resources */,
+				CCF995FB15E7648A00E61755 /* icon.png in Resources */,
+				CCD4BE3115E8630F00B0B40F /* testBook.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +319,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -323,6 +340,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
