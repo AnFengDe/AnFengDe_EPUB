@@ -7,7 +7,7 @@ License
 
 EPUB SDK (the last version called EPUB UI Component) is a free software, all rights reserved by An Fengde  Information Technology Co.,Ltd.
 
-EPUB_SDK official site is [http://epub.anfengde.com](http://epub.anfengde.com)
+EPUB_SDK official site is [http://epub.anfengde.com](http://epub.anfengde.com).
 
 You can use EPUB SDK to make your own application. It’s free. 
 
