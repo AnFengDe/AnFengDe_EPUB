@@ -15,3 +15,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20120824 A significant improvement of this version is the support to EPUB 2.0.x, in which most of the ebooks on the net are published. The SDK API interface is unchanged for compatibility with previous applications. Also we've added Google's AdMob feature. Ebook readers developed by this dev kit will cast advertisements.
+
+=================
+* 20120924 In this release we've fixed the bug of memory leaks in EPUB SDK. Meanwhile we added the features of page turning and reading progress bar for the rendering of book contents.

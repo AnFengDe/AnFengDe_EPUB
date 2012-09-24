@@ -1,20 +1,11 @@
 package com.anfengde.ui.call;
 
-import java.text.DateFormat;
-import java.util.Calendar;
 
 import com.anfengde.epub.core.value.Constants;
 import com.anfengde.epub.ui.BookView;
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
-
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
-import android.widget.LinearLayout;
 
 public class CallEPubUIActivity extends Activity {
 	public BookView bookView;
@@ -22,14 +13,9 @@ public class CallEPubUIActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        String startTime = DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
-//		Log.v("start timing",startTime);
         setContentView(R.layout.main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
         		WindowManager.LayoutParams.FLAG_FULLSCREEN); 
-        //requestWindowFeature(Window.FEATURE_NO_TITLE);
-        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        //LinearLayout linearLayout1 = (LinearLayout) findViewById(R.id.linearLayout1);
        bookView = (BookView) findViewById(R.id.bookView1);
        bookView.setPath(Constants.CACHE_PAHT, "/mnt/sdcard/epub/testBook.epub");
        bookView.initBook();

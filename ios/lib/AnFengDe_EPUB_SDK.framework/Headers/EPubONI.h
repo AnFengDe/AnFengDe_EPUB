@@ -12,6 +12,7 @@
 #import "EPubSpine.h"
 #import "EPubChapter.h"
 #import "EPubSpine.h"
+#import "EPubBookMark.h"
 
 /// EPub ONI interface define
 @interface EPubONI : NSObject {
@@ -83,6 +84,12 @@
  */
 + (unsigned int)getEPubBookSize:(unsigned int)handle;
 /**
+ Get book mimetype
+ @param handle is the handle of the book
+ @returns the mimetype of the book
+ */
++ (NSString *)getEPubMimetype:(unsigned int)handle;
+/**
   Get book root dir
   @param handle is the handle of the book
   @returns the cache path of the book
@@ -116,5 +123,35 @@
   Clean up the env
  */
 + (void)cleanUpEPubEnv;
+
+/**
+ Get BookMark Count
+ */
++ (unsigned int)getEPubBookMarkCount:(unsigned int)handle;
+
+/**
+ Get BookMark
+ */ 
++ (unsigned int)getEPubBookMark:(NSMutableArray *)bookmarkArray Handle:(unsigned int)handle;
+
+/**
+ Add BookMark
+ */
++ (int)addEPubBookMark:(EPubBookMark *)bookmark Handle:(unsigned int)handle;
+
+/**
+ Update BookMark
+ */
++ (int)updateEPubBookMark:(EPubBookMark *)bookmark Handle:(unsigned int)handle;
+
+/**
+ Delete BookMark
+ */
++ (int)deleteEPubBookMark:(EPubBookMark *)bookmark Handle:(unsigned int)handle;
+
+/**
+ get error message
+ */
++ (NSString *)getErrorMessage:(unsigned int)errorcode;
 
 @end

@@ -15,5 +15,6 @@
 #import <AnFengDe_EPUB_SDK/EPubChapter.h>
 #import <AnFengDe_EPUB_SDK/EPubManifestItem.h>
 #import <AnFengDe_EPUB_SDK/EPubSpine.h>
+#import <AnFengDe_EPUB_SDK/EPubBookMark.h>
 
 #endif

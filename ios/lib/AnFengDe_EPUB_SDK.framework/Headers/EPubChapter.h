@@ -22,7 +22,7 @@
 /** chapter href */
 @property (nonatomic, retain) NSString *href;
 /** the size of chapter */
-@property (nonatomic, readwrite) int size;
+@property (nonatomic, readwrite) int csize;
 /** the level of chapter */
 @property (nonatomic, readwrite) int level;
 

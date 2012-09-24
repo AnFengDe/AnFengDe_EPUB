@@ -1,0 +1,39 @@
+
+#afd_pageturn {
+	position: relative;
+	width: auto;
+	overflow: hidden;
+	border: 0px solid lightblue;
+}
+
+#afd_content {
+	position: relative;
+	-webkit-column-count: aoto;
+	-webkit-column-width: 500em;
+	-webkit-column-gap: 20px;
+	border: none;
+	width: auto;
+	height: auto;
+	text-align: justify;
+	padding: 10px
+}
+
+#afd_break {
+	position: relative;
+	height: 0px;
+}
+
+#currentPage {
+	position: absolute;
+	width: 100px;
+	bottom:0px;
+	left: 10px;
+	font-size: 12px;
+}
+a{
+	outline:none;
+	border-style:none;
+}
+a:hover{
+	border-style:none;
+}

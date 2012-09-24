@@ -151,5 +151,12 @@
  @param fontSize is the custom size of font
  */
 - (void) setChapterTitleFontSize:(CGFloat)fontSize;
-
+/**
+ write js and css to device
+ */
+- (void) writeJS:(NSString*)fileName type:(NSString*)type folder:(NSString*)folder;
+/**
+ return html content with js and css
+ */
+- (NSString*) urlContent:(NSString*)htmlContent;
 @end
