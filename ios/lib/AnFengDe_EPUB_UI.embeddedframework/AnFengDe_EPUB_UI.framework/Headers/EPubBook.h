@@ -26,10 +26,12 @@
 @public
     /** The index of current chapter in the book */
     NSUInteger currentChapterIndex;
+    int current_percent;
     /** The bookSize */
     int bookSize_;
     /** The index of current page in current chapter */
     NSUInteger currentPageIndexInChapter;
+    int handle;
 }
 
 /** The basic info of epub book */
@@ -44,6 +46,7 @@
 @property (nonatomic, retain) NSString *cachePath;
 /** The bookSize */
 @property (nonatomic, readwrite) int bookSize;
+@property (nonatomic, readwrite) int handle;
 
 /**
   Initialize a new EPubBook object

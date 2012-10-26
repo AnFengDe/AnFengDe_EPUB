@@ -13,6 +13,7 @@
 #import "EPubChapter.h"
 #import "EPubSpine.h"
 #import "EPubBookMark.h"
+#import "EPubReadStatus.h"
 
 /// EPub ONI interface define
 @interface EPubONI : NSObject {
@@ -154,4 +155,14 @@
  */
 + (NSString *)getErrorMessage:(unsigned int)errorcode;
 
+/**
+ get last reading status(include last chapter and last percent)
+ */
++ (unsigned int)getEPubReadStatus:(EPubReadStatus *)readstatus Handle:(unsigned int)handle;
+
+/**
+ update last reading status(include last chapter and last percent)
+ */
+
++ (unsigned int)updateEPubReadStatus:(EPubReadStatus *)readstatus Handle:(unsigned int)handle;
 @end
