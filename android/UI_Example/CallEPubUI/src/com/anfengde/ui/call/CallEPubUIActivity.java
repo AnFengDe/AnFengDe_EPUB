@@ -20,5 +20,5 @@ public class CallEPubUIActivity extends Activity {
        bookView.setPath(Constants.CACHE_PAHT, "/mnt/sdcard/epubtest/siddhartha3.epub");
        bookView.initBook();
        bookView.openBook();
-    }
+    } 
 }
