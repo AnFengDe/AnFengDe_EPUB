@@ -1,0 +1,145 @@
+
+
+#afd_pageturn {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    border: 0px solid lightblue;
+}
+
+#afd_content {
+    position: relative;
+    -webkit-column-count: aoto;
+    -webkit-column-width: 500em;
+    -webkit-column-gap: 20px;
+    border: none;
+    width: auto;
+    height: auto;
+    text-align: justify;
+    padding: 10px
+}
+
+#afd_break {
+    position: relative;
+    height: 0px;
+}
+
+#afd_menu {
+    position:absolute;
+    z-index:1;
+    left:0px;
+    top:0px;
+    height:48px;
+    display:none;
+}
+
+#afd_menu #afd_bookmark{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:absolute;
+    right:10px;
+    width:40px;
+    height:48px;
+    text-align:right;
+}
+
+#afd_menu #afd_bookmark img{
+    position:relative;
+    top:10px;
+    height:30px;
+}
+
+#afd_menu #afd_zoom{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:absolute;
+    right:50px;
+    width:50px;
+    height:48px;
+    text-align:right;
+}
+
+#afd_menu #afd_zoom img{
+    position:relative;
+    width:38px;
+    top:10px;
+}
+
+#afd_menu #afd_title{
+    position:absolute;
+    width:80px;
+    height:20px;
+    text-algin:center;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    font-size:20px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+#afd_menu #afd_TOC{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:absolute;
+    left:70px;
+    width: 50px;
+    height:48px;
+}
+
+#afd_menu #afd_TOC img{
+    position:relative;
+    width:20px;
+    top:15px;
+}
+
+#afd_menu #afd_bookshelf{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:absolute;
+    left:10px;
+    width: 50px;
+    height:48px;
+}
+
+#afd_menu #afd_bookshelf img{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:relative;
+    top:10px;
+    width:50px;
+}
+
+#afd_menu #afd_zoomin{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:absolute;
+    top:48px;
+    right:15px;
+    width:50px;
+    text-algin:right;
+    display:none;
+}
+
+#afd_menu #afd_zoomin img{
+    width:40px;
+    height:35px;
+}
+
+#afd_menu #afd_zoomout{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    position:absolute;
+    top:48px;
+    width:50px;
+    right:67px;
+    text-algin:left;
+    display:none;
+}
+
+#afd_menu #afd_zoomout img{
+    width:40px;
+    height:35px;
+}
+
+#currentPage {
+    position: absolute;
+    width: 100px;
+    bottom:10px;
+    left: 10px;
+    font-size: 12px;
+}
+

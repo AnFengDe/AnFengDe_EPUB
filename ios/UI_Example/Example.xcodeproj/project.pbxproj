@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F6AFB3815EB44B400409926 /* AnFengDe_EPUB_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */; };
+		4F8BA0B415E5D8B5004B7B96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */; };
+		4F8BA0B715E5D8BE004B7B96 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */; };
+		4F8BA0B915E5D8CA004B7B96 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */; };
+		4F8BA0BB15E5D8D4004B7B96 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */; };
+		4FD8095615C93E270065448B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8095515C93E270065448B /* UIKit.framework */; };
+		4FD8095815C93E270065448B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8095715C93E270065448B /* Foundation.framework */; };
+		4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FD8095915C93E270065448B /* CoreGraphics.framework */; };
+		4FD8096015C93E270065448B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8095E15C93E270065448B /* InfoPlist.strings */; };
+		4FD8096215C93E270065448B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096115C93E270065448B /* main.m */; };
+		4FD8096615C93E270065448B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096515C93E270065448B /* AppDelegate.m */; };
+		4FD8099F15C943B20065448B /* testBook.epub in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8099E15C943B20065448B /* testBook.epub */; };
+		CC0662991615AA4F0086E897 /* siddhartha3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC0662981615AA4F0086E897 /* siddhartha3.epub */; };
+		CC7A14961607261E000E2008 /* igpn-28languages-01-EPUB3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */; };
+		CCD3AEBC16392E3200E8EA0D /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD3AEA216392E3200E8EA0D /* AnFengDe_EPUB_UI.framework */; };
+		CCD3AEBD16392E3200E8EA0D /* afd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA416392E3200E8EA0D /* afd_back.png */; };
+		CCD3AEBE16392E3200E8EA0D /* afd_backreadview.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA516392E3200E8EA0D /* afd_backreadview.png */; };
+		CCD3AEBF16392E3200E8EA0D /* afd_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA616392E3200E8EA0D /* afd_bookmark.png */; };
+		CCD3AEC016392E3200E8EA0D /* afd_bookmark_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA716392E3200E8EA0D /* afd_bookmark_yellow.png */; };
+		CCD3AEC116392E3200E8EA0D /* afd_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA816392E3200E8EA0D /* afd_delete.png */; };
+		CCD3AEC216392E3200E8EA0D /* afd_deletebg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA916392E3200E8EA0D /* afd_deletebg.png */; };
+		CCD3AEC316392E3200E8EA0D /* afd_font_zoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAA16392E3200E8EA0D /* afd_font_zoomIn.png */; };
+		CCD3AEC416392E3200E8EA0D /* afd_font_zoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAB16392E3200E8EA0D /* afd_font_zoomOut.png */; };
+		CCD3AEC516392E3200E8EA0D /* afd_fontsize.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAC16392E3200E8EA0D /* afd_fontsize.png */; };
+		CCD3AEC616392E3200E8EA0D /* afd_green_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAD16392E3200E8EA0D /* afd_green_left.png */; };
+		CCD3AEC716392E3200E8EA0D /* afd_green_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAE16392E3200E8EA0D /* afd_green_right.png */; };
+		CCD3AEC816392E3200E8EA0D /* afd_tableContentsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAF16392E3200E8EA0D /* afd_tableContentsBtn.png */; };
+		CCD3AEC916392E3200E8EA0D /* afd_topmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB016392E3200E8EA0D /* afd_topmenu.png */; };
+		CCD3AECA16392E3200E8EA0D /* afd_white_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB116392E3200E8EA0D /* afd_white_left.png */; };
+		CCD3AECB16392E3200E8EA0D /* afd_white_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB216392E3200E8EA0D /* afd_white_right.png */; };
+		CCD3AECC16392E3200E8EA0D /* backpage.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB316392E3200E8EA0D /* backpage.js */; };
+		CCD3AECD16392E3200E8EA0D /* control.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB416392E3200E8EA0D /* control.js */; };
+		CCD3AECE16392E3200E8EA0D /* EPubRootViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB516392E3200E8EA0D /* EPubRootViewController.nib */; };
+		CCD3AECF16392E3200E8EA0D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB616392E3200E8EA0D /* icon.png */; };
+		CCD3AED016392E3200E8EA0D /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB716392E3200E8EA0D /* jquery.min.js */; };
+		CCD3AED116392E3200E8EA0D /* jtoc.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB816392E3200E8EA0D /* jtoc.js */; };
+		CCD3AED216392E3200E8EA0D /* readpage.css in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB916392E3200E8EA0D /* readpage.css */; };
+		CCD3AED316392E3200E8EA0D /* stoc.css in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEBA16392E3200E8EA0D /* stoc.css */; };
+		CCD3AED416392E3200E8EA0D /* toc.html in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEBB16392E3200E8EA0D /* toc.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnFengDe_EPUB_SDK.framework; path = ../lib/AnFengDe_EPUB_SDK.framework; sourceTree = "<group>"; };
+		4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4FD8095115C93E270065448B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FD8095515C93E270065448B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4FD8095715C93E270065448B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4FD8095915C93E270065448B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4FD8095D15C93E270065448B /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
+		4FD8095F15C93E270065448B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4FD8096115C93E270065448B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4FD8096315C93E270065448B /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
+		4FD8096415C93E270065448B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4FD8096515C93E270065448B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4FD8099E15C943B20065448B /* testBook.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = testBook.epub; sourceTree = "<group>"; };
+		CC0662981615AA4F0086E897 /* siddhartha3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = siddhartha3.epub; sourceTree = "<group>"; };
+		CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "igpn-28languages-01-EPUB3.epub"; sourceTree = "<group>"; };
+		CCD3AEA216392E3200E8EA0D /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
+		CCD3AEA416392E3200E8EA0D /* afd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_back.png; sourceTree = "<group>"; };
+		CCD3AEA516392E3200E8EA0D /* afd_backreadview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_backreadview.png; sourceTree = "<group>"; };
+		CCD3AEA616392E3200E8EA0D /* afd_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_bookmark.png; sourceTree = "<group>"; };
+		CCD3AEA716392E3200E8EA0D /* afd_bookmark_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_bookmark_yellow.png; sourceTree = "<group>"; };
+		CCD3AEA816392E3200E8EA0D /* afd_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_delete.png; sourceTree = "<group>"; };
+		CCD3AEA916392E3200E8EA0D /* afd_deletebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_deletebg.png; sourceTree = "<group>"; };
+		CCD3AEAA16392E3200E8EA0D /* afd_font_zoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomIn.png; sourceTree = "<group>"; };
+		CCD3AEAB16392E3200E8EA0D /* afd_font_zoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomOut.png; sourceTree = "<group>"; };
+		CCD3AEAC16392E3200E8EA0D /* afd_fontsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_fontsize.png; sourceTree = "<group>"; };
+		CCD3AEAD16392E3200E8EA0D /* afd_green_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_green_left.png; sourceTree = "<group>"; };
+		CCD3AEAE16392E3200E8EA0D /* afd_green_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_green_right.png; sourceTree = "<group>"; };
+		CCD3AEAF16392E3200E8EA0D /* afd_tableContentsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tableContentsBtn.png; sourceTree = "<group>"; };
+		CCD3AEB016392E3200E8EA0D /* afd_topmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_topmenu.png; sourceTree = "<group>"; };
+		CCD3AEB116392E3200E8EA0D /* afd_white_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_left.png; sourceTree = "<group>"; };
+		CCD3AEB216392E3200E8EA0D /* afd_white_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_right.png; sourceTree = "<group>"; };
+		CCD3AEB316392E3200E8EA0D /* backpage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = backpage.js; sourceTree = "<group>"; };
+		CCD3AEB416392E3200E8EA0D /* control.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = control.js; sourceTree = "<group>"; };
+		CCD3AEB516392E3200E8EA0D /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubRootViewController.nib; sourceTree = "<group>"; };
+		CCD3AEB616392E3200E8EA0D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CCD3AEB716392E3200E8EA0D /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		CCD3AEB816392E3200E8EA0D /* jtoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jtoc.js; sourceTree = "<group>"; };
+		CCD3AEB916392E3200E8EA0D /* readpage.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = readpage.css; sourceTree = "<group>"; };
+		CCD3AEBA16392E3200E8EA0D /* stoc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stoc.css; sourceTree = "<group>"; };
+		CCD3AEBB16392E3200E8EA0D /* toc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = toc.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FD8094E15C93E270065448B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8BA0BB15E5D8D4004B7B96 /* MediaPlayer.framework in Frameworks */,
+				4F8BA0B915E5D8CA004B7B96 /* MessageUI.framework in Frameworks */,
+				4F8BA0B715E5D8BE004B7B96 /* SystemConfiguration.framework in Frameworks */,
+				4F8BA0B415E5D8B5004B7B96 /* AudioToolbox.framework in Frameworks */,
+				4FD8095615C93E270065448B /* UIKit.framework in Frameworks */,
+				4FD8095815C93E270065448B /* Foundation.framework in Frameworks */,
+				4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */,
+				4F6AFB3815EB44B400409926 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
+				CCD3AEBC16392E3200E8EA0D /* AnFengDe_EPUB_UI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FD8094615C93E270065448B = {
+			isa = PBXGroup;
+			children = (
+				CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */,
+				4FD8099E15C943B20065448B /* testBook.epub */,
+				CC0662981615AA4F0086E897 /* siddhartha3.epub */,
+				4FD8095B15C93E270065448B /* Example */,
+				4FD8095415C93E270065448B /* Frameworks */,
+				4FD8095215C93E270065448B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FD8095215C93E270065448B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8095115C93E270065448B /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD8095415C93E270065448B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCD3AEA116392E3200E8EA0D /* AnFengDe_EPUB_UI.embeddedframework */,
+				4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */,
+				4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */,
+				4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */,
+				4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */,
+				4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */,
+				4FD8095515C93E270065448B /* UIKit.framework */,
+				4FD8095715C93E270065448B /* Foundation.framework */,
+				4FD8095915C93E270065448B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FD8095B15C93E270065448B /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8096415C93E270065448B /* AppDelegate.h */,
+				4FD8096515C93E270065448B /* AppDelegate.m */,
+				4FD8095C15C93E270065448B /* Supporting Files */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		4FD8095C15C93E270065448B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4FD8095D15C93E270065448B /* Example-Info.plist */,
+				4FD8095E15C93E270065448B /* InfoPlist.strings */,
+				4FD8096115C93E270065448B /* main.m */,
+				4FD8096315C93E270065448B /* Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCD3AEA116392E3200E8EA0D /* AnFengDe_EPUB_UI.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				CCD3AEA216392E3200E8EA0D /* AnFengDe_EPUB_UI.framework */,
+				CCD3AEA316392E3200E8EA0D /* Resources */,
+			);
+			name = AnFengDe_EPUB_UI.embeddedframework;
+			path = ../lib/AnFengDe_EPUB_UI.embeddedframework;
+			sourceTree = "<group>";
+		};
+		CCD3AEA316392E3200E8EA0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCD3AEA416392E3200E8EA0D /* afd_back.png */,
+				CCD3AEA516392E3200E8EA0D /* afd_backreadview.png */,
+				CCD3AEA616392E3200E8EA0D /* afd_bookmark.png */,
+				CCD3AEA716392E3200E8EA0D /* afd_bookmark_yellow.png */,
+				CCD3AEA816392E3200E8EA0D /* afd_delete.png */,
+				CCD3AEA916392E3200E8EA0D /* afd_deletebg.png */,
+				CCD3AEAA16392E3200E8EA0D /* afd_font_zoomIn.png */,
+				CCD3AEAB16392E3200E8EA0D /* afd_font_zoomOut.png */,
+				CCD3AEAC16392E3200E8EA0D /* afd_fontsize.png */,
+				CCD3AEAD16392E3200E8EA0D /* afd_green_left.png */,
+				CCD3AEAE16392E3200E8EA0D /* afd_green_right.png */,
+				CCD3AEAF16392E3200E8EA0D /* afd_tableContentsBtn.png */,
+				CCD3AEB016392E3200E8EA0D /* afd_topmenu.png */,
+				CCD3AEB116392E3200E8EA0D /* afd_white_left.png */,
+				CCD3AEB216392E3200E8EA0D /* afd_white_right.png */,
+				CCD3AEB316392E3200E8EA0D /* backpage.js */,
+				CCD3AEB416392E3200E8EA0D /* control.js */,
+				CCD3AEB516392E3200E8EA0D /* EPubRootViewController.nib */,
+				CCD3AEB616392E3200E8EA0D /* icon.png */,
+				CCD3AEB716392E3200E8EA0D /* jquery.min.js */,
+				CCD3AEB816392E3200E8EA0D /* jtoc.js */,
+				CCD3AEB916392E3200E8EA0D /* readpage.css */,
+				CCD3AEBA16392E3200E8EA0D /* stoc.css */,
+				CCD3AEBB16392E3200E8EA0D /* toc.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FD8095015C93E270065448B /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FD8096F15C93E270065448B /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				4FD8094D15C93E270065448B /* Sources */,
+				4FD8094E15C93E270065448B /* Frameworks */,
+				4FD8094F15C93E270065448B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = Example;
+			productReference = 4FD8095115C93E270065448B /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FD8094815C93E270065448B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 4FD8094B15C93E270065448B /* Build configuration list for PBXProject "Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4FD8094615C93E270065448B;
+			productRefGroup = 4FD8095215C93E270065448B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FD8095015C93E270065448B /* Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FD8094F15C93E270065448B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD8096015C93E270065448B /* InfoPlist.strings in Resources */,
+				4FD8099F15C943B20065448B /* testBook.epub in Resources */,
+				CC7A14961607261E000E2008 /* igpn-28languages-01-EPUB3.epub in Resources */,
+				CC0662991615AA4F0086E897 /* siddhartha3.epub in Resources */,
+				CCD3AEBD16392E3200E8EA0D /* afd_back.png in Resources */,
+				CCD3AEBE16392E3200E8EA0D /* afd_backreadview.png in Resources */,
+				CCD3AEBF16392E3200E8EA0D /* afd_bookmark.png in Resources */,
+				CCD3AEC016392E3200E8EA0D /* afd_bookmark_yellow.png in Resources */,
+				CCD3AEC116392E3200E8EA0D /* afd_delete.png in Resources */,
+				CCD3AEC216392E3200E8EA0D /* afd_deletebg.png in Resources */,
+				CCD3AEC316392E3200E8EA0D /* afd_font_zoomIn.png in Resources */,
+				CCD3AEC416392E3200E8EA0D /* afd_font_zoomOut.png in Resources */,
+				CCD3AEC516392E3200E8EA0D /* afd_fontsize.png in Resources */,
+				CCD3AEC616392E3200E8EA0D /* afd_green_left.png in Resources */,
+				CCD3AEC716392E3200E8EA0D /* afd_green_right.png in Resources */,
+				CCD3AEC816392E3200E8EA0D /* afd_tableContentsBtn.png in Resources */,
+				CCD3AECC16392E3200E8EA0D /* backpage.js in Resources */,
+				CCD3AECD16392E3200E8EA0D /* control.js in Resources */,
+				CCD3AED016392E3200E8EA0D /* jquery.min.js in Resources */,
+				CCD3AED116392E3200E8EA0D /* jtoc.js in Resources */,
+				CCD3AEC916392E3200E8EA0D /* afd_topmenu.png in Resources */,
+				CCD3AECA16392E3200E8EA0D /* afd_white_left.png in Resources */,
+				CCD3AECB16392E3200E8EA0D /* afd_white_right.png in Resources */,
+				CCD3AECE16392E3200E8EA0D /* EPubRootViewController.nib in Resources */,
+				CCD3AECF16392E3200E8EA0D /* icon.png in Resources */,
+				CCD3AED216392E3200E8EA0D /* readpage.css in Resources */,
+				CCD3AED316392E3200E8EA0D /* stoc.css in Resources */,
+				CCD3AED416392E3200E8EA0D /* toc.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FD8094D15C93E270065448B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FD8096215C93E270065448B /* main.m in Sources */,
+				4FD8096615C93E270065448B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4FD8095E15C93E270065448B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FD8095F15C93E270065448B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FD8096D15C93E270065448B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4FD8096E15C93E270065448B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FD8097015C93E270065448B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/AnFengDe_EPUB_UI.embeddedframework\"",
+					"\"$(SRCROOT)/../../../epub_sdk/ios/Products\"",
+					"\"$(SRCROOT)/../EPUB_UI/Products/AnFengDe_EPUB_UI.embeddedframework\"",
+					"\"$(SRCROOT)/../../../deploy/ios/lib\"",
+					"\"$(SRCROOT)/../../../deploy/ios/lib/AnFengDe_EPUB_UI.embeddedframework\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4FD8097115C93E270065448B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib/AnFengDe_EPUB_UI.embeddedframework\"",
+					"\"$(SRCROOT)/../../../epub_sdk/ios/Products\"",
+					"\"$(SRCROOT)/../EPUB_UI/Products/AnFengDe_EPUB_UI.embeddedframework\"",
+					"\"$(SRCROOT)/../../../deploy/ios/lib\"",
+					"\"$(SRCROOT)/../../../deploy/ios/lib/AnFengDe_EPUB_UI.embeddedframework\"",
+					"\"$(SRCROOT)/../lib\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
+				INFOPLIST_FILE = "Example/Example-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FD8094B15C93E270065448B /* Build configuration list for PBXProject "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD8096D15C93E270065448B /* Debug */,
+				4FD8096E15C93E270065448B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FD8096F15C93E270065448B /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FD8097015C93E270065448B /* Debug */,
+				4FD8097115C93E270065448B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FD8094815C93E270065448B /* Project object */;
+}
