@@ -22,5 +22,5 @@ public class CallEPubUIActivity extends Activity {
        bookView.setPath(Constants.CACHE_PAHT, "/sdcard/epub/china.epub");
        bookView.initBook();
        bookView.openBook();
-    }
+    } 
 }
