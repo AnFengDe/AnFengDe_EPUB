@@ -11,7 +11,7 @@ function addListener()
             if (navigator.userAgent.match(/Android/i)) {
                 Android.back();
             }
-            if (navigator.userAgent.match(/iPhone/i)) {
+            if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
                 window.location = 'anreader:myaction:back';
             } 
         }

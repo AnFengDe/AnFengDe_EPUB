@@ -32,6 +32,7 @@
     /** The index of current page in current chapter */
     NSUInteger currentPageIndexInChapter;
     int handle;
+    NSString *errorMes;
 }
 
 /** The basic info of epub book */
@@ -47,6 +48,7 @@
 /** The bookSize */
 @property (nonatomic, readwrite) int bookSize;
 @property (nonatomic, readwrite) int handle;
+@property (nonatomic, retain) NSString *errorMes;
 
 /**
   Initialize a new EPubBook object

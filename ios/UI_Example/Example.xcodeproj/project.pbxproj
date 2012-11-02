@@ -20,32 +20,32 @@
 		4FD8096615C93E270065448B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096515C93E270065448B /* AppDelegate.m */; };
 		4FD8099F15C943B20065448B /* testBook.epub in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8099E15C943B20065448B /* testBook.epub */; };
 		CC0662991615AA4F0086E897 /* siddhartha3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC0662981615AA4F0086E897 /* siddhartha3.epub */; };
+		CC771A74163E71E80086638D /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC771A5A163E71E80086638D /* AnFengDe_EPUB_UI.framework */; };
+		CC771A75163E71E80086638D /* afd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A5C163E71E80086638D /* afd_back.png */; };
+		CC771A76163E71E80086638D /* afd_backreadview.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A5D163E71E80086638D /* afd_backreadview.png */; };
+		CC771A77163E71E80086638D /* afd_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A5E163E71E80086638D /* afd_bookmark.png */; };
+		CC771A78163E71E80086638D /* afd_bookmark_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A5F163E71E80086638D /* afd_bookmark_yellow.png */; };
+		CC771A79163E71E80086638D /* afd_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A60163E71E80086638D /* afd_delete.png */; };
+		CC771A7A163E71E80086638D /* afd_deletebg.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A61163E71E80086638D /* afd_deletebg.png */; };
+		CC771A7B163E71E80086638D /* afd_font_zoomin.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A62163E71E80086638D /* afd_font_zoomin.png */; };
+		CC771A7C163E71E80086638D /* afd_font_zoomout.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A63163E71E80086638D /* afd_font_zoomout.png */; };
+		CC771A7D163E71E80086638D /* afd_fontsize.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A64163E71E80086638D /* afd_fontsize.png */; };
+		CC771A7E163E71E80086638D /* afd_green_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A65163E71E80086638D /* afd_green_left.png */; };
+		CC771A7F163E71E80086638D /* afd_green_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A66163E71E80086638D /* afd_green_right.png */; };
+		CC771A80163E71E80086638D /* afd_tablecontentsbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A67163E71E80086638D /* afd_tablecontentsbtn.png */; };
+		CC771A81163E71E80086638D /* afd_topmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A68163E71E80086638D /* afd_topmenu.png */; };
+		CC771A82163E71E80086638D /* afd_white_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A69163E71E80086638D /* afd_white_left.png */; };
+		CC771A83163E71E80086638D /* afd_white_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A6A163E71E80086638D /* afd_white_right.png */; };
+		CC771A84163E71E80086638D /* backpage.js in Resources */ = {isa = PBXBuildFile; fileRef = CC771A6B163E71E80086638D /* backpage.js */; };
+		CC771A85163E71E80086638D /* control.js in Resources */ = {isa = PBXBuildFile; fileRef = CC771A6C163E71E80086638D /* control.js */; };
+		CC771A86163E71E80086638D /* EPubRootViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = CC771A6D163E71E80086638D /* EPubRootViewController.nib */; };
+		CC771A87163E71E80086638D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CC771A6E163E71E80086638D /* icon.png */; };
+		CC771A88163E71E80086638D /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CC771A6F163E71E80086638D /* jquery.min.js */; };
+		CC771A89163E71E80086638D /* jtoc.js in Resources */ = {isa = PBXBuildFile; fileRef = CC771A70163E71E80086638D /* jtoc.js */; };
+		CC771A8A163E71E80086638D /* readpage.css in Resources */ = {isa = PBXBuildFile; fileRef = CC771A71163E71E80086638D /* readpage.css */; };
+		CC771A8B163E71E80086638D /* stoc.css in Resources */ = {isa = PBXBuildFile; fileRef = CC771A72163E71E80086638D /* stoc.css */; };
+		CC771A8C163E71E80086638D /* toc.html in Resources */ = {isa = PBXBuildFile; fileRef = CC771A73163E71E80086638D /* toc.html */; };
 		CC7A14961607261E000E2008 /* igpn-28languages-01-EPUB3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */; };
-		CCD3AEBC16392E3200E8EA0D /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD3AEA216392E3200E8EA0D /* AnFengDe_EPUB_UI.framework */; };
-		CCD3AEBD16392E3200E8EA0D /* afd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA416392E3200E8EA0D /* afd_back.png */; };
-		CCD3AEBE16392E3200E8EA0D /* afd_backreadview.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA516392E3200E8EA0D /* afd_backreadview.png */; };
-		CCD3AEBF16392E3200E8EA0D /* afd_bookmark.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA616392E3200E8EA0D /* afd_bookmark.png */; };
-		CCD3AEC016392E3200E8EA0D /* afd_bookmark_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA716392E3200E8EA0D /* afd_bookmark_yellow.png */; };
-		CCD3AEC116392E3200E8EA0D /* afd_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA816392E3200E8EA0D /* afd_delete.png */; };
-		CCD3AEC216392E3200E8EA0D /* afd_deletebg.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEA916392E3200E8EA0D /* afd_deletebg.png */; };
-		CCD3AEC316392E3200E8EA0D /* afd_font_zoomIn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAA16392E3200E8EA0D /* afd_font_zoomIn.png */; };
-		CCD3AEC416392E3200E8EA0D /* afd_font_zoomOut.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAB16392E3200E8EA0D /* afd_font_zoomOut.png */; };
-		CCD3AEC516392E3200E8EA0D /* afd_fontsize.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAC16392E3200E8EA0D /* afd_fontsize.png */; };
-		CCD3AEC616392E3200E8EA0D /* afd_green_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAD16392E3200E8EA0D /* afd_green_left.png */; };
-		CCD3AEC716392E3200E8EA0D /* afd_green_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAE16392E3200E8EA0D /* afd_green_right.png */; };
-		CCD3AEC816392E3200E8EA0D /* afd_tableContentsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEAF16392E3200E8EA0D /* afd_tableContentsBtn.png */; };
-		CCD3AEC916392E3200E8EA0D /* afd_topmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB016392E3200E8EA0D /* afd_topmenu.png */; };
-		CCD3AECA16392E3200E8EA0D /* afd_white_left.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB116392E3200E8EA0D /* afd_white_left.png */; };
-		CCD3AECB16392E3200E8EA0D /* afd_white_right.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB216392E3200E8EA0D /* afd_white_right.png */; };
-		CCD3AECC16392E3200E8EA0D /* backpage.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB316392E3200E8EA0D /* backpage.js */; };
-		CCD3AECD16392E3200E8EA0D /* control.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB416392E3200E8EA0D /* control.js */; };
-		CCD3AECE16392E3200E8EA0D /* EPubRootViewController.nib in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB516392E3200E8EA0D /* EPubRootViewController.nib */; };
-		CCD3AECF16392E3200E8EA0D /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB616392E3200E8EA0D /* icon.png */; };
-		CCD3AED016392E3200E8EA0D /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB716392E3200E8EA0D /* jquery.min.js */; };
-		CCD3AED116392E3200E8EA0D /* jtoc.js in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB816392E3200E8EA0D /* jtoc.js */; };
-		CCD3AED216392E3200E8EA0D /* readpage.css in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEB916392E3200E8EA0D /* readpage.css */; };
-		CCD3AED316392E3200E8EA0D /* stoc.css in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEBA16392E3200E8EA0D /* stoc.css */; };
-		CCD3AED416392E3200E8EA0D /* toc.html in Resources */ = {isa = PBXBuildFile; fileRef = CCD3AEBB16392E3200E8EA0D /* toc.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,32 +66,32 @@
 		4FD8096515C93E270065448B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4FD8099E15C943B20065448B /* testBook.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = testBook.epub; sourceTree = "<group>"; };
 		CC0662981615AA4F0086E897 /* siddhartha3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = siddhartha3.epub; sourceTree = "<group>"; };
+		CC771A5A163E71E80086638D /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
+		CC771A5C163E71E80086638D /* afd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_back.png; sourceTree = "<group>"; };
+		CC771A5D163E71E80086638D /* afd_backreadview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_backreadview.png; sourceTree = "<group>"; };
+		CC771A5E163E71E80086638D /* afd_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_bookmark.png; sourceTree = "<group>"; };
+		CC771A5F163E71E80086638D /* afd_bookmark_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_bookmark_yellow.png; sourceTree = "<group>"; };
+		CC771A60163E71E80086638D /* afd_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_delete.png; sourceTree = "<group>"; };
+		CC771A61163E71E80086638D /* afd_deletebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_deletebg.png; sourceTree = "<group>"; };
+		CC771A62163E71E80086638D /* afd_font_zoomin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomin.png; sourceTree = "<group>"; };
+		CC771A63163E71E80086638D /* afd_font_zoomout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomout.png; sourceTree = "<group>"; };
+		CC771A64163E71E80086638D /* afd_fontsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_fontsize.png; sourceTree = "<group>"; };
+		CC771A65163E71E80086638D /* afd_green_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_green_left.png; sourceTree = "<group>"; };
+		CC771A66163E71E80086638D /* afd_green_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_green_right.png; sourceTree = "<group>"; };
+		CC771A67163E71E80086638D /* afd_tablecontentsbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tablecontentsbtn.png; sourceTree = "<group>"; };
+		CC771A68163E71E80086638D /* afd_topmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_topmenu.png; sourceTree = "<group>"; };
+		CC771A69163E71E80086638D /* afd_white_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_left.png; sourceTree = "<group>"; };
+		CC771A6A163E71E80086638D /* afd_white_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_right.png; sourceTree = "<group>"; };
+		CC771A6B163E71E80086638D /* backpage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = backpage.js; sourceTree = "<group>"; };
+		CC771A6C163E71E80086638D /* control.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = control.js; sourceTree = "<group>"; };
+		CC771A6D163E71E80086638D /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubRootViewController.nib; sourceTree = "<group>"; };
+		CC771A6E163E71E80086638D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CC771A6F163E71E80086638D /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
+		CC771A70163E71E80086638D /* jtoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jtoc.js; sourceTree = "<group>"; };
+		CC771A71163E71E80086638D /* readpage.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = readpage.css; sourceTree = "<group>"; };
+		CC771A72163E71E80086638D /* stoc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stoc.css; sourceTree = "<group>"; };
+		CC771A73163E71E80086638D /* toc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = toc.html; sourceTree = "<group>"; };
 		CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "igpn-28languages-01-EPUB3.epub"; sourceTree = "<group>"; };
-		CCD3AEA216392E3200E8EA0D /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
-		CCD3AEA416392E3200E8EA0D /* afd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_back.png; sourceTree = "<group>"; };
-		CCD3AEA516392E3200E8EA0D /* afd_backreadview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_backreadview.png; sourceTree = "<group>"; };
-		CCD3AEA616392E3200E8EA0D /* afd_bookmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_bookmark.png; sourceTree = "<group>"; };
-		CCD3AEA716392E3200E8EA0D /* afd_bookmark_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_bookmark_yellow.png; sourceTree = "<group>"; };
-		CCD3AEA816392E3200E8EA0D /* afd_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_delete.png; sourceTree = "<group>"; };
-		CCD3AEA916392E3200E8EA0D /* afd_deletebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_deletebg.png; sourceTree = "<group>"; };
-		CCD3AEAA16392E3200E8EA0D /* afd_font_zoomIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomIn.png; sourceTree = "<group>"; };
-		CCD3AEAB16392E3200E8EA0D /* afd_font_zoomOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_font_zoomOut.png; sourceTree = "<group>"; };
-		CCD3AEAC16392E3200E8EA0D /* afd_fontsize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_fontsize.png; sourceTree = "<group>"; };
-		CCD3AEAD16392E3200E8EA0D /* afd_green_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_green_left.png; sourceTree = "<group>"; };
-		CCD3AEAE16392E3200E8EA0D /* afd_green_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_green_right.png; sourceTree = "<group>"; };
-		CCD3AEAF16392E3200E8EA0D /* afd_tableContentsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_tableContentsBtn.png; sourceTree = "<group>"; };
-		CCD3AEB016392E3200E8EA0D /* afd_topmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_topmenu.png; sourceTree = "<group>"; };
-		CCD3AEB116392E3200E8EA0D /* afd_white_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_left.png; sourceTree = "<group>"; };
-		CCD3AEB216392E3200E8EA0D /* afd_white_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_right.png; sourceTree = "<group>"; };
-		CCD3AEB316392E3200E8EA0D /* backpage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = backpage.js; sourceTree = "<group>"; };
-		CCD3AEB416392E3200E8EA0D /* control.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = control.js; sourceTree = "<group>"; };
-		CCD3AEB516392E3200E8EA0D /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubRootViewController.nib; sourceTree = "<group>"; };
-		CCD3AEB616392E3200E8EA0D /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		CCD3AEB716392E3200E8EA0D /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.min.js; sourceTree = "<group>"; };
-		CCD3AEB816392E3200E8EA0D /* jtoc.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jtoc.js; sourceTree = "<group>"; };
-		CCD3AEB916392E3200E8EA0D /* readpage.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = readpage.css; sourceTree = "<group>"; };
-		CCD3AEBA16392E3200E8EA0D /* stoc.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = stoc.css; sourceTree = "<group>"; };
-		CCD3AEBB16392E3200E8EA0D /* toc.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = toc.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 				4FD8095815C93E270065448B /* Foundation.framework in Frameworks */,
 				4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */,
 				4F6AFB3815EB44B400409926 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
-				CCD3AEBC16392E3200E8EA0D /* AnFengDe_EPUB_UI.framework in Frameworks */,
+				CC771A74163E71E80086638D /* AnFengDe_EPUB_UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +137,7 @@
 		4FD8095415C93E270065448B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CCD3AEA116392E3200E8EA0D /* AnFengDe_EPUB_UI.embeddedframework */,
+				CC771A59163E71E80086638D /* AnFengDe_EPUB_UI.embeddedframework */,
 				4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */,
 				4F8BA0BA15E5D8D4004B7B96 /* MediaPlayer.framework */,
 				4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */,
@@ -171,43 +171,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CCD3AEA116392E3200E8EA0D /* AnFengDe_EPUB_UI.embeddedframework */ = {
+		CC771A59163E71E80086638D /* AnFengDe_EPUB_UI.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				CCD3AEA216392E3200E8EA0D /* AnFengDe_EPUB_UI.framework */,
-				CCD3AEA316392E3200E8EA0D /* Resources */,
+				CC771A5A163E71E80086638D /* AnFengDe_EPUB_UI.framework */,
+				CC771A5B163E71E80086638D /* Resources */,
 			);
 			name = AnFengDe_EPUB_UI.embeddedframework;
 			path = ../lib/AnFengDe_EPUB_UI.embeddedframework;
 			sourceTree = "<group>";
 		};
-		CCD3AEA316392E3200E8EA0D /* Resources */ = {
+		CC771A5B163E71E80086638D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				CCD3AEA416392E3200E8EA0D /* afd_back.png */,
-				CCD3AEA516392E3200E8EA0D /* afd_backreadview.png */,
-				CCD3AEA616392E3200E8EA0D /* afd_bookmark.png */,
-				CCD3AEA716392E3200E8EA0D /* afd_bookmark_yellow.png */,
-				CCD3AEA816392E3200E8EA0D /* afd_delete.png */,
-				CCD3AEA916392E3200E8EA0D /* afd_deletebg.png */,
-				CCD3AEAA16392E3200E8EA0D /* afd_font_zoomIn.png */,
-				CCD3AEAB16392E3200E8EA0D /* afd_font_zoomOut.png */,
-				CCD3AEAC16392E3200E8EA0D /* afd_fontsize.png */,
-				CCD3AEAD16392E3200E8EA0D /* afd_green_left.png */,
-				CCD3AEAE16392E3200E8EA0D /* afd_green_right.png */,
-				CCD3AEAF16392E3200E8EA0D /* afd_tableContentsBtn.png */,
-				CCD3AEB016392E3200E8EA0D /* afd_topmenu.png */,
-				CCD3AEB116392E3200E8EA0D /* afd_white_left.png */,
-				CCD3AEB216392E3200E8EA0D /* afd_white_right.png */,
-				CCD3AEB316392E3200E8EA0D /* backpage.js */,
-				CCD3AEB416392E3200E8EA0D /* control.js */,
-				CCD3AEB516392E3200E8EA0D /* EPubRootViewController.nib */,
-				CCD3AEB616392E3200E8EA0D /* icon.png */,
-				CCD3AEB716392E3200E8EA0D /* jquery.min.js */,
-				CCD3AEB816392E3200E8EA0D /* jtoc.js */,
-				CCD3AEB916392E3200E8EA0D /* readpage.css */,
-				CCD3AEBA16392E3200E8EA0D /* stoc.css */,
-				CCD3AEBB16392E3200E8EA0D /* toc.html */,
+				CC771A5C163E71E80086638D /* afd_back.png */,
+				CC771A5D163E71E80086638D /* afd_backreadview.png */,
+				CC771A5E163E71E80086638D /* afd_bookmark.png */,
+				CC771A5F163E71E80086638D /* afd_bookmark_yellow.png */,
+				CC771A60163E71E80086638D /* afd_delete.png */,
+				CC771A61163E71E80086638D /* afd_deletebg.png */,
+				CC771A62163E71E80086638D /* afd_font_zoomin.png */,
+				CC771A63163E71E80086638D /* afd_font_zoomout.png */,
+				CC771A64163E71E80086638D /* afd_fontsize.png */,
+				CC771A65163E71E80086638D /* afd_green_left.png */,
+				CC771A66163E71E80086638D /* afd_green_right.png */,
+				CC771A67163E71E80086638D /* afd_tablecontentsbtn.png */,
+				CC771A68163E71E80086638D /* afd_topmenu.png */,
+				CC771A69163E71E80086638D /* afd_white_left.png */,
+				CC771A6A163E71E80086638D /* afd_white_right.png */,
+				CC771A6B163E71E80086638D /* backpage.js */,
+				CC771A6C163E71E80086638D /* control.js */,
+				CC771A6D163E71E80086638D /* EPubRootViewController.nib */,
+				CC771A6E163E71E80086638D /* icon.png */,
+				CC771A6F163E71E80086638D /* jquery.min.js */,
+				CC771A70163E71E80086638D /* jtoc.js */,
+				CC771A71163E71E80086638D /* readpage.css */,
+				CC771A72163E71E80086638D /* stoc.css */,
+				CC771A73163E71E80086638D /* toc.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -264,32 +264,32 @@
 			files = (
 				4FD8096015C93E270065448B /* InfoPlist.strings in Resources */,
 				4FD8099F15C943B20065448B /* testBook.epub in Resources */,
+				CC771A84163E71E80086638D /* backpage.js in Resources */,
+				CC771A85163E71E80086638D /* control.js in Resources */,
+				CC771A88163E71E80086638D /* jquery.min.js in Resources */,
+				CC771A89163E71E80086638D /* jtoc.js in Resources */,
 				CC7A14961607261E000E2008 /* igpn-28languages-01-EPUB3.epub in Resources */,
 				CC0662991615AA4F0086E897 /* siddhartha3.epub in Resources */,
-				CCD3AEBD16392E3200E8EA0D /* afd_back.png in Resources */,
-				CCD3AEBE16392E3200E8EA0D /* afd_backreadview.png in Resources */,
-				CCD3AEBF16392E3200E8EA0D /* afd_bookmark.png in Resources */,
-				CCD3AEC016392E3200E8EA0D /* afd_bookmark_yellow.png in Resources */,
-				CCD3AEC116392E3200E8EA0D /* afd_delete.png in Resources */,
-				CCD3AEC216392E3200E8EA0D /* afd_deletebg.png in Resources */,
-				CCD3AEC316392E3200E8EA0D /* afd_font_zoomIn.png in Resources */,
-				CCD3AEC416392E3200E8EA0D /* afd_font_zoomOut.png in Resources */,
-				CCD3AEC516392E3200E8EA0D /* afd_fontsize.png in Resources */,
-				CCD3AEC616392E3200E8EA0D /* afd_green_left.png in Resources */,
-				CCD3AEC716392E3200E8EA0D /* afd_green_right.png in Resources */,
-				CCD3AEC816392E3200E8EA0D /* afd_tableContentsBtn.png in Resources */,
-				CCD3AECC16392E3200E8EA0D /* backpage.js in Resources */,
-				CCD3AECD16392E3200E8EA0D /* control.js in Resources */,
-				CCD3AED016392E3200E8EA0D /* jquery.min.js in Resources */,
-				CCD3AED116392E3200E8EA0D /* jtoc.js in Resources */,
-				CCD3AEC916392E3200E8EA0D /* afd_topmenu.png in Resources */,
-				CCD3AECA16392E3200E8EA0D /* afd_white_left.png in Resources */,
-				CCD3AECB16392E3200E8EA0D /* afd_white_right.png in Resources */,
-				CCD3AECE16392E3200E8EA0D /* EPubRootViewController.nib in Resources */,
-				CCD3AECF16392E3200E8EA0D /* icon.png in Resources */,
-				CCD3AED216392E3200E8EA0D /* readpage.css in Resources */,
-				CCD3AED316392E3200E8EA0D /* stoc.css in Resources */,
-				CCD3AED416392E3200E8EA0D /* toc.html in Resources */,
+				CC771A75163E71E80086638D /* afd_back.png in Resources */,
+				CC771A76163E71E80086638D /* afd_backreadview.png in Resources */,
+				CC771A77163E71E80086638D /* afd_bookmark.png in Resources */,
+				CC771A78163E71E80086638D /* afd_bookmark_yellow.png in Resources */,
+				CC771A79163E71E80086638D /* afd_delete.png in Resources */,
+				CC771A7A163E71E80086638D /* afd_deletebg.png in Resources */,
+				CC771A7B163E71E80086638D /* afd_font_zoomin.png in Resources */,
+				CC771A7C163E71E80086638D /* afd_font_zoomout.png in Resources */,
+				CC771A7D163E71E80086638D /* afd_fontsize.png in Resources */,
+				CC771A7E163E71E80086638D /* afd_green_left.png in Resources */,
+				CC771A7F163E71E80086638D /* afd_green_right.png in Resources */,
+				CC771A80163E71E80086638D /* afd_tablecontentsbtn.png in Resources */,
+				CC771A81163E71E80086638D /* afd_topmenu.png in Resources */,
+				CC771A82163E71E80086638D /* afd_white_left.png in Resources */,
+				CC771A83163E71E80086638D /* afd_white_right.png in Resources */,
+				CC771A86163E71E80086638D /* EPubRootViewController.nib in Resources */,
+				CC771A87163E71E80086638D /* icon.png in Resources */,
+				CC771A8A163E71E80086638D /* readpage.css in Resources */,
+				CC771A8B163E71E80086638D /* stoc.css in Resources */,
+				CC771A8C163E71E80086638D /* toc.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,9 +379,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -401,9 +402,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Example/Example-Prefix.pch";
 				INFOPLIST_FILE = "Example/Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

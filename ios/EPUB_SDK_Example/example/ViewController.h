@@ -20,7 +20,7 @@
     UIButton *btn_getChapter;
     UIButton *btn_cleanCache;
     UIButton *btn_closeEpub;
-    UIButton *btn_cleanUp; 
+    UIButton *btn_cleanUp;
     UIButton *btn_img;
 }
 

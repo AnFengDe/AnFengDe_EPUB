@@ -41,16 +41,21 @@ function getCurrentElementContent() {
 	for ( var i = 0; i < elements.length; i++) {
 		var left = $(elements[i]).offset().left;
 		var top = $(elements[i]).offset().top;
-	    /*alert(((currentPage-1)*layoutWidth+10)+","+$(elements[i]).offset().left+","+$(elements[i]).offset().top+","+i+","+elements[i].innerText.substring(0,10)+","+layoutHeight);*/ 
-		if (navigator.userAgent.match(/iPhone/i)) {
+	    /*alert(((currentPage-1)*layoutWidth+10)+","+$(elements[i]).offset().left+","+$(elements[i]).offset().top+","+i +","+elements[i].innerText.substring(0,10)+","+layoutHeight);*/ 
+		if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
 			if (0 < left) {
-                if (left<layoutWidth)
+                if (left<layoutWidth){
                     bookmarkContent = elements[i].innerText.substring(0, 30)+"......";
-                if (i==0)
-                    bookmarkContent = elements[1].innerText.substring(0, 30)+"......";
-                if (i>0)
+                    return bookmarkContent = bookmarkContent.replace("\n"," ");
+                }
+                if (i==0){
+                    bookmarkContent = elements[0].innerText.substring(0, 30)+"......";
+                    return bookmarkContent = bookmarkContent.replace("\n"," ");
+                }
+                if (i>0){
                     bookmarkContent = elements[i-1].innerText.substring(0, 30)+"......";
-				return bookmarkContent = bookmarkContent.replace("\n"," ");
+				    return bookmarkContent = bookmarkContent.replace("\n"," ");
+                }
 			}
 			if (i == elements.length - 1) {
 				bookmarkContent = elements[i].innerText.substring(0, 30)+"......";
@@ -59,14 +64,20 @@ function getCurrentElementContent() {
             
 		}
 		if (navigator.userAgent.match(/Android/i)) {
-			if ((layoutHeight - 30) * (currentPage - 1) < top) {
-				if (top<(layoutHeight - 30) * currentPage)
-				    bookmarkContent = elements[i].innerText.substring(0, 30)+"......";	
-                if (i==0)
-                    bookmarkContent = elements[1].innerText.substring(0, 30)+"......";
-                if (i>0)
+			if ((layoutHeight - 45) * (currentPage - 1) < top) {
+				if (top<(layoutHeight - 45) * currentPage){
+				    bookmarkContent = elements[i].innerText.substring(0, 30)+"......";
+                    return bookmarkContent = bookmarkContent.replace("\n"," ");
+                }
+                if (i==0){
+                    bookmarkContent = elements[0].innerText.substring(0, 30)+"......";
+                    return bookmarkContent = bookmarkContent.replace("\n"," ");
+                }
+                if (i>0){
 					bookmarkContent = elements[i-1].innerText.substring(0, 30)+"......";
-				return bookmarkContent = bookmarkContent.replace("\n"," ");
+                    return bookmarkContent = bookmarkContent.replace("\n"," ");
+                }
+				
 			}
 			if (i == elements.length - 1) {
 				bookmarkContent = elements[i].innerText.substring(0, 30)+"......";
@@ -74,6 +85,7 @@ function getCurrentElementContent() {
 			}
 		}
 	}
+	return " ";
 }
 /**
  * Native codes invoke the method when the webview loading finished
@@ -100,7 +112,7 @@ function resizePage(current_percent, fontSize) {
 	if (navigator.userAgent.match(/Android/i)) {
         Android.getBookmark();
     }
-    if (navigator.userAgent.match(/iPhone/i)) {
+    if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
         window.location = 'anreader:myaction:getBookmark';
     }
 	/* alert(leftPosition); */
@@ -120,7 +132,7 @@ function getPages() {
 }
 /** Exit application */
 function exitReading() {
-	if (navigator.userAgent.match(/iPhone/i)) {
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
 		window.location = 'anreader:myaction:exit';
 	}
 	if (navigator.userAgent.match(/Android/i)) {
@@ -146,7 +158,7 @@ function addBookmark() {
 	if (navigator.userAgent.match(/Android/i)) {
 		Android.addBookmark(bookmarkContent);
 	}
-	if (navigator.userAgent.match(/iPhone/i)) {
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
 		window.location = "anreader:myaction:addBookmark:" + bookmarkContent;
 	}
 	/*alert(bookmarkContent);*/
@@ -158,7 +170,7 @@ function deleteBookmark(identifier) {
     if (navigator.userAgent.match(/Android/i)) {
         Android.deleteBookmark(identifier);
     }
-    if (navigator.userAgent.match(/iPhone/i)) {
+    if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
         window.location = "anreader:myaction:deleteBookmark:"+identifier;
     }
 }
@@ -208,7 +220,7 @@ function saveReadingData() {
 	if (navigator.userAgent.match(/Android/i)) {
 		Android.currentReadingData(currentPage, parseInt(fontSize), pages);
 	}
-	if (navigator.userAgent.match(/iPhone/i)) {
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
 		window.location = "anreader:myaction:currentReadingData:" + currentPage
         + ":" + parseInt(fontSize) + ":" + pages;
 	}
@@ -229,14 +241,14 @@ function hiddenFontSizeLayout() {
 /** Zoom in font size */
 function fontSizeZoomin() {
 	var fontSize = $("#afd_content").css("font-size");
-	$("#afd_content").css("font-size", parseInt(fontSize) + 1 + "px");
+	$("#afd_content").css("font-size", parseInt(fontSize) + 3 + "px");
 	readProportion();
 	saveReadingData();
 }
 /** Zoom out font size */
 function fontSizeZoomout() {
 	var fontSize = $("#afd_content").css("font-size");
-	$("#afd_content").css("font-size", parseInt(fontSize) - 1 + "px");
+	$("#afd_content").css("font-size", parseInt(fontSize) - 3 + "px");
 	readProportion();
 	saveReadingData();
 }
@@ -391,11 +403,28 @@ function initDom(path) {
     
 	layoutHeight = $(window).height() - 20;
 	layoutWidth = $(window).width() - 10;
+    
+    var cWPadding;
+    var cHPadding;
+    if ($(window).width()>=720){
+        $("#afd_content").css({
+                              "padding-right":"80px","padding-left":"80px","padding-top":"40px"});
+        cWPadding = 160;
+        cHPadding = 50;
+    }
+    if ($(window).width()<720){
+        $("#afd_content").css({
+                              "-webkit-column-gap": "20px",
+                              "padding-right":"10px","padding-left":"10px","padding-top":"10px"});
+        cWPadding = 20;
+        cHPadding = 20;
+    }
+    
 	$("#afd_menu").width($(window).width());
 	$("#afd_pageturn").width(layoutWidth);
-	$("#afd_content").width(layoutWidth - 20);
+	$("#afd_content").width(layoutWidth - cWPadding);
 	$("#afd_pageturn").height(layoutHeight);
-	$("#afd_content").height(layoutHeight - 20);
+	$("#afd_content").height(layoutHeight - cHPadding);
 	$("#afd_content img").css("maxWidth", (layoutWidth - 20) + "px");
 	$("#afd_content audio").css("maxWidth", (layoutWidth - 20) + "px");
 	$("#afd_content video").css("maxWidth", (layoutWidth - 20) + "px");
@@ -408,9 +437,9 @@ function initDom(path) {
                      layoutWidth = $(window).width() - 10;
                      $("#afd_menu").width($(window).width());
                      $("#afd_pageturn").width(layoutWidth);
-                     $("#afd_content").width(layoutWidth - 20);
+                     $("#afd_content").width(layoutWidth - cWPadding);
                      $("#afd_pageturn").height(layoutHeight);
-                     $("#afd_content").height(layoutHeight - 20);
+                     $("#afd_content").height(layoutHeight - cHPadding);
                      $("#afd_content img").css("maxWidth", (layoutWidth - 20) + "px");
                      $("#afd_content audio").css("maxWidth", (layoutWidth - 20) + "px");
                      $("#afd_content video").css("maxWidth", (layoutWidth - 20) + "px");
@@ -420,7 +449,7 @@ function initDom(path) {
 	if (navigator.userAgent.match(/Android/i)) {
 		Android.resizePage();
 	}
-	if (navigator.userAgent.match(/iPhone/i)) {
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
 		window.location = 'anreader:myaction:resizePage';
 	}
 	addListener();

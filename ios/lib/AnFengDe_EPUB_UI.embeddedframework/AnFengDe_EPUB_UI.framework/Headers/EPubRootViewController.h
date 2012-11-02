@@ -78,4 +78,6 @@
 - (void) writeJS:(NSString*)fileName type:(NSString*)type folder:(NSString*)folder;
 /** Return html content with js and css */
 - (NSString*) urlContent:(NSString*)htmlContent;
+/** show error message */
+- (void) showErrorCode:(NSString*)errorMes;
 @end

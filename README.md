@@ -21,3 +21,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20121026 In this release we've made a lot of modifications. We've realized our UI component based on HTML5 + CSS and used the same js code in android and iOS. Of course the users can always modify our js to get their desired effects, for example, a custom menu. And we've added the bookmark feature so that reading can be easier. At the same time we've included the the earlier EPub SDK example project to demonstrate the use of it. We've made some changes in version structure. 
+
+=================
+* 20121102 In this release our app supports the iPad. And at the same time, we've fixed the bug that some books can't be opened successfully. In our UI component we've added some functions to check whether the book is supported, if not, the app will display the corresponding error message and exit.

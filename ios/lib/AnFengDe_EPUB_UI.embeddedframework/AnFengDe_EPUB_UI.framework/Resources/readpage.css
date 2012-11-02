@@ -12,7 +12,7 @@
     position: relative;
     -webkit-column-count: aoto;
     -webkit-column-width: 500em;
-    -webkit-column-gap: 20px;
+    -webkit-column-gap: 160px;
     border: none;
     width: auto;
     height: auto;
@@ -73,7 +73,7 @@
 
 #afd_menu #afd_title{
     position:absolute;
-    width:80px;
+    width:130px;
     height:20px;
     text-algin:center;
     text-overflow:ellipsis;
