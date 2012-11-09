@@ -12,7 +12,7 @@
     position: relative;
     -webkit-column-count: aoto;
     -webkit-column-width: 500em;
-    -webkit-column-gap: 160px;
+    -webkit-column-gap: 80px;
     border: none;
     width: auto;
     height: auto;
@@ -44,7 +44,7 @@
 #afd_menu #afd_bookmark{
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
     position:absolute;
-    right:10px;
+    right:15px;
     width:40px;
     height:48px;
     text-align:right;

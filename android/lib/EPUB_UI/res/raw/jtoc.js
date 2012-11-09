@@ -1,8 +1,9 @@
 var bookmarkTimeout;
 var opChapter = 0;
 var pageShowing = 0;
-var identifier;
+var deleteBKIndex;
 var screenWidth;
+var bookmarkArray = new Array();
 /**
  * Show up the chapter
  * @param chapterTitle is the chapter name
@@ -48,14 +49,15 @@ function addChapterListener(i,currentChapterIndex){
  * @param i 
  */
 function getBookmark(bookmark,i){
+    /*alert(bookmark[3]);*/
 	var tempLevel;
-	if (screenWidth>720){
+	if (screenWidth>=720){
 		tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     }
     if (screenWidth<720){
     	tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     }
-    $("#afd_BTContent").append("<li id='afd_bookmark"+i+"'>"+tempLevel+bookmark+"</li>");
+    $("#afd_BTContent").append("<li id='afd_bookmark"+i+"'>"+tempLevel+bookmark[3]+"</li>");
     document.getElementById("afd_bookmark"+i+"").addEventListener("touchstart",function (){addBookmarkListener(i);},false);
     document.getElementById("afd_bookmark"+i+"").addEventListener("touchend",function (){clearDeleteBookmarkListener(i);},false);
     document.getElementById("afd_bookmark"+i+"").addEventListener("touchmove",function (){stopOpeningBookmarkListener(i);},false);
@@ -93,15 +95,8 @@ function stopOpeningBookmarkListener(i){
  */
 function deleteBookmark(i){
     opChapter = 0;
-    $("#afd_bookmark"+i).css("background","white");
-    
-	if (screenWidth>720){
-		identifier = $("#afd_bookmark"+i).text().substring(12,80);
-    }
-    if (screenWidth<720){
-    	identifier = $("#afd_bookmark"+i).text().substring(5,80);
-    }
-    
+    $("#afd_bookmark"+i).css("background","white");    
+	deleteBKIndex = i;    
     var top =$("#afd_deleteBKPage").position().top;
     $("#afd_deleteBKPage").css("left","0px");
     $("#afd_deleteBKPage").css("top",top+$(window).height()/2-30+"px");
@@ -110,14 +105,37 @@ function deleteBookmark(i){
 }
 /** Delete bookmark */
 function performanceDeleting(){
-	if (navigator.userAgent.match(/Android/i)) {
-        Android.deleteBookmark(identifier);
+    bookmarkArray.splice(deleteBKIndex,1);
+    var tempBookmarkArray = new Array();
+    var tempBookmark;
+    if (bookmarkArray.length==0){
+        var bookIdentifier = localStorage.getItem("afd_bookname");
+        localStorage.removeItem(bookIdentifier);
+    }
+    else {
+        for (var i=0;i<bookmarkArray.length;i++){
+            var bookmarkData = bookmarkArray[i];
+            var temp = bookmarkData.join("afd_item");
+            tempBookmarkArray.push(temp);
         }
-        if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = "anreader:myaction:deleteBookmark:"+identifier;
+        tempBookmark = tempBookmarkArray.join("afd_divide");
+        
+        if (typeof(localStorage) == 'undefined') {
+            alert('Your browser does not support HTML5 localStorage. Try upgrading.');
+        } else {
+            try {
+                var bookIdentifier = localStorage.getItem("afd_bookname");
+                localStorage.setItem(bookIdentifier,tempBookmark);
+            } catch (e) {
+                if (e == QUOTA_EXCEEDED_ERR) {
+                    alert('Quota exceeded!'); 
+                }
+            }
         }
-        $("#afd_deleteBKPage").hide("fast");
-        pageShowing = 0;
+    }
+    initLoadingBookmark();   
+    $("#afd_deleteBKPage").hide("fast");
+    pageShowing = 0;
 }
 /** Hide the deleting page */
 function hidePage(){
@@ -130,11 +148,14 @@ function hidePage(){
  * Open the chapter
  */
 function bkOpenChapter(i){
+	var chapterIndex = parseInt(bookmarkArray[i][0]);
+	var pIndex = parseInt(bookmarkArray[i][1]);
+	var sIndex = parseInt(bookmarkArray[i][2]);
     if (navigator.userAgent.match(/Android/i)) {
-        Android.bkOpenChapter(i);
+        Android.bkOpenChapter(chapterIndex,pIndex,sIndex);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = "anreader:myaction:bkOpenChapter:"+i+"";
+        window.location = "anreader:myaction:bkOpenChapter:"+bookmarkArray[i][0]+":"+bookmarkArray[i][1]+":"+bookmarkArray[i][2];
     }    
     
 }
@@ -153,11 +174,30 @@ function initLoadingBookmark(){
     $("#afd_TOC").attr("src","../image/afd_white_left.png");
     $("#afd_BTContent").empty();
     document.documentElement.style.webkitUserSelect='none';
-    if (navigator.userAgent.match(/Android/i)) {
-        Android.getBookmark();
-    }
-    if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:myaction:getBookmark';
+    readLocalStorage();
+}
+function readLocalStorage(){
+    bookmarkArray.length=0;
+    if (typeof(localStorage) == 'undefined' ) {
+        alert('Your browser does not support HTML5 localStorage. Try upgrading.');
+    } else {
+        try {
+            var bookIdentifier = localStorage.getItem("afd_bookname");
+            var tempBookmark = localStorage.getItem(bookIdentifier);
+            if (tempBookmark==null)return;
+            var tempBookmarkArray = tempBookmark.split("afd_divide");
+            var num = tempBookmarkArray.length;
+            for (var i=0;i<num;i++){
+                var bookmarkData = tempBookmarkArray[i].split("afd_item");
+                bookmarkArray.push(bookmarkData);
+                getBookmark(bookmarkData,i);
+            }
+            /*alert(bookmarkArray[0][0]);*/
+        } catch (e) {
+            if (e == QUOTA_EXCEEDED_ERR) {
+                alert('Quota exceeded!'); 
+            }
+        }
     }
 }
 /** Invoke native code passing chapter to js */
@@ -182,6 +222,6 @@ function addListener(){
 }
 document.addEventListener("DOMContentLoaded", addListener, false);
 $(document).ready(function(){
-	screenWidth = $(window).width();
-	initLoadingTOC();
+	              screenWidth = $(window).width();
+	              initLoadingTOC();
 });

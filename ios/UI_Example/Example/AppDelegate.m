@@ -5,7 +5,6 @@
 //  Created by kitty on 12-8-1.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
-
 #import "AppDelegate.h"
 
 @implementation AppDelegate
@@ -17,7 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"siddhartha3" ofType:@"epub"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"igpn-28languages-01-EPUB3" ofType:@"epub"];
     self.rootEpubView = [[EPubRootViewController alloc] initWithNibName:@"EPubRootViewController" bundle:nil epubBookPath:path];
     self.window.rootViewController = self.rootEpubView;
     [self.window makeKeyAndVisible];

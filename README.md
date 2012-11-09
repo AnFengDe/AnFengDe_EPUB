@@ -24,3 +24,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20121102 In this release our app supports the iPad. And at the same time, we've fixed the bug that some books can't be opened successfully. In our UI component we've added some functions to check whether the book is supported, if not, the app will display the corresponding error message and exit.
+
+=================
+* 20121109 In this release we've optimized the bookmark algorithm. Our bookmark data storing is base on HTML5 localStorage, which results in precise bookmark. At the same time, we've modified the rendering so that users who read on iPad will feel more comfortable.

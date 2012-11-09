@@ -20,8 +20,11 @@
     int currentPageNum;
     int currentFontSize;
     int totalPages;
+    int pIndex;
+    int sIndex;
+    int cIndex;
     NSString *urlPrefix;
-    NSMutableArray *bookmarkArray;
+    NSString *clickBk;
 
 @private
     UIWebView *afd_webView;
@@ -33,8 +36,11 @@
 @property (nonatomic, readwrite) int currentPageNum;
 @property (nonatomic, readwrite) int currentFontSize;
 @property (nonatomic, readwrite) int totalPages;
+@property (nonatomic, readwrite) int pIndex;
+@property (nonatomic, readwrite) int sIndex;
+@property (nonatomic, readwrite) int cIndex;
 @property (nonatomic, retain) NSString *urlPrefix;
-@property (nonatomic, retain) NSMutableArray *bookmarkArray;
+@property (nonatomic, retain) NSString *clickBk;
 
 
 - (GADRequest *)createRequest;
@@ -64,20 +70,11 @@
 - (void)readInnerConfigurationFromFile;
 /** Save the configuration */
 - (void)saveInnerConfigurationToFile;
-/** 
- Add bookmark
- @param text is content of the bookmark item
- */
-- (void)addEpubBookmark:(NSString*)text;
-/**
- Delete bookmark
- @param identifier is identifier of the bookmark 
- */
-- (void)deleteEpubBookmark:(NSString*)identifier;
 /** Write js and css to device */
 - (void) writeJS:(NSString*)fileName type:(NSString*)type folder:(NSString*)folder;
 /** Return html content with js and css */
 - (NSString*) urlContent:(NSString*)htmlContent;
 /** show error message */
 - (void) showErrorCode:(NSString*)errorMes;
+- (void)resizePage;
 @end
