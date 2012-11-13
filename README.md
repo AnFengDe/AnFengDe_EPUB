@@ -27,3 +27,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20121109 In this release we've optimized the bookmark algorithm. Our bookmark data storing is base on HTML5 localStorage, which results in precise bookmark. At the same time, we've modified the rendering so that users who read on iPad will feel more comfortable.
+
+=================
+* 20121113 In this release we've fixed a bug that the localStorage would be cleared when application loaded in android. The bug was caused by Admob.
