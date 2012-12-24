@@ -19,8 +19,8 @@ public class CallEPubUIActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN); 
        bookView = (BookView) findViewById(R.id.bookView1);
-       bookView.setPath(Constants.CACHE_PAHT, "/sdcard/epub/testBook.epub");
+       bookView.setPath(Constants.CACHE_PAHT);
        bookView.initBook();
-       bookView.openBook();
+       bookView.openShelf();
     }
-}
+} 

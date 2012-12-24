@@ -21,8 +21,9 @@
     NSString *category_;
     /** The last open unix time stamp of book */
     unsigned long *readRecord;
-    NSString *epubFilePath_;
+    NSString *epubBookPath_;
     NSString *cachePath_;
+    NSString *coverImage_;
 @public
     /** The index of current chapter in the book */
     NSUInteger currentChapterIndex;
@@ -42,9 +43,11 @@
 /** The category of book */
 @property (nonatomic, retain) NSString *category;
 /** The source file path of book */
-@property (nonatomic, retain) NSString *epubFilepath;
+@property (nonatomic, retain) NSString *epubBookpath;
 /** The unzipped folder path of book */
 @property (nonatomic, retain) NSString *cachePath;
+/** The cover image path of book */
+@property (nonatomic, retain) NSString *coverImage;
 /** The bookSize */
 @property (nonatomic, readwrite) int bookSize;
 @property (nonatomic, readwrite) int handle;
@@ -61,8 +64,14 @@
  */
 + (void) closeEPubReading;
 /**
+ init EPub SDK Library
+ */
++ (int) initEPubReading:(NSString *)cachePath;
+/**
   Returns the directory of current app's Documents
   @returns the directory of current app's Documents
  */
 + (NSString*) applicationDocumentsDirectory;
+
+- (BOOL) openEPubBook;
 @end

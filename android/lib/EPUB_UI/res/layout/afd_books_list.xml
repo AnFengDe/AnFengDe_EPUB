@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="Import Book"
+        android:textColor="#492D0E"
+        android:textSize="20dip" />
+
+    <ListView
+        android:id="@+id/afd_book_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+	
+</LinearLayout>
+

@@ -30,3 +30,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20121113 In this release we've fixed a bug that the localStorage would be cleared when application loaded in android. The bug was caused by Admob.
+
+=================
+* 20121224 In this release we've added bookshelf and settings function. In android you can add books from local or internet. In iOS you can load books from internet. And we've fixed some bugs. 

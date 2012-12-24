@@ -38,7 +38,7 @@ function addChapterListener(i,currentChapterIndex){
         Android.jsOpenChapter(i);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = "anreader:myaction:jsOpenChapter:"+i+"";
+        window.location = 'anreader:afd:myaction:afd:jsOpenChapter:afd:'+i;
     } 
     $("#afd_chapter"+currentChapterIndex).css("background","white")
     $("#afd_chapter"+i).css("background","#e4efd1");
@@ -155,7 +155,7 @@ function bkOpenChapter(i){
         Android.bkOpenChapter(chapterIndex,pIndex,sIndex);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = "anreader:myaction:bkOpenChapter:"+bookmarkArray[i][0]+":"+bookmarkArray[i][1]+":"+bookmarkArray[i][2];
+        window.location = "anreader:afd:myaction:afd:bkOpenChapter:afd:"+bookmarkArray[i][0]+":afd:"+bookmarkArray[i][1]+":afd:"+bookmarkArray[i][2];
     }    
     
 }
@@ -165,7 +165,7 @@ function back(){
         Android.back();
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:myaction:back';
+        window.location = 'anreader:afd:myaction:afd:back';
     }    
 }
 /** Invoke native code passing bookmarks to js */
@@ -210,7 +210,7 @@ function initLoadingTOC(){
         Android.getChapter();
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:myaction:getChapter';
+        window.location = 'anreader:afd:myaction:afd:getChapter';
     }
 }
 function addListener(){	
@@ -220,8 +220,9 @@ function addListener(){
     document.getElementById("afd_TOC").addEventListener("click",initLoadingTOC,false);
     document.getElementById("afd_bookmark").addEventListener("click",initLoadingBookmark,false);
 }
-document.addEventListener("DOMContentLoaded", addListener, false);
+//document.addEventListener("DOMContentLoaded", addListener, false);
 $(document).ready(function(){
 	              screenWidth = $(window).width();
 	              initLoadingTOC();
+                  addListener();
 });

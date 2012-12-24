@@ -12,7 +12,7 @@ function addListener()
                 Android.back();
             }
             if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-                window.location = 'anreader:myaction:back';
+                window.location = 'anreader:afd:myaction:afd:back';
             } 
         }
     };

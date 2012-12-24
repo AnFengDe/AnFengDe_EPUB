@@ -16,8 +16,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"igpn-28languages-01-EPUB3" ofType:@"epub"];
-    self.rootEpubView = [[EPubRootViewController alloc] initWithNibName:@"EPubRootViewController" bundle:nil epubBookPath:path];
+    self.rootEpubView = [[EPubRootViewController alloc] initWithNibName:@"EPubRootViewController" bundle:nil];
     self.window.rootViewController = self.rootEpubView;
     [self.window makeKeyAndVisible];
     return YES;
