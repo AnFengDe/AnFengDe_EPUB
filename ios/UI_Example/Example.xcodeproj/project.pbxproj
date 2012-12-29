@@ -18,9 +18,6 @@
 		4FD8096015C93E270065448B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8095E15C93E270065448B /* InfoPlist.strings */; };
 		4FD8096215C93E270065448B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096115C93E270065448B /* main.m */; };
 		4FD8096615C93E270065448B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096515C93E270065448B /* AppDelegate.m */; };
-		4FD8099F15C943B20065448B /* testBook.epub in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8099E15C943B20065448B /* testBook.epub */; };
-		CC0662991615AA4F0086E897 /* siddhartha3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC0662981615AA4F0086E897 /* siddhartha3.epub */; };
-		CC7A14961607261E000E2008 /* igpn-28languages-01-EPUB3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */; };
 		CCC8A2EA1682DA9A00237CBF /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCC8A2AB1682DA9A00237CBF /* AnFengDe_EPUB_UI.framework */; };
 		CCC8A2EB1682DA9A00237CBF /* afd.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CCC8A2AD1682DA9A00237CBF /* afd.sqlite */; };
 		CCC8A2EC1682DA9A00237CBF /* afd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC8A2AE1682DA9A00237CBF /* afd_back.png */; };
@@ -102,9 +99,6 @@
 		4FD8096315C93E270065448B /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
 		4FD8096415C93E270065448B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FD8096515C93E270065448B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4FD8099E15C943B20065448B /* testBook.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = testBook.epub; sourceTree = "<group>"; };
-		CC0662981615AA4F0086E897 /* siddhartha3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = siddhartha3.epub; sourceTree = "<group>"; };
-		CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "igpn-28languages-01-EPUB3.epub"; sourceTree = "<group>"; };
 		CCC8A2AB1682DA9A00237CBF /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
 		CCC8A2AD1682DA9A00237CBF /* afd.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = afd.sqlite; sourceTree = "<group>"; };
 		CCC8A2AE1682DA9A00237CBF /* afd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_back.png; sourceTree = "<group>"; };
@@ -194,9 +188,6 @@
 		4FD8094615C93E270065448B = {
 			isa = PBXGroup;
 			children = (
-				CC7A14951607261E000E2008 /* igpn-28languages-01-EPUB3.epub */,
-				4FD8099E15C943B20065448B /* testBook.epub */,
-				CC0662981615AA4F0086E897 /* siddhartha3.epub */,
 				4FD8095B15C93E270065448B /* Example */,
 				4FD8095415C93E270065448B /* Frameworks */,
 				4FD8095215C93E270065448B /* Products */,
@@ -385,9 +376,6 @@
 				CCC8A31F1682DA9A00237CBF /* jquery.min.js in Resources */,
 				CCC8A3201682DA9A00237CBF /* jsetting.js in Resources */,
 				CCC8A3211682DA9A00237CBF /* jtoc.js in Resources */,
-				4FD8099F15C943B20065448B /* testBook.epub in Resources */,
-				CC7A14961607261E000E2008 /* igpn-28languages-01-EPUB3.epub in Resources */,
-				CC0662991615AA4F0086E897 /* siddhartha3.epub in Resources */,
 				CCC8A2EB1682DA9A00237CBF /* afd.sqlite in Resources */,
 				CCC8A2EC1682DA9A00237CBF /* afd_back.png in Resources */,
 				CCC8A2ED1682DA9A00237CBF /* afd_backreadview.png in Resources */,

@@ -90,7 +90,6 @@
 - (void)createBookself;
 - (void)errorMessage:(int)ret;
 - (NSString*)downloadFiles:(NSString*)urlPath;
-- (void)retirieveEPubBook;
 - (NSString *) jsStringEscape:(NSString *)src;
 - (void) bookStrEscape:(DBBooks *)book;
 @end
