@@ -33,3 +33,5 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20121224 In this release we've added bookshelf and settings function. In android you can add books from local or internet. In iOS you can load books from internet. And we've fixed some bugs. 
+=================
+* 20130118 In this release we've added the sharing function. In the reading page you can select the text by long clicking and then share the text. 
