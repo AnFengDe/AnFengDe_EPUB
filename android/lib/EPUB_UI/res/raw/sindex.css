@@ -78,7 +78,7 @@ body{
 #container #afd_books ul .coverimage{
     background-color:#666;
     height:80%;
-    max-width:90%;
+    max-width:80%;
     border:1px solid #000;
     -moz-box-shadow:3px 3px 4px #000;
     -webkit-box-shadow:3px 3px 4px #000;
@@ -173,14 +173,14 @@ body{
 
 .afd_importdialog > div {
     font-size:25px;
-    width:90%;
-    height:70%;
+    width:80%;
+    height:50%;
     position:relative;
     margin-top:20%;
-    margin-left:5%;
+    margin-left:10%;
     border-radius: 10px;
-    overflow:hidden;
     background:#ffffff;
+    text-align:center;
 }
 #afd_background{
 	position:absolute;
@@ -194,9 +194,9 @@ body{
     color:#FFFFFF;
     line-height:25px;
     position:absolute;
-    right:2px;
+    right:-5px;
     text-align:center;
-    top:0px;
+    top:-5px;
     width: 24px;
     text-decoration: none;
     font-weight: bold;
@@ -221,116 +221,72 @@ body{
 }
 
 
-.tabs {
-    /*float: left;*/
-    overflow:hidden;
-    position: absolute;
-    display: block;
-    height:60px;
-    width:100%;
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px;
-    background-color:#666666;
-}
-
-.tabs section {
-    float: left;
-    z-index:1;
-    width:33%;
-    height:60xp;
-}
-.tabs section h3{
-	font-size:15px;
-	display:block;
-	width:100%;
-	height:60px;
-    cursor: hand;
-    cursor: pointer;
-	text-align:center;
-	background-repeat:no-repeat;
-    opacity: 1;
-    padding: 0px;
-    float: left;
-    display: block;
-    color:#5A9A30;
-    margin-top:8px;
-}
-.tabs section h3 span{
-	display:block;
-}
-
-
-.tabs section h3 a{
-    font-size:25px;
-}
-
-.tabs section.current h3{
-    cursor: default;
-	color:#ffffff;
-	background-repeat:no-repeat;
-}
-
-.tabs section div {
-    margin-top:5%;
-    position: fixed;
-    z-index: 10;
-	left:10px;
-	color: #999999;
-    display: none;
-    float:left;
-    width:100%;
-    padding:0px;
-}
-
-
-.tabs section div ul{
-	width:80%;
-	margin-left:0px;
-}
-.tabs section div ul li {
-    list-style:none;
-    padding-top:20px;
-    text-align:left;
-    padding-left:0px;
-}
-
-.tabs section.current div {
-    display: block;
-    border: none;
-}
-
-.tabs section h3 .text{
-    width:200px;
-    height:20px;
-}
-
 #afd_internet{
-	position:fixed;
+	position:relative;
 	z-index:10;
-	width:90%;
+	width:100%;
 	display:none;
-	top:30%;
-	left:6%;
+	margin-top:10%;
+    text-align:center;
 }
 #afd_internet #downloadbutton{
 	font-size:14px;
 	color:#000000;
+    padding:5px;
+    border-color:#5A9A30;
+    background-color:#ffffff;
+    border-radius:2px;
+    border-style:solid;
 }
+
 #filepath{
-	width:50%;
+    border-color:#5A9A30;
+    height:25px;
+	width:80%;
+    margin-bottom:30px;
 }
 #fileurl{
-	width:50%;
+    border-color:#5A9A30;
+    height:25px;
+	width:80%;
+    margin-bottom:30px;
 }
 #afd_local{
-	position:fixed;
+	position:relative;
 	z-index:10;
-	width:90%;
+	width:100%;
 	display:none;
-	top:30%;
-	left:6%;
+	margin-top:10%;
+	text-align:center;
 }
 #afd_local .importbutton{
 	font-size:14px;
 	color:#000000;
+    padding:5px;
+    border-color:#5A9A30;
+    background-color:#ffffff;
+    border-radius:2px;
+    border-style:solid;
+}
+
+#afd_wifi{
+	position:relative;
+	z-index:10;
+	width:100%;
+	display:none;
+}
+#afd_importingoptions{
+    text-align:center;
+    height:60px;
+    width:100%;
+    overflow:hidden;
+    background-color:#b5b5b5;
+    border-top-left-radius:7px;
+    border-top-right-radius:7px;
+}
+.afd_option{
+    float:left;
+    width:33%;
+    margin-top:8px;
+    font-size:14px;
 }

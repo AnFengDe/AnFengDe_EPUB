@@ -1,4 +1,5 @@
 var selectAll = 0;
+var injectBackJS = "unInjectBackJS";
 $(document).ready(function(){
                   getAllBooks();
                   addListener();
@@ -6,7 +7,7 @@ $(document).ready(function(){
 
 function addListener(){
     $("#quit").bind("click",function(){exit();});
-    $("#localbutton").bind("click",function(){addBooks();});
+    $("#localbutton").bind("click",function(){androidLocalAddBooks();});
     $("#importbutton").bind("click",function(){importBook();$("#afd_local").hide();});
     $("#downloadbutton").bind("click",function(){downloadBook();});
     $("#import").bind("click",function(){openImportPage();});
@@ -14,32 +15,58 @@ function addListener(){
     $("#afd_editDelete").bind("click",function(){deleteBooks();});
     $("#afd_editAll").bind("click",function(){selectAllBooks();});
     $("#afd_editCancel").bind("click",function(){cancelDelete();});
-    $("#afd_showInternet").bind("click",function(){$("#afd_internet").show();$("#afd_local").hide();});
-    $("#afd_showLocal").bind("click",function(){$("#afd_internet").hide();$("#afd_local").show();});
-    $("#afd_showWifi").bind("click",function(){$("#afd_internet").hide();$("#afd_local").hide();});
+    $("#afd_showInternet").bind("click",function(){internetOptionClicked();});
+    $("#afd_showLocal").bind("click",function(){localOptionClicked()});
+    $("#afd_showWifi").bind("click",function(){wifiOptionClicked();});
     $(".close").bind("click",function(){$("#afd_internet").hide();$("#afd_local").hide();});
+}
+function localOptionClicked(){
+    $("#afd_internet").hide();
+    $("#afd_local").show();
+    $("#afd_showLocal").css('color','#5A9A30');
+    $("#afd_showWifi").css('color','#000000');
+    $("#afd_showInternet").css('color','#000000');
+}
+function internetOptionClicked(){
+    $("#afd_internet").show();
+    $("#afd_local").hide();
+    $("#afd_showLocal").css('color','#000000');
+    $("#afd_showWifi").css('color','#000000');
+    $("#afd_showInternet").css('color','#5A9A30');
+}
+function wifiOptionClicked(){
+    $("#afd_internet").hide();
+    $("#afd_local").hide();
+    $("#afd_showLocal").css('color','#000000');
+    $("#afd_showWifi").css('color','#5A9A30');
+    $("#afd_showInternet").css('color','#000000');
 }
 function openImportPage(){
     $(".afd_selectBg").hide();
     $("#afd_editMenu").hide();
     
     $("#edit img").attr("src","../image/afd_index_edit.png");
-	$('article.tabs section').removeClass('current');
     
     if (navigator.userAgent.match(/Android/i)) {
         $("#afd_showWifi").hide();
-        $("#afd_showLocal").closest('section').addClass('current');
-        $("#afd_local").show("slow");
+        $("#afd_local").show();
+        $("#afd_showLocal").css('color','#5A9A30');
+        $("#afd_showWifi").css('color','#000000');
+        $("#afd_showInternet").css('color','#000000');
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)){
         $("#afd_showLocal").hide();
         $("#afd_showWifi").hide();
-        $("#afd_showInternet").closest('section').addClass('current');
-        $("#afd_internet").show("slow");
+        $("#afd_internet").show();
+        $("#afd_showLocal").css('color','#000000');
+        $("#afd_showWifi").css('color','#000000');
+        $("#afd_showInternet").css('color','#5A9A30');
     }
     window.location = "#openModa";
 }
 function downloadBook(){
+    $("#downloadbutton").css('color','#5A9A30');
+    setTimeout(function(){$("#downloadbutton").css('color','#000000');},200);
 	var fileurl = $("#fileurl").attr("value");
     if (fileurl==""){
         alert("Please enter a book url!")
@@ -53,7 +80,9 @@ function downloadBook(){
     }
 }
 
-function addBooks(){
+function androidLocalAddBooks(){
+    $("#localbutton").css('color','#5A9A30');
+    setTimeout(function(){$("#localbutton").css('color','#000000');},200);
 	if (navigator.userAgent.match(/Android/i)) {
         Android.addBooks();
     }
@@ -124,12 +153,11 @@ function exit(){
 }
 
 function importBook(){
+    $("#importbutton").css('color','#ffffff');
+    setTimeout(function(){$("#importbutton").css('color','#000000');},200);
 	var bookPath = $('#filepath').attr('value');
     if (navigator.userAgent.match(/Android/i)) {
 		Android.jsImportBook(bookPath);
-	}
-	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-		window.location = 'anreader:afd:myaction:afd:importBook:afd:'+bookPath;
 	}
 	window.location = "#close";
 }

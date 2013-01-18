@@ -1,768 +1,0 @@
-TExample
-v4
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Info.plist Example/Example-Info.plist
-cProcessPCH /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.pth Example/Example-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example normal i386
-cGenerateDSYMFile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example
-cCopyStringsFile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/en.lproj/InfoPlist.strings Example/en.lproj/InfoPlist.strings
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/backpage.js build/Debug-iphonesimulator/Example.app/backpage.js
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/control.js build/Debug-iphonesimulator/Example.app/control.js
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jquery.min.js build/Debug-iphonesimulator/Example.app/jquery.min.js
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jtoc.js build/Debug-iphonesimulator/Example.app/jtoc.js
-cCpResource testBook.epub build/Debug-iphonesimulator/Example.app/testBook.epub
-cCpResource igpn-28languages-01-EPUB3.epub build/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epub
-cCpResource siddhartha3.epub build/Debug-iphonesimulator/Example.app/siddhartha3.epub
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_back.png build/Debug-iphonesimulator/Example.app/afd_back.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backBtn.png build/Debug-iphonesimulator/Example.app/afd_backBtn.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backreadview.png build/Debug-iphonesimulator/Example.app/afd_backreadview.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_bookmark.png build/Debug-iphonesimulator/Example.app/afd_bookmark.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomIn.png build/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomOut.png build/Debug-iphonesimulator/Example.app/afd_font_zoomOut.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_fontsize.png build/Debug-iphonesimulator/Example.app/afd_fontsize.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBg.png build/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBtn.png build/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topmenu.png build/Debug-iphonesimulator/Example.app/afd_topmenu.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topMenuBg.png build/Debug-iphonesimulator/Example.app/afd_topMenuBg.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/EPubRootViewController.nib build/Debug-iphonesimulator/Example.app/EPubRootViewController.nib
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/icon.png build/Debug-iphonesimulator/Example.app/icon.png
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/readpage.css build/Debug-iphonesimulator/Example.app/readpage.css
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/stoc.css build/Debug-iphonesimulator/Example.app/stoc.css
-cCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/toc.html build/Debug-iphonesimulator/Example.app/toc.html
-cTouch /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
-c000000004FC84D610000000000000110
-t1338527073
-s272
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c000000004E72F1F200000000002F4210
-t1316155890
-s3097104
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004E72F1CC0000000000245480
-t1316155852
-s2380928
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004E72F2960000000000353830
-t1316156054
-s3487792
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
-c000000004E7808D3000000000023A3F0
-t1316489427
-s2335728
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/MessageUI.framework/MessageUI
-c000000004E78081300000000000CA7C0
-t1316489235
-s829376
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c000000004E72F177000000000006C8A0
-t1316155767
-s444576
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004E7806AB00000000008F7390
-t1316488875
-s9401232
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubBookMark.h
-c00000000507BB7A90000000000000389
-t1350285225
-s905
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubChapter.h
-c00000000507BB7A9000000000000026E
-t1350285225
-s622
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubErrorCode.h
-c00000000507BB7A9000000000000061D
-t1350285225
-s1565
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubManifestItem.h
-c00000000507BB7A9000000000000029B
-t1350285225
-s667
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubMetadata.h
-c00000000507BB7A9000000000000068D
-t1350285225
-s1677
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubONI.h
-c00000000507BB7A9000000000000124D
-t1350285225
-s4685
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubReadStatus.h
-c00000000507BB7A900000000000001DC
-t1350285225
-s476
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubSDKHeader.h
-c00000000507BB7A900000000000001FE
-t1350285225
-s510
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products/AnFengDe_EPUB_SDK.framework/Headers/EPubSpine.h
-c00000000507BB7A900000000000001C5
-t1350285225
-s453
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_SDK.framework/AnFengDe_EPUB_SDK
-c00000000507BB7A90000000000089E58
-t1350285225
-s564824
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/AnFengDe_EPUB_UI.framework/AnFengDe_EPUB_UI
-c00000000507BB80A0000000000A45594
-t1350285322
-s10769812
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/AnFengDe_EPUB_UI.framework/Headers/EPubBook.h
-c00000000507BB80A0000000000000702
-t1350285322
-s1794
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/AnFengDe_EPUB_UI.framework/Headers/EPubRootViewController.h
-c00000000507BB80A000000000000077F
-t1350285322
-s1919
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/AnFengDe_EPUB_UI.framework/Headers/EPubUIHeader.h
-c00000000507BB80A0000000000000162
-t1350285322
-s354
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/AnFengDe_EPUB_UI.framework/Headers/GADBannerViewDelegate.h
-c00000000507BB80A0000000000000A0A
-t1350285322
-s2570
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/EPubRootViewController.nib
-c00000000507BB80A00000000000003D7
-t1350285322
-s983
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_back.png
-c00000000507BB80A0000000000001144
-t1350285322
-s4420
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backBtn.png
-c00000000507BB80A0000000000001144
-t1350285322
-s4420
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backreadview.png
-c00000000507BB80A0000000000001032
-t1350285322
-s4146
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_bookmark.png
-c00000000507BB80A0000000000000F1B
-t1350285322
-s3867
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomIn.png
-c00000000507BB80A00000000000012FD
-t1350285322
-s4861
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomOut.png
-c00000000507BB80A0000000000001227
-t1350285322
-s4647
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_fontsize.png
-c00000000507BB80A0000000000000EF1
-t1350285322
-s3825
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBg.png
-c00000000507BB80A00000000000F6D9E
-t1350285322
-s1011102
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBtn.png
-c00000000507BB80A0000000000000BF9
-t1350285322
-s3065
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topMenuBg.png
-c00000000507BB80A0000000000005C65
-t1350285322
-s23653
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topmenu.png
-c00000000507BB80A0000000000013002
-t1350285322
-s77826
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/backpage.js
-c00000000507BB80A000000000000054F
-t1350285322
-s1359
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/control.js
-c00000000507BB80A0000000000002995
-t1350285322
-s10645
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/icon.png
-c00000000507BB80A000000000000054F
-t1350285322
-s1359
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jquery.min.js
-c00000000507BB80B0000000000016614
-t1350285323
-s91668
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jtoc.js
-c00000000507BB80B000000000000077A
-t1350285323
-s1914
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/readpage.css
-c00000000507BB80B00000000000009FB
-t1350285323
-s2555
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/stoc.css
-c00000000507BB80B0000000000000471
-t1350285323
-s1137
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/toc.html
-c00000000507BB80B00000000000003CA
-t1350285323
-s970
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.h
-c00000000505817FD00000000000001A7
-t1347950589
-s423
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m
-c00000000507BA91C0000000000000B38
-t1350281500
-s2872
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/Example-Prefix.pch
-c00000000505817FD000000000000013D
-t1347950589
-s317
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/en.lproj/InfoPlist.strings
-c00000000505817FD000000000000002D
-t1347950589
-s45
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m
-c00000000505817FD0000000000000152
-t1347950589
-s338
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app
-t1350285260
-s986
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM
-t1350285260
-s102
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/EPubRootViewController.nib
-t1350285260
-s983
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example
-t1350285260
-s939936
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Info.plist
-t1350285057
-s821
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/PkgInfo
-t1350285057
-s8
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_back.png
-t1350285260
-s4420
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_backBtn.png
-t1350285260
-s4420
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_backreadview.png
-t1350285260
-s4146
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_bookmark.png
-t1350285260
-s3867
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png
-t1350285260
-s4861
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_font_zoomOut.png
-t1350285260
-s4647
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_fontsize.png
-t1350285260
-s3825
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png
-t1350285260
-s1011102
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png
-t1350285260
-s3065
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_topMenuBg.png
-t1350285260
-s23653
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_topmenu.png
-t1350285260
-s77826
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/backpage.js
-t1350285260
-s1359
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/control.js
-t1350285260
-s10645
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/en.lproj/InfoPlist.strings
-t1350285061
-s42
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/icon.png
-t1350285260
-s1359
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epub
-t1350285062
-s3259477
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/jquery.min.js
-t1350285260
-s91668
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/jtoc.js
-t1350285260
-s1914
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/readpage.css
-t1350285260
-s2555
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/siddhartha3.epub
-t1350285062
-s233647
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/stoc.css
-t1350285260
-s1137
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/testBook.epub
-t1350285064
-s31664584
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/toc.html
-t1350285260
-s970
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.o
-t1350285260
-s55032
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/Example.LinkFileList
-c00000000507BB701000000000000011D
-t1350285057
-s285
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.o
-t1350285260
-s2768
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/igpn-28languages-01-EPUB3.epub
-c00000000507BA91C000000000031BC55
-t1350281500
-s3259477
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/siddhartha3.epub
-c00000000507BA91C00000000000390AF
-t1350281500
-s233647
-
-N/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/testBook.epub
-c00000000505817FD0000000001E329C8
-t1347950589
-s31664584
-
-N/var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.pth
-t1350285059
-s3914932
-
-NExample/Example-Info.plist
-c00000000507BA91C00000000000004A0
-t1350281500
-s1184
-
-CBuild AST from /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m
-r0
-
-CBuild AST from /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m
-r0
-
-CCheck dependencies
-r0
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies87c51c96ef2bb641^95292696ef2bb641^---0#1#0#--18"Check dependencies36"79CEEE47-647F-4A5C-B3E2-390D67216158-
-
-CCompileC build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s371978134.170430
-e371978134.254867
-r1
-xCompileC
-xbuild/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.o
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m55c22b96ef2bb641^6f4a4196ef2bb641^---0#0#0#-19%DVTDocumentLocation2@93"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m0000000000000000^3428"CompileC build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.o Example/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-generated-files.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-own-target-headers.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-all-target-headers.hmap -iquote /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-project-headers.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/include -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/DerivedSources/i386 -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/DerivedSources -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../EPUB_UI/Products/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib -include /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch -MMD -MT dependencies -MF /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.d -c /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/AppDelegate.m -o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/AppDelegate.o36"D9CAFC01-93BF-402D-96A2-CDB3B091926D-
-
-CCompileC build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s371978134.171241
-e371978134.239227
-r1
-xCompileC
-xbuild/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.o
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.maaf02b96ef2bb641^274b3d96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@86"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m0000000000000000^3393"CompileC build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.o Example/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-generated-files.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-own-target-headers.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-all-target-headers.hmap -iquote /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-project-headers.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/include -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/DerivedSources/i386 -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/DerivedSources -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../EPUB_UI/Products/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib -include /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch -MMD -MT dependencies -MF /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.d -c /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/main.m -o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/main.o36"4513DFA5-DDEA-4E1D-9D30-FF6A40960B53-
-
-CCopyStringsFile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/en.lproj/InfoPlist.strings Example/en.lproj/InfoPlist.strings
-s371977861.900840
-e371977861.941847
-r1
-xCopyStringsFile
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/en.lproj/InfoPlist.strings
-xExample/en.lproj/InfoPlist.strings
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Copy Example/en.lproj/InfoPlist.stringsccb3e685ee2bb641^2026f185ee2bb641^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/en.lproj/InfoPlist.strings0000000000000000^545"CopyStringsFile build/Debug-iphonesimulator/Example.app/en.lproj/InfoPlist.strings Example/en.lproj/InfoPlist.strings    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/en.lproj -- Example/en.lproj/InfoPlist.strings36"52B7A206-E31F-4950-ADB9-BFF7156DA373-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/EPubRootViewController.nib build/Debug-iphonesimulator/Example.app/EPubRootViewController.nib
-s371978134.838609
-e371978134.853452
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/EPubRootViewController.nib
-xbuild/Debug-iphonesimulator/Example.app/EPubRootViewController.nib
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Copy build/Debug-iphonesimulator/Example.app/EPubRootViewController.nib77bfd696ef2bb641^f27cda96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/EPubRootViewController.nib0000000000000000^694"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/EPubRootViewController.nib build/Debug-iphonesimulator/Example.app/EPubRootViewController.nib    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/EPubRootViewController.nib /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"F336D4E1-7A27-4E4D-9950-8C0190EEBF07-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_back.png build/Debug-iphonesimulator/Example.app/afd_back.png
-s371978134.671162
-e371978134.703951
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_back.png
-xbuild/Debug-iphonesimulator/Example.app/afd_back.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphonesimulator/Example.app/afd_back.png05e0ab96ef2bb641^f9bab496ef2bb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_back.png0000000000000000^652"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_back.png build/Debug-iphonesimulator/Example.app/afd_back.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_back.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"14E9B0EF-8258-4663-85F6-D431EC129CDF-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backBtn.png build/Debug-iphonesimulator/Example.app/afd_backBtn.png
-s371978134.672285
-e371978134.707168
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backBtn.png
-xbuild/Debug-iphonesimulator/Example.app/afd_backBtn.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphonesimulator/Example.app/afd_backBtn.png3d28ac96ef2bb641^460ab596ef2bb641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_backBtn.png0000000000000000^661"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backBtn.png build/Debug-iphonesimulator/Example.app/afd_backBtn.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backBtn.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"A888B0A9-0ED1-48F0-9B95-E9CF6849B075-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backreadview.png build/Debug-iphonesimulator/Example.app/afd_backreadview.png
-s371978134.706599
-e371978134.754634
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backreadview.png
-xbuild/Debug-iphonesimulator/Example.app/afd_backreadview.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/Example.app/afd_backreadview.png6ff5b496ef2bb641^5934c196ef2bb641^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_backreadview.png0000000000000000^676"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backreadview.png build/Debug-iphonesimulator/Example.app/afd_backreadview.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_backreadview.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"B4D03B6B-2E03-4CB3-9122-9991A1F71896-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_bookmark.png build/Debug-iphonesimulator/Example.app/afd_bookmark.png
-s371978134.708964
-e371978134.765290
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_bookmark.png
-xbuild/Debug-iphonesimulator/Example.app/afd_bookmark.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/Example.app/afd_bookmark.png508fb596ef2bb641^20f1c396ef2bb641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_bookmark.png0000000000000000^664"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_bookmark.png build/Debug-iphonesimulator/Example.app/afd_bookmark.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_bookmark.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"F83607D1-03CA-412F-AE2A-BD2D65726804-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomIn.png build/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png
-s371978134.756312
-e371978134.765522
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomIn.png
-xbuild/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png21b1c196ef2bb641^9301c496ef2bb641^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png0000000000000000^673"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomIn.png build/Debug-iphonesimulator/Example.app/afd_font_zoomIn.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomIn.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"D21FA7BC-0968-4B84-B56C-631E32D9F814-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomOut.png build/Debug-iphonesimulator/Example.app/afd_font_zoomOut.png
-s371978134.766562
-e371978134.799058
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomOut.png
-xbuild/Debug-iphonesimulator/Example.app/afd_font_zoomOut.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/Example.app/afd_font_zoomOut.pngfd4dc496ef2bb641^ed9acc96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_font_zoomOut.png0000000000000000^676"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomOut.png build/Debug-iphonesimulator/Example.app/afd_font_zoomOut.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_font_zoomOut.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"2CDBC6FA-B7C9-4891-A4C0-2882CFB4096A-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_fontsize.png build/Debug-iphonesimulator/Example.app/afd_fontsize.png
-s371978134.767034
-e371978134.799522
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_fontsize.png
-xbuild/Debug-iphonesimulator/Example.app/afd_fontsize.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/Example.app/afd_fontsize.png7768c496ef2bb641^3eb3cc96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_fontsize.png0000000000000000^664"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_fontsize.png build/Debug-iphonesimulator/Example.app/afd_fontsize.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_fontsize.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"9F4378B2-22F5-4865-A723-C2C199615832-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBg.png build/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png
-s371978134.800723
-e371978134.816880
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBg.png
-xbuild/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png630bcd96ef2bb641^2e1fd196ef2bb641^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png0000000000000000^685"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBg.png build/Debug-iphonesimulator/Example.app/afd_tableContentsBg.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBg.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"524E8B8F-C840-487A-9635-DB4AF42CC882-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBtn.png build/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png
-s371978134.801161
-e371978134.816904
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBtn.png
-xbuild/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png1824cd96ef2bb641^2026d196ef2bb641^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png0000000000000000^688"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBtn.png build/Debug-iphonesimulator/Example.app/afd_tableContentsBtn.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_tableContentsBtn.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"57DBD536-D64E-41EF-A875-BBDABD563F07-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topMenuBg.png build/Debug-iphonesimulator/Example.app/afd_topMenuBg.png
-s371978134.818748
-e371978134.837324
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topMenuBg.png
-xbuild/Debug-iphonesimulator/Example.app/afd_topMenuBg.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/Debug-iphonesimulator/Example.app/afd_topMenuBg.png6aa4d196ef2bb641^096cd696ef2bb641^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_topMenuBg.png0000000000000000^667"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topMenuBg.png build/Debug-iphonesimulator/Example.app/afd_topMenuBg.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topMenuBg.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"4DF45D77-985D-4463-A5AC-FC362E818785-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topmenu.png build/Debug-iphonesimulator/Example.app/afd_topmenu.png
-s371978134.818325
-e371978134.837311
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topmenu.png
-xbuild/Debug-iphonesimulator/Example.app/afd_topmenu.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/Debug-iphonesimulator/Example.app/afd_topmenu.pnga08cd196ef2bb641^a164d696ef2bb641^---0#0#0#-19%DVTDocumentLocation2@127"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/afd_topmenu.png0000000000000000^661"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topmenu.png build/Debug-iphonesimulator/Example.app/afd_topmenu.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/afd_topmenu.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"6B144B9C-ACDE-4800-A4FC-FCC96FB606F9-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/backpage.js build/Debug-iphonesimulator/Example.app/backpage.js
-s371978134.615219
-e371978134.656876
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/backpage.js
-xbuild/Debug-iphonesimulator/Example.app/backpage.js
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/Debug-iphonesimulator/Example.app/backpage.jsd68f9d96ef2bb641^5037a896ef2bb641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/backpage.js0000000000000000^649"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/backpage.js build/Debug-iphonesimulator/Example.app/backpage.js    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/backpage.js /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"53D0FD18-CFF3-4552-83FE-35B1E2805275-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/control.js build/Debug-iphonesimulator/Example.app/control.js
-s371978134.616366
-e371978134.657186
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/control.js
-xbuild/Debug-iphonesimulator/Example.app/control.js
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/Debug-iphonesimulator/Example.app/control.jsbfd69d96ef2bb641^5f43a896ef2bb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/control.js0000000000000000^646"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/control.js build/Debug-iphonesimulator/Example.app/control.js    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/control.js /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"6430B845-ED8F-4ACA-A899-BDB3475252D7-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/icon.png build/Debug-iphonesimulator/Example.app/icon.png
-s371978134.839069
-e371978134.853621
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/icon.png
-xbuild/Debug-iphonesimulator/Example.app/icon.png
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/Example.app/icon.png27d9d696ef2bb641^3389da96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/icon.png0000000000000000^640"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/icon.png build/Debug-iphonesimulator/Example.app/icon.png    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/icon.png /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"D035E689-E521-4F38-90E0-844B2BB02485-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jquery.min.js build/Debug-iphonesimulator/Example.app/jquery.min.js
-s371978134.658209
-e371978134.668450
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jquery.min.js
-xbuild/Debug-iphonesimulator/Example.app/jquery.min.js
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/Debug-iphonesimulator/Example.app/jquery.min.js0492a896ef2bb641^f032ab96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/jquery.min.js0000000000000000^655"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jquery.min.js build/Debug-iphonesimulator/Example.app/jquery.min.js    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jquery.min.js /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"11A6BDB3-9E13-4A9E-9CA0-F2CD21F59F6E-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jtoc.js build/Debug-iphonesimulator/Example.app/jtoc.js
-s371978134.658568
-e371978134.668643
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jtoc.js
-xbuild/Debug-iphonesimulator/Example.app/jtoc.js
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection52"Copy build/Debug-iphonesimulator/Example.app/jtoc.js9ca5a896ef2bb641^293dab96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/jtoc.js0000000000000000^637"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jtoc.js build/Debug-iphonesimulator/Example.app/jtoc.js    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/jtoc.js /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"F488D197-A181-4F71-B9DF-2D6A43CAF1FA-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/readpage.css build/Debug-iphonesimulator/Example.app/readpage.css
-s371978134.854765
-e371978134.875959
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/readpage.css
-xbuild/Debug-iphonesimulator/Example.app/readpage.css
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/Debug-iphonesimulator/Example.app/readpage.css50e3da96ef2bb641^2d3fe096ef2bb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/readpage.css0000000000000000^652"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/readpage.css build/Debug-iphonesimulator/Example.app/readpage.css    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/readpage.css /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"AED3B6D1-C4A6-4C07-B507-4472B379B45C-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/stoc.css build/Debug-iphonesimulator/Example.app/stoc.css
-s371978134.855269
-e371978134.876005
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/stoc.css
-xbuild/Debug-iphonesimulator/Example.app/stoc.css
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/Example.app/stoc.csscafdda96ef2bb641^984de096ef2bb641^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/stoc.css0000000000000000^640"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/stoc.css build/Debug-iphonesimulator/Example.app/stoc.css    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/stoc.css /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"BF0CA070-2F2A-429C-8FAD-D15029B769A1-
-
-CCpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/toc.html build/Debug-iphonesimulator/Example.app/toc.html
-s371978134.877385
-e371978134.917966
-r1
-xCpResource
-x../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/toc.html
-xbuild/Debug-iphonesimulator/Example.app/toc.html
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/Debug-iphonesimulator/Example.app/toc.html5cace096ef2bb641^9b00eb96ef2bb641^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/toc.html0000000000000000^640"CpResource ../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/toc.html build/Debug-iphonesimulator/Example.app/toc.html    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework/Resources/toc.html /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"DD62C60B-08AE-4BD7-AA54-6A812ACF79FF-
-
-CCpResource igpn-28languages-01-EPUB3.epub build/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epub
-s371977861.954521
-e371977862.244793
-r1
-xCpResource
-xigpn-28languages-01-EPUB3.epub
-xbuild/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epub
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy build/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epubd26ef485ee2bb641^feb73e86ee2bb641^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epub00f458cedeffdf42^602"CpResource igpn-28languages-01-EPUB3.epub build/Debug-iphonesimulator/Example.app/igpn-28languages-01-EPUB3.epub    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/igpn-28languages-01-EPUB3.epub /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"A5FB08F5-AFDA-436D-97CF-7248CAE285A5-
-
-CCpResource siddhartha3.epub build/Debug-iphonesimulator/Example.app/siddhartha3.epub
-s371977862.246106
-e371977862.278316
-r1
-xCpResource
-xsiddhartha3.epub
-xbuild/Debug-iphonesimulator/Example.app/siddhartha3.epub
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/Debug-iphonesimulator/Example.app/siddhartha3.epubc2123f86ee2bb641^4a414786ee2bb641^---0#0#0#-19%DVTDocumentLocation2@128"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/siddhartha3.epub00f458cedeffdf42^560"CpResource siddhartha3.epub build/Debug-iphonesimulator/Example.app/siddhartha3.epub    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/siddhartha3.epub /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"1B0AD2BA-52C8-4186-8FB5-C29E1E65D532-
-
-CCpResource testBook.epub build/Debug-iphonesimulator/Example.app/testBook.epub
-s371977861.949612
-e371977864.147240
-r1
-xCpResource
-xtestBook.epub
-xbuild/Debug-iphonesimulator/Example.app/testBook.epub
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/Debug-iphonesimulator/Example.app/testBook.epub2427f385ee2bb641^29b32588ee2bb641^---0#0#0#-19%DVTDocumentLocation2@125"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/testBook.epub00f458cedeffdf42^551"CpResource testBook.epub build/Debug-iphonesimulator/Example.app/testBook.epub    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/testBook.epub /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"3A544DCD-0E3E-449F-962E-087921933146-
-
-CGenerateDSYMFile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example
-s371978134.392682
-e371978134.606500
-r1
-xGenerateDSYMFile
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_comm.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_error.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_parse.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubChapter.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubMetadata.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubONI.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/ioapi.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/mztools.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/unzip.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/zip.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/adler32.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/compress.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/crc32.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/deflate.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzclose.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzlib.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzread.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzwrite.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/infback.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inffast.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inflate.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inftrees.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/trees.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/uncompr.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/zutil.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml-internal.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml-parse-engine.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubManifestItem.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubSpine.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubRootfile.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubBookMark.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_debug.o unable to open object file
-owarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubReadStatus.o unable to open object file
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Generating /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM3d986496ef2bb641^7e549b96ef2bb641^-6626"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_comm.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_error.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_parse.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubChapter.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubMetadata.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubONI.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/ioapi.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/mztools.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/unzip.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/zip.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/adler32.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/compress.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/crc32.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/deflate.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzclose.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzlib.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzread.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzwrite.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/infback.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inffast.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inflate.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inftrees.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/trees.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/uncompr.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/zutil.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml-internal.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml-parse-engine.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubManifestItem.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubSpine.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubRootfile.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubBookMark.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_debug.o unable to open object filewarning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubReadStatus.o unable to open object file35(21%IDEActivityLogMessage2@184"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@189"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_comm.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@190"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_error.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@190"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_parse.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@191"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubChapter.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@192"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubMetadata.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubONI.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/ioapi.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/mztools.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/unzip.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@183"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/zip.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/adler32.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@188"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/compress.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/crc32.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/deflate.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzclose.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzlib.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@186"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzread.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/gzwrite.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/infback.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inffast.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inflate.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@188"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/inftrees.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/trees.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@187"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/uncompr.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/zutil.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@194"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml-internal.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@198"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml-parse-engine.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@185"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/roxml.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@196"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubManifestItem.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@189"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubSpine.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@192"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubRootfile.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@192"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubBookMark.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@190"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/epub_debug.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---2@194"warning: (i386) /Users/xdjiang/wu/xhpm-epub3/src/epub_sdk/ios/build/EPUB_SDK.build/Release-iphonesimulator/AnFengDe_EPUB_SDK.build/Objects-normal/i386/EPubReadStatus.o unable to open object file8"Warning:371978134#18446744073709551615#0#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---0#0#0#-19%DVTDocumentLocation4@117"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM/0000000000000000^544"GenerateDSYMFile build/Debug-iphonesimulator/Example.app.dSYM build/Debug-iphonesimulator/Example.app/Example    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example -o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app.dSYM36"EDEB4E8E-8A80-4A12-96DE-D747F23F74CD-
-
-CLd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example normal i386
-s371978134.261983
-e371978134.385148
-r1
-xLd
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example
-xnormal
-xi386
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Link /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example172a4396ef2bb641^51a56296ef2bb641^---0#0#0#--1859"Ld build/Debug-iphonesimulator/Example.app/Example normal i386    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -L/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../EPUB_UI/Products/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib -filelist /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Objects-normal/i386/Example.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -all_load -fobjc-arc -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -framework MediaPlayer -framework MessageUI -framework SystemConfiguration -framework AudioToolbox -framework UIKit -framework Foundation -framework CoreGraphics -framework AnFengDe_EPUB_SDK -framework AnFengDe_EPUB_UI -o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Example36"39914BEB-AD99-44C2-8315-5A8EDAB1EAF6-
-
-CProcessInfoPlistFile /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Info.plist Example/Example-Info.plist
-s371977857.718861
-e371977857.727061
-r1
-xProcessInfoPlistFile
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Info.plist
-xExample/Example-Info.plist
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection34"Process Example/Example-Info.plist6361b881ee2bb641^3a1fba81ee2bb641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/Example-Info.plist0000000000000000^637"ProcessInfoPlistFile build/Debug-iphonesimulator/Example.app/Info.plist Example/Example-Info.plist    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Example/Example-Info.plist -genpkginfo /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app/Info.plist36"79FC4830-52E2-4D05-A8EA-753D8AD81A7E-
-
-CProcessPCH /Users/xdjiang/Library/Developer/Xcode/DerivedData/Example-cpzrtjdowtqipibmfdrgpnlckjqz/Index/PrecompiledHeaders/Example-Prefix-dumvmcgmuogouwefvkytlrolnjbg_ast/Example-Prefix.pch.pth Example/Example-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CProcessPCH /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.pth Example/Example-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s371977857.734731
-e371977859.666543
-r1
-xProcessPCH
-x/var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.pth
-xExample/Example-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection37"Precompile Example/Example-Prefix.pchc746bc81ee2bb641^0aa2aa83ee2bb641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/Example-Prefix.pch0000000000000000^3380"ProcessPCH /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.pth Example/Example-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-shorten-64-to-32 -DDEBUG=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=50000 -iquote /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-generated-files.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-own-target-headers.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-all-target-headers.hmap -iquote /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/Example-project-headers.hmap -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/include -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/DerivedSources/i386 -I/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Example.build/Debug-iphonesimulator/Example.build/DerivedSources -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../epub_sdk/ios/Products -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../EPUB_UI/Products/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../../../deploy/ios/lib/AnFengDe_EPUB_UI.embeddedframework -F/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/../lib -c /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/Example/Example-Prefix.pch -o /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/y0/fnth99t97f98gbr80xq3pmgh0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/Example-Prefix-dilneuualraogffcksfhbjlfglci/Example-Prefix.pch.d36"59AF7867-E710-423D-80FE-82C99F846F94-
-
-CTouch /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app
-s371978134.926298
-e371978134.942349
-r1
-xTouch
-x/Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app
-lSLF04#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Touch /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app5435ed96ef2bb641^2d3ef196ef2bb641^---0#0#0#--358"Touch build/Debug-iphonesimulator/Example.app    cd /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/xdjiang/wu/xhpm-epub3/src/epub_ui/ios/CallEPubUI/build/Debug-iphonesimulator/Example.app36"4E786364-3FFE-4506-950B-AAC41A6F79AD-
-

@@ -14,7 +14,8 @@ body{
 	border-left:0px;
 	border-right:0px;
 	border-top:0px;
-	border-style:dotted;
+	border-style:solid;
+    border-color:#cccccc;
 	display:block;
 	background-repeat:repeat-x;
 }

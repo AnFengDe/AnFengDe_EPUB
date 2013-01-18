@@ -1,5 +1,5 @@
 
-function addListener()
+function addListener_backToReading()
 {
     document.ontouchstart = function onStart(ev){
         startPageX = ev.touches[0].pageX;

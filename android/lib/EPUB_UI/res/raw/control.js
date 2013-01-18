@@ -9,7 +9,7 @@ var tempX = 0;
 var currentPage;
 var tempPosition = 0;
 var chapterSize;
-var size;
+var size; 
 var bookSize;
 var chapterSize;
 var chapterTotleNum;
@@ -20,7 +20,10 @@ var preventMove =0;
 var showMenu =1;
 var bookIdentifier;
 var bookmarkIndexArray = new Array();
-
+var injectBackJS = "unInjectBackJS";
+var inReadingPage = "inReadingPage";
+var androidLongtouch = 0;
+var multipleTouch = 0;
 
 /** Inject span tag */
 function injectSpanTag(pArray){
@@ -29,7 +32,8 @@ function injectSpanTag(pArray){
         var pIndex = pArray[j][1];
         if (typeof($(pTag).find("span")[0])=='undefined'||$($(pTag).find("span")[0]).attr("id")!='afd_span'){
             var text = $(pTag).html();
-            var svgElements = getSvgTag(pTag);
+            var svgElements = getSvgTag(pTag,'svg');
+            var canvasElements = getSvgTag(pTag,'canvas');
             text = "<span id='afd_span'>"+text+"</span>";
             text = text.replace(/,/g,"</span>afd_mark<span>").replace(/afd_mark/g,",");
             text = text.replace(/\. /g,"</span>afd_mark<span>").replace(/afd_mark/g,". ");
@@ -37,9 +41,8 @@ function injectSpanTag(pArray){
             text = text.replace(/。/g,"</span>afd_mark<span>").replace(/afd_mark/g,"。");
             $(pTag).html(text);
             //$(pTag).append(text);
-            setSvgTag(pTag,svgElements);
-//            $("#afd_break").remove();
-//            $("#afd_content").append("<span id='afd_break'><br>.</span>");
+            setSvgTag(pTag,svgElements,'svg');
+            setSvgTag(pTag,canvasElements,'canvas');
         }
         
         var spanArray = $(pTag).find("span");
@@ -430,7 +433,8 @@ function deleteBookmark() {
             }
         }
     } 
-}
+    
+} 
 
 /** refresh bookmark data */
 
@@ -533,11 +537,13 @@ function replacePText(){
                     else
                         element = $("#afd_content").find("p")[pIndex];
                     var pText = bookmarkData[4];
-                    var svgElements = getSvgTag(element);
+                    var svgElements = getSvgTag(element,'svg');
+                    var canvasElements = getSvgTag(element,'canvas');
                     $(element).html(pText);
-                    setSvgTag(element,svgElements);
-//                    $("#afd_break").remove();
-//                    $("#afd_content").append("<span id='afd_break'><br>.</span>");
+                    setSvgTag(element,svgElements,'svg');
+                    setSvgTag(element,canvasElements,'canvas');
+                    //                    $("#afd_break").remove();
+                    //                    $("#afd_content").append("<span id='afd_break'><br>.</span>");
                 }                
             }
         } catch (e) {
@@ -597,6 +603,7 @@ function fontSizeZoomin() {
 	var fontSize = $("#afd_content").css("font-size");
     if (parseInt(fontSize)>36) {alert("Maximum"); return;}
 	$("#afd_content").css("font-size", parseInt(fontSize) + 3 + "px");
+    
 	getReadingPercent();
 	saveSettingData("fontSize",parseInt(fontSize) + 3);
 	saveReadingData();
@@ -606,6 +613,16 @@ function fontSizeZoomout() {
 	var fontSize = $("#afd_content").css("font-size");
     if (parseInt(fontSize)<14) {alert("Minimum"); return;}
 	$("#afd_content").css("font-size", parseInt(fontSize) - 3 + "px");
+    
+    if (currentPage > getPages()){
+        var i = currentPage - getPages();
+        leftPosition = leftPosition + i*layoutWidth;
+        tempPosition = leftPosition;
+        currentPage = getPages();
+        $("#afd_content").css({
+                              "left" : leftPosition + "px"
+                              });
+    }
 	getReadingPercent();
 	saveSettingData("fontSize",parseInt(fontSize) - 3);
 	saveReadingData();
@@ -634,14 +651,27 @@ function rotateScreen() {
 }
 
 function onStart(ev) {
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+	    if (ev.touches.length >1){multipleTouch = 1;return};
+	    multipleTouch = 0;
+	}
+    
 	showMenu =1;
 	pages = getPages();
 	startX = ev.touches[0].pageX;
 	startY = ev.touches[0].pageY;
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+		if(window.getSelection().toString().length > 1){
+	        showMenu = 0;
+	    }
+	    setTimeout(function(){showMenu=0;},300);
+    } 
+    
 	if (currentPage==1&&startX<layoutWidth/2){
 		preventMove =1;
 		return;
 	}
+    
 	//alert(leftPosition+","+tempPosition);
 	leftPosition = $("#afd_content").position().left;
 	if (tempPosition != leftPosition) {
@@ -651,11 +681,16 @@ function onStart(ev) {
 }
 
 function onMove(ev){
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+		if (multipleTouch ==1)return;
+	}
+    
     showMenu =0;
     $("#afd_menu").hide();
     $("#afd_bottomMenu").hide();
     $(".afd_scale_panel").hide();
     $("#afd_currentPage").show();
+    $("#afd_sharingBox").hide();
     if (preventMove == 1)
         return;
     tempX = ev.touches[0].pageX;
@@ -669,6 +704,19 @@ function onMove(ev){
 }
 
 function onEnd(ev){
+	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+	    if (multipleTouch ==1){
+            $("#afd_content").animate({
+                                      left : leftPosition
+                                      }, 100);
+            moveTemp = 0;
+            tempX = 0;
+            return;
+        }
+	}
+    
+	if(!($("#afd_sharingBox").css('display')=='none')){showMenu = 0;$("#afd_sharingBox").hide()};
+	if (androidLongtouch==1)return;
     if (showMenu == 1 && startY > $('#afd_menu').height()&&startY<$('#afd_pageturn').height()-$('#afd_bottomMenu').height()) {
         setBookmarkImg();
     }
@@ -743,10 +791,13 @@ function addListener() {
     document.getElementById("afd_nextChapter").addEventListener("click",
                                                                 function(){openChapter(chapterIndex,"next");}, false);
 }
-function getSvgTag(element){
+function getSvgTag(element,type){
     var svgElements = new Array();
-    var svgs = element.getElementsByTagNameNS('http://www.w3.org/2000/svg','svg');
-    //alert(svgs.length);
+    var svgs;
+    if (type == 'svg')
+        svgs = element.getElementsByTagNameNS('http://www.w3.org/2000/svg','svg');
+    if (type == 'canvas')
+        svgs = element.getElementsByTagName('canvas');
     if (svgs.length==0)svgElements.push("0");
     for (var i=0;i<svgs.length;i++){
     	
@@ -754,21 +805,21 @@ function getSvgTag(element){
     }
     return svgElements;
 }
-function setSvgTag(element,svgElements){
+function setSvgTag(element,svgElements,type){
 	if (svgElements[0]=="0")return;
-    var svgTemps = element.getElementsByTagName('svg');
+    var svgTemps;
+    if (type == 'svg')
+        svgTemps = element.getElementsByTagName('svg');
+    if (type == 'canvas')
+        svgTemps = element.getElementsByTagName('canvas');
     for (var i=0;i<svgTemps.length;i++){
-        //var parentElemnt = svgTemps[i].parentNode;
-        //parentElemnt.removeChild(svgTemps[i]);
         var svgElement = svgElements[i];
-        //parentElemnt.appendChild(svgElement);
         $(svgTemps[i]).replaceWith(svgElement);
     }
 }
 function initDom() {
-	
-    var svgElements = getSvgTag(document.body);
-    
+    var svgElements = getSvgTag(document.body,'svg');
+    var canvasElements = getSvgTag(document.body,'canvas');
 	var bodyContent = document.body.innerHTML;
 	$("body").empty();
 	var menu = "<div id='afd_menu'><div id='afd_bookshelf'><img/></div><div id='afd_TOC'><img/></div><div id='afd_title'></div><div id='afd_zoom'><img/></div><div id='afd_zoomout'><img/></div><div id='afd_zoomin'><img/></div><div id='afd_bookmark'><img id='afd_bkImg'/></div></div>";
@@ -776,9 +827,17 @@ function initDom() {
 	var pageturn = "<div id='afd_pageturn'></div>";
 	var content = "<div id='afd_content'></div>";
     var scalePanel = "<div class='afd_scale_panel'><span id='afd_value'></span><div class='afd_scale' id='afd_bar'><div></div><span id='afd_btn'></span></div></div>" ;
+    var sharingBox = "<div id='afd_sharingBox'></div>";
     
     //$("body").append(test);
 	$("body").append(menu);
+    $("body").append(sharingBox);
+    
+    var twitter = "<div class='afd_shareItem'><a id='afd_twitter_button' target='_blank' href ='#'><span><img/>&nbsp;&nbsp;Twitter&nbsp;&nbsp;</span></a></div>";
+    var googleShare = "<div class='afd_shareItem'><a id='afd_gplus' href='#'><span><img/>&nbsp;&nbsp;Google+</span></a></div>";
+    $("#afd_sharingBox").append(googleShare); 
+    $("#afd_sharingBox").append(twitter); 
+    
 	$("body").append(pageturn);
 	
 	$("#afd_pageturn").append(content);
@@ -822,7 +881,8 @@ function initDom() {
     //initSettings();
 	$("#afd_content").append(bodyContent);
 	//alert(svgElements);
-    setSvgTag(document.getElementById("afd_content"),svgElements);
+    setSvgTag(document.getElementById("afd_content"),svgElements,'svg');
+    setSvgTag(document.getElementById("afd_content"),canvasElements,'canvas');
     //alert(svgElements);
 	$("#afd_content").append("<span id='afd_break'><br>&nbsp;</span>");
 	pages = getPages();
@@ -1085,6 +1145,27 @@ function initSettings(){
         $("body").css({"background-color":"black"});
         $("#afd_pageturn").find("*").css({"color":"white"});
     }
+}
+
+function showSharingPage(){
+	androidLongtouch = 0;
+    var text = window.getSelection().toString();
+    window.getSelection().empty();                 
+    $("#afd_twitter_button").attr('href',"http://twitter.com/intent/tweet?source=sharethiscom&text="+text);
+    $("#afd_twitter_button img").attr('src',path+"/image/twitter_bird_callout.png");
+    $("#afd_gplus").attr('href',"https://m.google.com/app/plus/x/aoyapxt82rpw/?v=compose&group=m1c&hideloc=1&content="+text);
+    $("#afd_gplus img").attr('src',path+"/image/gplus_64.png");
+    $("#afd_sharingBox").show();
+}
+
+function androidLongtouchModel(model){
+	androidLongtouch = model;
+}
+
+function androidCopySelectionText(){
+	androidLongtouch = 0;
+    var text = window.getSelection().toString();
+	Android.copySelectionText(text);
 }
 $(document).ready(function() {
                   initDom();

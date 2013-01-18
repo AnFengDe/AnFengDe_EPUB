@@ -32,7 +32,6 @@
     int sIndex;
     int cIndex;
     int lastBookNum;
-    NSString *urlPrefix;
     NSString *clickBk;
 //    NSMutableArray *bookArray;
 
@@ -49,7 +48,6 @@
 @property (nonatomic, readwrite) int sIndex;
 @property (nonatomic, readwrite) int cIndex;
 @property (nonatomic, readwrite) int lastBookNum;
-@property (nonatomic, retain) NSString *urlPrefix;
 @property (nonatomic, retain) NSString *clickBk;
 //@property (nonatomic, retain) NSMutableArray *bookArray;
 
@@ -92,4 +90,5 @@
 - (NSString*)downloadFiles:(NSString*)urlPath;
 - (NSString *) jsStringEscape:(NSString *)src;
 - (void) bookStrEscape:(DBBooks *)book;
+- (IBAction)share:(id)sender;
 @end
