@@ -1,4 +1,5 @@
 var selectAll = 0;
+var isDownloading = false;
 var injectBackJS = "unInjectBackJS";
 $(document).ready(function(){
                   getAllBooks();
@@ -10,6 +11,7 @@ function addListener(){
     $("#localbutton").bind("click",function(){androidLocalAddBooks();});
     $("#importbutton").bind("click",function(){importBook();$("#afd_local").hide();});
     $("#downloadbutton").bind("click",function(){downloadBook();});
+    $("#downloadcancel").bind("click",function(){downloadCancel();});
     $("#import").bind("click",function(){openImportPage();});
     $("#edit").bind("click",function(){editing();});
     $("#afd_editDelete").bind("click",function(){deleteBooks();});
@@ -42,6 +44,8 @@ function wifiOptionClicked(){
     $("#afd_showInternet").css('color','#000000');
 }
 function openImportPage(){
+    if (!isDownloading){$("#downloadcancel").css('color','grey');downloadProgress(0);}
+    if (isDownloading){$("#downloadbutton").css('color','grey');downloadProgress(1);}
     $(".afd_selectBg").hide();
     $("#afd_editMenu").hide();
     
@@ -62,21 +66,36 @@ function openImportPage(){
         $("#afd_showWifi").css('color','#000000');
         $("#afd_showInternet").css('color','#5A9A30');
     }
+    
     window.location = "#openModa";
 }
 function downloadBook(){
-    $("#downloadbutton").css('color','#5A9A30');
-    setTimeout(function(){$("#downloadbutton").css('color','#000000');},200);
+    if (isDownloading){return;}
+    //$("#downloadbutton").css('color','#5A9A30');
+    //setTimeout(function(){$("#downloadbutton").css('color','#000000');},200);
 	var fileurl = $("#fileurl").attr("value");
     if (fileurl==""){
         alert("Please enter a book url!")
         return;
     }
 	if (navigator.userAgent.match(/Android/i)) {
+		checkLoadingStatus(1);
+		downloadProgress(0);
         Android.downloadBook(fileurl);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
         window.location = 'anreader:afd:myaction:afd:downloadBook:afd:'+fileurl;
+    }
+}
+function downloadCancel(){
+    if (!isDownloading){return;}
+    //$("#downloadcancel").css('color','#5A9A30');
+    //setTimeout(function(){$("#downloadcancel").css('color','#000000');},200);
+	if (navigator.userAgent.match(/Android/i)) {
+        Android.downloadCancel();
+    }
+    if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+        window.location = 'anreader:afd:myaction:afd:downloadCancel';
     }
 }
 
@@ -211,7 +230,20 @@ function deleteBookmark(key){
         }
     }
 }
+function downloadProgress(progress){
+    $("#afd_dprogress").css({"width":progress+"%"});
+    $("#afd_dpercent").text(progress+"%");
+}
 
+function checkLoadingStatus(downloadStatus){
+    if (downloadStatus==0){
+        isDownloading = false;
+    }
+    else
+        isDownloading = true;
+    if (!isDownloading){$("#downloadcancel").css('color','grey');$("#downloadbutton").css('color','#000000');}
+    if (isDownloading){$("#downloadbutton").css('color','grey');$("#downloadcancel").css('color','#000000');}
+}
 function creatBookShelf(id, name, author, coverimage, bookpath)
 {
     var bookTag ="<ul><li class='li_coverimage'><div class='afd_selectBg'><img class='afd_edit_selectedPng' src='../image/afd_edit_selected.png'/></div><span class='bookname'></span><img class='coverimage' src='"+coverimage+"'/></li><li class='li_baseimage'><img class='baseimage' src='../image/afd_index_bookbase.png'/></li></ul>";

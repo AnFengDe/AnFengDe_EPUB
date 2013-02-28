@@ -38,8 +38,10 @@ android.selection.clearSelection = function(){
 	
 	try{
 		// if current selection clear it.
+		
 	   	var sel = window.getSelection();
 	   	sel.removeAllRanges();
+	   	
 	}catch(err){
 		window.TextSelection.jsError(err);
 	}	
@@ -63,9 +65,7 @@ android.selection.longTouch = function() {
 			
 	   	
 	   	sel.addRange(oneWordCaret);
-	   	
 	   	var temp = sel.getRangeAt(0);
-	   	
 	   	android.selection.saveSelectionStart();
 	   	android.selection.saveSelectionEnd();
 	   	
@@ -136,11 +136,10 @@ android.selection.selectionChanged = function(){
 	   	
 	   	var rangyRange = android.selection.getRange();
 	   	// Text to send to the selection
-	   	
 	   	var text = window.getSelection().toString();
 	   	// Set the content width
 	   	window.TextSelection.setContentWidth(100000);
-	   	
+	    
 	   	// Tell the interface that the selection changed
 	   	window.TextSelection.selectionChanged(rangyRange, text, handleBounds, menuBounds);
 	}
@@ -254,8 +253,7 @@ android.selection.selectBetweenHandles = function(){
 		var endCaret = android.selection.selectionEndRange;
 		
 		// If we have two carets, update the selection
-		if (startCaret && endCaret) {
-		
+		if (startCaret && endCaret) {	
 			// If end caret comes before start caret, need to flip
 			if(startCaret.compareBoundaryPoints (Range.START_TO_END, endCaret) > 0){
 				var temp = startCaret;
@@ -268,16 +266,11 @@ android.selection.selectBetweenHandles = function(){
 			
 			var range = document.createRange();
 			range.setStart(startCaret.startContainer, startCaret.startOffset);
-			range.setEnd(endCaret.startContainer, endCaret.startOffset);
-			
-			
+			range.setEnd(endCaret.startContainer, endCaret.startOffset);			
 			android.selection.clearSelection();
 				
 			var selection = window.getSelection();
-			selection.addRange(range);
-	
-			
-			
+			selection.addRange(range);	
 		}
 		
 		android.selection.selectionChanged();
@@ -286,6 +279,3 @@ android.selection.selectBetweenHandles = function(){
    		window.TextSelection.jsError(err);
    	}
 };
-
-
-

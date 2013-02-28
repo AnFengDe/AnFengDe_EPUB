@@ -22,11 +22,9 @@ body{
     border: none;
     width: auto;
     height: auto;
-    text-align: justify;
 }
 
 #afd_break {
-    position: relative;
     height: 0px;
 }
 
@@ -264,7 +262,7 @@ body{
     z-index:1;
 	font-size:12px;
 	background-color:rgba(0,0,0,0.6);
-	position:absolute; 
+	position:fixed; 
 	line-height:18px; 
 	bottom:0px;
     left:0px;

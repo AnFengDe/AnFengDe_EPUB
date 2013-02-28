@@ -36,3 +36,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20130118 In this release we've added the sharing function. In the reading page you can select the text by long clicking and then share the text. 
+
+=================
+* 20130228 In this release we've added TTS. And we've modified the downloading event. We added a button to cancel downloading and a progress bar to show the downloading progress.

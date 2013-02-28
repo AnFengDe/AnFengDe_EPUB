@@ -229,7 +229,7 @@ body{
 	margin-top:10%;
     text-align:center;
 }
-#afd_internet #downloadbutton{
+#afd_internet .afd_downloadbutton{
 	font-size:14px;
 	color:#000000;
     padding:5px;
@@ -237,6 +237,8 @@ body{
     background-color:#ffffff;
     border-radius:2px;
     border-style:solid;
+    position:relative;
+    top:10px;
 }
 
 #filepath{
@@ -289,4 +291,24 @@ body{
     width:33%;
     margin-top:8px;
     font-size:14px;
+}
+.afd_progress{
+    background:grey;
+    margin-left:10%;
+    width:80%;
+    text-align:left;
+    height:8px;
+    border-radius:5px;
+    float:left;
+}
+#afd_dprogress{
+    width:0;
+    height:100%;
+    background:green;
+    border-radius:5px;
+}
+#afd_dpercent{
+    float:left;
+    margin-left:2px;
+    font-size:8px;
 }

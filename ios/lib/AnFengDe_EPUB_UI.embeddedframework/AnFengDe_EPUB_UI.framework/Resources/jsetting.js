@@ -6,6 +6,7 @@ function addListener()
     $("#afd_fontColorOptions").change(function(){getSettings(this)});
     $("#afd_fontStyleOptions").change(function(){getSettings(this)});
     $("#afd_backgroundOptions").change(function(){getSettings(this)});
+    document.getElementById("afd_ttsSettings").addEventListener("click",function(){ttsSetting();},false);
 }
 /** Go back reading page */
 function back(){
@@ -120,6 +121,15 @@ function initOptions(settingsArray){
     }
     else
         $("#afd_dayAndNightOptions img").attr("src","../image/afd_day.png");	
+}
+function ttsSetting(){
+    if (navigator.userAgent.match(/Android/i)) {
+        Android.ttsSetting();
+    }
+    if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+        window.location = 'anreader:afd:myaction:afd:ttsSetting';
+    }
+ 
 }
 $(document).ready(function(){
                   addListener();

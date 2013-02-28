@@ -13,7 +13,7 @@
 #import "GADBannerViewDelegate.h"
 
 #define ERROR_FATAL  0
-#define ERROR_INFO   1
+#define INFO   1
 
 #define DOWNLOAD_ERROR_INFO @"Download Error!"
 #define DOWNLOAD_INFO @"Download Success!"
@@ -33,8 +33,14 @@
     int cIndex;
     int lastBookNum;
     NSString *clickBk;
-//    NSMutableArray *bookArray;
-
+    NSURLRequest		*DownloadRequest;
+	NSURLConnection		*DownloadConnection;
+	NSMutableData		*receivedData;
+    NSString            *saveEPubBookPath;
+    float				bytesReceived;
+	long long			expectedBytes;
+    Boolean             downloadCancel;
+    Boolean             isDownloading;
 @private
     UIWebView *afd_webView;
 }
@@ -49,7 +55,11 @@
 @property (nonatomic, readwrite) int cIndex;
 @property (nonatomic, readwrite) int lastBookNum;
 @property (nonatomic, retain) NSString *clickBk;
-//@property (nonatomic, retain) NSMutableArray *bookArray;
+@property (nonatomic, retain) NSMutableData* receivedData;
+@property (nonatomic, readonly, retain) NSURLRequest* DownloadRequest;
+@property (nonatomic, readonly, retain) NSURLConnection* DownloadConnection;
+@property (nonatomic, retain) NSString *saveEPubBookPath;
+@property (nonatomic, retain) NSString *downloadUrl;
 
 
 - (GADRequest *)createRequest;
@@ -87,8 +97,12 @@
 - (void)deleteBooks:(NSArray*)bookIdArray;
 - (void)createBookself;
 - (void)errorMessage:(int)ret;
-- (NSString*)downloadFiles:(NSString*)urlPath;
+- (void)downloadFiles:(NSString*)urlPath;
 - (NSString *) jsStringEscape:(NSString *)src;
 - (void) bookStrEscape:(DBBooks *)book;
 - (IBAction)share:(id)sender;
+- (void)handleTapGesture:(UITapGestureRecognizer *)sender;
+- (void)createNewBook:(NSString*)filePath;
+- (void)downloadCancel;
+- (void)ttsSetting;
 @end

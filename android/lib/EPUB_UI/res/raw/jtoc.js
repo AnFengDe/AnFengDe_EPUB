@@ -12,17 +12,18 @@ var bookmarkArray = new Array();
  */
 function getChapter(chapterTitle,level,i,currentChapterIndex){
 	var tempLevel;
+    var title = chapterTitle;
 	if (screenWidth>720){
 		tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     }
     if (screenWidth<720){
     	tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     }
-    if (level ==1){
-        $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>"+tempLevel+chapterTitle+"</li>");
+    if (level !=2){
+        $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>"+tempLevel+title+"</li>");
     }
     if (level ==2){
-        $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+tempLevel+chapterTitle+"</li>");
+        $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+tempLevel+title+"</li>");
     }
     document.getElementById("afd_chapter"+i+"").addEventListener("click",function(){addChapterListener(i,currentChapterIndex);},false);
     if (currentChapterIndex==i){

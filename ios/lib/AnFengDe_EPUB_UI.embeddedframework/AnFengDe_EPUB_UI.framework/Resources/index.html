@@ -9,7 +9,7 @@
     </head>
     
     <body>
-       <!--<a href="#openModa">Open Modal</a>-->
+        <!--<a href="#openModa">Open Modal</a>-->
         <div id="header">
             <div id="mystore" align="center">Book Shelf</div>
             <div id="storemenu">
@@ -51,32 +51,35 @@
                                 <img src="../image/afd_import_wifi.png"/><div>Wifi</div>
                             </div>    
                         </div>
-                                    <div id="afd_local" class='afd_opthioncontent'>
-                                        <input type="text" id="filepath" name="file_path"/>
-                                        <div>
-                                          <input type="button" id="localbutton" class="importbutton" value="local"/>
-                                          <input type="button" id="importbutton" class="importbutton" value="import"/>
-                                        </div>
-                                    </div>
-
-                                    <div id ="afd_internet" class='afd_opthioncontent'>
-                                        <input type="text" id="fileurl" name="search_text" value="http://"/>
-                                        <div>
-                                          <input type="button" id="downloadbutton" value="download"/>
-                                        </div>
-                                    </div>
-
-                                    <div id ="afd_wifi" class='afd_opthioncontent'>
-                                        <ul>
-                                            <li>Transfer books from computer to mobile device!</li>
-                                            <li>Please enter the url in your computer browser:</li>
-                                            <li style="color:#663300; font-size:23px">http://192.168.66.102</li>
-                                            <li>Notice: make sure your computer and mobile device in the same Wifi</li>
-                                        </ul>
-                                    </div>        
-                </div>	
+                        <div id="afd_local" class='afd_opthioncontent'>
+                            <input type="text" id="filepath" name="file_path"/>
+                            <div>
+                                <input type="button" id="localbutton" class="importbutton" value="local"/>
+                                <input type="button" id="importbutton" class="importbutton" value="import"/>
+                            </div>
+                        </div>
+                        
+                        <div id ="afd_internet" class='afd_opthioncontent'>
+                            <input type="text" id="fileurl" name="search_text" value="http://"/>
+                            <div class="afd_progress"><div id="afd_dprogress"></div></div>
+                            <div id="afd_dpercent">0%</div>
+                            <div>
+                                <input type="button" class="afd_downloadbutton" id="downloadbutton" value="download"/>
+                                <input type="button" class="afd_downloadbutton" id="downloadcancel" value="cancel"/>
+                            </div>
+                        </div>
+                        
+                        <div id ="afd_wifi" class='afd_opthioncontent'>
+                            <ul>
+                                <li>Transfer books from computer to mobile device!</li>
+                                <li>Please enter the url in your computer browser:</li>
+                                <li style="color:#663300; font-size:23px">http://192.168.66.102</li>
+                                <li>Notice: make sure your computer and mobile device in the same Wifi</li>
+                            </ul>
+                        </div>        
+                    </div>	
+                </div>
             </div>
-        </div>
         </div>
     </body>
 </html>

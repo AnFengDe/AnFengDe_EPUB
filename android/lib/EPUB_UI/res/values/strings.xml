@@ -5,4 +5,5 @@
     <string name="msg_invalid_toc">Invalid table of contents.</string>
     <string name="msg_open_book_error">open book error.</string>
     <string name="loading_video">Loading video</string>
+    <string name="send_to">share via</string>
 </resources>

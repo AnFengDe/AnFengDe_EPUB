@@ -69,6 +69,10 @@ body{
 #afd_dayAndNight{
     height:50px;
 }
+#afd_ttsOptions img{
+    max-height:75px;
+    max-width:150px;
+}
 select{
     position: absolute;
     width: 158px;
