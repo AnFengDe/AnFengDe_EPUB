@@ -145,19 +145,7 @@ function storeData(bookmarkData){
         }
     }
 }
-/**
- * Stop show up menu when click on link
- */
-function clickOnLinkListener() {
-	var a = document.getElementsByTagName("a");
-	for ( var i = 0; i < a.length; i++) {
-		a[i].addEventListener("touchstart", function clickOnLink(ev) {
-                              preventMove =1;
-                              showMenu =0;
-                              ev.stopPropagation();
-                              }, false);
-	}
-}
+
 /**
  * Get the current element content
  */
@@ -785,7 +773,6 @@ function addListener() {
                                                                      function(){openChapter(chapterIndex,"preceding");}, false);
     document.getElementById("afd_nextChapter").addEventListener("click",
                                                                 function(){openChapter(chapterIndex,"next");}, false);
-    clickOnLinkListener();
 }
 function getSvgTag(element,type){
     var svgElements = new Array();

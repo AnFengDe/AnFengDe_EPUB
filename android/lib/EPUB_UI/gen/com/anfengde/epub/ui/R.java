@@ -89,18 +89,19 @@ public final class R {
         public static int afd_skip=0x7f02002a;
         public static int afd_tablecontentsbtn=0x7f02002b;
         public static int afd_topmenu=0x7f02002c;
-        public static int afd_white_left=0x7f02002d;
-        public static int afd_white_right=0x7f02002e;
-        public static int arrow_down=0x7f02002f;
-        public static int arrow_up=0x7f020030;
-        public static int default_video_poster=0x7f020031;
-        public static int ex_doc=0x7f020032;
-        public static int ex_folder=0x7f020033;
-        public static int gplus_64=0x7f020034;
-        public static int ic_launcher=0x7f020035;
-        public static int popup=0x7f020036;
-        public static int selection_handle=0x7f020037;
-        public static int twitter_bird_callout=0x7f020038;
+        public static int afd_tts=0x7f02002d;
+        public static int afd_white_left=0x7f02002e;
+        public static int afd_white_right=0x7f02002f;
+        public static int arrow_down=0x7f020030;
+        public static int arrow_up=0x7f020031;
+        public static int default_video_poster=0x7f020032;
+        public static int ex_doc=0x7f020033;
+        public static int ex_folder=0x7f020034;
+        public static int gplus_64=0x7f020035;
+        public static int ic_launcher=0x7f020036;
+        public static int popup=0x7f020037;
+        public static int selection_handle=0x7f020038;
+        public static int twitter_bird_callout=0x7f020039;
     }
     public static final class id {
         public static int afd_bookView=0x7f090007;
@@ -163,6 +164,7 @@ public final class R {
         public static int loading_video=0x7f070004;
         public static int msg_invalid_toc=0x7f070002;
         public static int msg_open_book_error=0x7f070003;
+        public static int send_to=0x7f070005;
     }
     public static final class style {
         public static int Animations=0x7f080001;

@@ -60,5 +60,10 @@
      See also applicationDidEnterBackground:.
      */
 }
-
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    if (url != nil && [url isFileURL]) {
+        [rootEpubView openBookFromSafari:url];                
+    }
+    return YES;
+}
 @end

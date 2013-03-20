@@ -105,4 +105,5 @@
 - (void)createNewBook:(NSString*)filePath;
 - (void)downloadCancel;
 - (void)ttsSetting;
+- (void)openBookFromSafari:(NSURL *)epubBookPath;
 @end

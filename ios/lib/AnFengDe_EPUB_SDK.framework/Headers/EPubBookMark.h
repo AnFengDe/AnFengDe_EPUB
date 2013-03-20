@@ -1,10 +1,11 @@
-//
-//  EPubBookMark.h
-//  EPUB_SDK
-//
-//  Created by xdjiang xdjiang on 8/29/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+/*!
+ * \author xdjiang
+ * \brief The epub bookmark definition 
+ * \file EPubBookMark.h
+ * \version 1.0 
+ * \date 2012-08-29
+ * \copyright (c) 2012 AnFengDe. All rights reserved.
+ * */
 
 #import <Foundation/Foundation.h>
 

@@ -39,3 +39,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20130228 In this release we've added TTS. And we've modified the downloading event. We added a button to cancel downloading and a progress bar to show the downloading progress.
+
+=================
+* 20130320 In this release we've fixed some bugs. And we've associated our project with ePub file type. In android you can invoke openBookFromFileExplorer(Intent intent) method and in iOS you can invoke openBookFromSafari:(NSURL*)url method.

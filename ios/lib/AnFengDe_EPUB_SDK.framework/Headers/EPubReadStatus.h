@@ -1,10 +1,11 @@
-//
-//  EPubReadStatus.h
-//  EPUB_SDK
-//
-//  Created by xdjiang xdjiang on 10/9/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
+/*!
+ * \author xdjiang
+ * \brief The epub read status definition 
+ * \file EPubReadStatus.h
+ * \version 1.0 
+ * \date 2012-10-9
+ * \copyright (c) 2012 AnFengDe. All rights reserved.
+ * */
 
 #import <Foundation/Foundation.h>
 
