@@ -45,5 +45,7 @@
 
 #define AFD_EPUB_ERR_PARSE_BOOKMARK		-26
 #define AFD_EPUB_ERR_NO_READING_DATA_FILE	-27
+#define AFD_EPUB_ERR_CHAPTER_NULL       -28
+#define AFD_EPUB_ERR_UNZIP_BUSY         -29
 
 #endif

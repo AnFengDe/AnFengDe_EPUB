@@ -22,6 +22,7 @@ function addListener(){
     $("#afd_showWifi").bind("click",function(){wifiOptionClicked();});
     $(".close").bind("click",function(){$("#afd_internet").hide();$("#afd_local").hide();});
 }
+/** click on local button and hide other options */
 function localOptionClicked(){
     $("#afd_internet").hide();
     $("#afd_local").show();
@@ -42,7 +43,11 @@ function wifiOptionClicked(){
     $("#afd_showLocal").css('color','#000000');
     $("#afd_showWifi").css('color','#5A9A30');
     $("#afd_showInternet").css('color','#000000');
+    if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
+        window.location = 'anreader:afd:myaction:afd:openWifi';
+    }
 }
+/** open add-book page */
 function openImportPage(){
     if (!isDownloading){$("#downloadcancel").css('color','grey');downloadProgress(0);}
     if (isDownloading){$("#downloadbutton").css('color','grey');downloadProgress(1);}
@@ -69,6 +74,7 @@ function openImportPage(){
     
     window.location = "#openModa";
 }
+
 function downloadBook(){
     if (isDownloading){return;}
     //$("#downloadbutton").css('color','#5A9A30');
@@ -79,7 +85,7 @@ function downloadBook(){
         return;
     }
 	if (navigator.userAgent.match(/Android/i)) {
-		checkLoadingStatus(1);
+		setDownLoadButtonStatus(1);
 		downloadProgress(0);
         Android.downloadBook(fileurl);
     }
@@ -115,6 +121,7 @@ function deleteBooks(){
     bookString = tempBooks;
     realizeDeleting(bookString)
 }
+/** invoke native code to delete book from db and cache folder */
 function realizeDeleting(bookString){
 	if (bookString==null) return;
 	if (navigator.userAgent.match(/Android/i)) {
@@ -124,6 +131,7 @@ function realizeDeleting(bookString){
         window.location = 'anreader:afd:myaction:afd:deleteBooks:afd:'+bookString;
     }
 }
+/** show the edit-buttons */
 function editing(){
     $(".afd_selectBg").toggle();
     if ($("#edit img").attr("src")=="../image/afd_index_edit.png"){
@@ -152,7 +160,7 @@ function cancelDelete(){
     //$("#afd_editAll img").attr("src","../image/afd_edit_all.png");
     selectAll = 0;
 }
-
+/** pass the bookpath to native code to open the book */
 function openBook(bookPath){
     if (navigator.userAgent.match(/Android/i)) {
 		Android.openBook(bookPath);
@@ -170,7 +178,7 @@ function exit(){
 		window.location = 'anreader:afd:myaction:afd:exit';
 	}
 }
-
+/** invoke android native code to add the book into db and then create it in bookshelf */
 function importBook(){
     $("#importbutton").css('color','#ffffff');
     setTimeout(function(){$("#importbutton").css('color','#000000');},200);
@@ -180,7 +188,7 @@ function importBook(){
 	}
 	window.location = "#close";
 }
-
+/** get all books in db and then invoke native code to create them in bookshelf */
 function getAllBooks()
 {
     if (navigator.userAgent.match(/Android/i)) {
@@ -190,20 +198,12 @@ function getAllBooks()
 		window.location = 'anreader:afd:myaction:afd:getAllBooks';
 	}
 }
-//function outHtml()
-//{
-//    alert("out html");
-//    if (navigator.userAgent.match(/Android/i)) {
-//		Android.outHtml;
-//	}
-//	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-//		window.location = 'anreader:myaction:outHtml'+$("html").html();
-//	}    
-//}
+
 function selectBook(ev,element){
     $(element).toggle();
     ev.stopPropagation();
 }
+/** check the book status, if the "display" is "none" that means the book will be deleted */
 function checkBookStatus(){
     var bookIdArray = new Array();
     var uls = $("#afd_books").find("ul");
@@ -217,6 +217,7 @@ function checkBookStatus(){
     }
     return bookIdArray;
 }
+
 function deleteBookmark(key){
 	if (typeof(localStorage) == 'undefined' ) {
         alert('Your browser does not support HTML5 localStorage. Try upgrading.');
@@ -235,7 +236,7 @@ function downloadProgress(progress){
     $("#afd_dpercent").text(progress+"%");
 }
 
-function checkLoadingStatus(downloadStatus){
+function setDownLoadButtonStatus(downloadStatus){
     if (downloadStatus==0){
         isDownloading = false;
     }
@@ -244,6 +245,7 @@ function checkLoadingStatus(downloadStatus){
     if (!isDownloading){$("#downloadcancel").css('color','grey');$("#downloadbutton").css('color','#000000');}
     if (isDownloading){$("#downloadbutton").css('color','grey');$("#downloadcancel").css('color','#000000');}
 }
+/** the native code invoke this method to create bookshelf */
 function creatBookShelf(id, name, author, coverimage, bookpath)
 {
     var bookTag ="<ul><li class='li_coverimage'><div class='afd_selectBg'><img class='afd_edit_selectedPng' src='../image/afd_edit_selected.png'/></div><span class='bookname'></span><img class='coverimage' src='"+coverimage+"'/></li><li class='li_baseimage'><img class='baseimage' src='../image/afd_index_bookbase.png'/></li></ul>";

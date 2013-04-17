@@ -2,7 +2,6 @@ package com.anfengde.ui.call;
 
 import com.anfengde.epub.core.value.Constants;
 import com.anfengde.epub.ui.BookView;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -11,12 +10,8 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-@SuppressLint("SdCardPath")
 public class CallEPubUIActivity extends Activity {
-	//To stop finishing the current activity instance
 	private boolean foreground = false;
-	
-	/** To finished the background instances of the activity **/
 	protected BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
 		@Override
 		public void onReceive(Context context, Intent intent) {
@@ -39,13 +34,10 @@ public class CallEPubUIActivity extends Activity {
 		bookView.setPath(Constants.CACHE_PAHT);
 		bookView.initBook();
 		bookView.openShelf();
-		
-		//To check if clicking on the epub file
 		Intent intent = getIntent();
 		bookView.openBookFromFileExplorer(intent);
 	}
 
-	/** To register broadcast */
 	@Override
 	public void onResume() {
 		super.onResume();
@@ -55,8 +47,15 @@ public class CallEPubUIActivity extends Activity {
 		this.registerReceiver(this.broadcastReceiver, filter);
 		finishPreviousActivity();
 	}
-    
-	/** To send broadcast to finish activity */
+
+	@Override
+	protected void onDestroy() {
+		// TODO Auto-generated method stub
+		super.onDestroy();
+		this.finish();
+		this.unregisterReceiver(this.broadcastReceiver);
+	}
+
 	protected void finishPreviousActivity() {
 		Intent intent = new Intent();
 		intent.setAction("com.anfengde.ExitApp");

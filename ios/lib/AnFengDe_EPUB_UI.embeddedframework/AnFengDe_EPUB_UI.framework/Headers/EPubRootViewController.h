@@ -4,50 +4,53 @@
  * \file EPubRootViewController.h
  * \version 1.0 
  * \date 2012-07-06
- * \copyright (c) 2012年 com.anfengde. All rights reserved.
+ * \copyright (c) 2012 com.anfengde. All rights reserved.
  * */
 
 #import <UIKit/UIKit.h>
 #import "EPubBook.h"
-#import "DBBooks.h"
 #import "GADBannerViewDelegate.h"
+#import "MongooseDaemon.h"
 
-#define ERROR_FATAL  0
-#define INFO   1
+#define ERROR_FATAL 0
+#define INFO        1
 
 #define DOWNLOAD_ERROR_INFO @"Download Error!"
-#define DOWNLOAD_INFO @"Download Success!"
+#define DOWNLOAD_INFO       @"Download Success!"
 
-#define DEFAULT_COVERIMG @"../image/afd_coverimg.png"
+#define DEFAULT_COVERIMG    @"../image/afd_coverimg.png"
 
 @class GADBannerView, GADRequest;
 @class EPubContentsViewController;
 
 @interface EPubRootViewController : UIViewController <UIWebViewDelegate, UIGestureRecognizerDelegate,GADBannerViewDelegate>{
-    GADBannerView *adBanner_;
-    EPubBook *epubBook;
-    int currentPageNum;
-    int totalPages;
-    int pIndex;
-    int sIndex;
-    int cIndex;
-    int lastBookNum;
-    NSString *clickBk;
-    NSURLRequest		*DownloadRequest;
-	NSURLConnection		*DownloadConnection;
-	NSMutableData		*receivedData;
-    NSString            *saveEPubBookPath;
-    float				bytesReceived;
-	long long			expectedBytes;
-    Boolean             downloadCancel;
-    Boolean             isDownloading;
+    /// Google Ad banner view pointer
+    GADBannerView   *pAdBanner_;
+    /// epub book pointer
+    EPubBook        *epubBook;
+    int             currentPageNum;
+    int             totalPages;
+    int             pIndex;
+    int             sIndex;
+    int             cIndex;
+    int             lastBookNum;
+    NSString        *clickBk;
+    NSURLRequest	*downloadRequest;
+	NSURLConnection	*downloadConnection;
+    NSString        *saveEPubBookPath;
+    float			bytesReceived;
+	long long		expectedBytes;
+    Boolean         downloadCancel;
+    Boolean         isDownloading;
+    MongooseDaemon  *mongooseDaemon;
+    NSString        *lastBookPath;
 @private
     UIWebView *afd_webView;
 }
 
 /** The current reading book */
 @property (nonatomic, retain) EPubBook *epubBook;
-@property (nonatomic, retain) GADBannerView *adBanner;
+@property (nonatomic, retain) GADBannerView *pAdBanner;
 @property (nonatomic, readwrite) int currentPageNum;
 @property (nonatomic, readwrite) int totalPages;
 @property (nonatomic, readwrite) int pIndex;
@@ -55,55 +58,21 @@
 @property (nonatomic, readwrite) int cIndex;
 @property (nonatomic, readwrite) int lastBookNum;
 @property (nonatomic, retain) NSString *clickBk;
-@property (nonatomic, retain) NSMutableData* receivedData;
-@property (nonatomic, readonly, retain) NSURLRequest* DownloadRequest;
-@property (nonatomic, readonly, retain) NSURLConnection* DownloadConnection;
+@property (nonatomic, readonly, retain) NSURLRequest* downloadRequest;
+@property (nonatomic, readonly, retain) NSURLConnection* downloadConnection;
 @property (nonatomic, retain) NSString *saveEPubBookPath;
 @property (nonatomic, retain) NSString *downloadUrl;
-
-
-- (GADRequest *)createRequest;
+@property (nonatomic, retain) MongooseDaemon *mongooseDaemon;
+@property (nonatomic, retain) NSString *lastBookPath;
 
 /**
-  Initialize a new nib file
-  @param nibNameOrNil is the name of nib
-  @param nibBundleOrNil is the name of bundle
-  @returns a newly initialize object
+ \brief Initialize with new nib file
+ \param nibNameOrNil the name of nib file
+ \param nibBundleOrNil the name of bundle
+ \returns a newly initialize object
  */
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
-/** 
- Open chapter 
- @param chapterPath is the chapter path
- */
-- (void)openChapter:(NSString*)chapterPath;
-/** Inject js to html when open a link */
-- (NSString*)openURL;
-/** Save the reading status */
-- (void)saveReadStatus;
-/** Read the reading status */
-- (void)readStatusData;
-/** Write js and css to device */
-- (void) writeJS:(NSString*)fileName type:(NSString*)type folder:(NSString*)folder;
-/** Return html content with js and css */
-- (NSString*) urlContent:(NSString*)htmlContent;
-/** show error message */
-- (void) showErrorCode:(NSString*)errorMes type:(int)type;
-- (void)resizePage;
-- (void)openBook:(NSString *)epubBookPath;
-- (void)openBookshelf;
-- (void)jump:(NSArray*)components;
-- (BOOL)importBook:(NSString*)epubBookPath;
-- (void)getBooksFromDB;
-- (void)deleteBooks:(NSArray*)bookIdArray;
-- (void)createBookself;
-- (void)errorMessage:(int)ret;
-- (void)downloadFiles:(NSString*)urlPath;
-- (NSString *) jsStringEscape:(NSString *)src;
-- (void) bookStrEscape:(DBBooks *)book;
-- (IBAction)share:(id)sender;
-- (void)handleTapGesture:(UITapGestureRecognizer *)sender;
-- (void)createNewBook:(NSString*)filePath;
-- (void)downloadCancel;
-- (void)ttsSetting;
+
 - (void)openBookFromSafari:(NSURL *)epubBookPath;
+
 @end

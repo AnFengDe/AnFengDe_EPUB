@@ -260,9 +260,6 @@ function getCurrentElementContent() {
 }
 /**
  * Native codes invoke the method when the webview loading finished
- * 
- * @param current_percent
- * @param fontSize
  */
 function resizePage(current_percent, pIndex, sIndex, clickBk) {
     setTimeout(function(){
@@ -313,8 +310,6 @@ function resizePage(current_percent, pIndex, sIndex, clickBk) {
 
 /**
  * Figure out the total pages
- * 
- * @returns {pages}
  */
 function getPages() {
 	var layoutLeft = $("#afd_break").position().left;
@@ -538,10 +533,6 @@ function replacePText(){
 }
 /**
  * Get the size from native code
- * 
- * @param tempSize
- * @param tempChapterSize
- * @param tempBookSize
  */
 function getBookData(tempSize, tempChapterSize, tempBookSize, tempChapterIndex, tempchapterTotleNum,tempIdentifier,tempFilePath,title) {
 	chapterSize = tempChapterSize;
@@ -897,9 +888,9 @@ function initDom() {
 }
 /**
  * Invoke native code to pass data to js
- * native code calls getBookData() and setBookTitle() and resizePage()
+ * native code calls getBookData() and resizePage()
  */
-function getNativeData(){
+function getNativeDataAndResizePage(){
 	if (navigator.userAgent.match(/Android/i)) {
 		Android.resizePage();
 	}
@@ -909,8 +900,6 @@ function getNativeData(){
 }
 /**
  * Get the actual top
- * @param element
- * @returns
  */
 function getElementTop(element){
     var actualTop = element.offsetTop;
@@ -1021,10 +1010,10 @@ ondrag:function (value){
 },
 onjump:function (percent){
 	if (navigator.userAgent.match(/Android/i)) {
-		Android.jump(percent);
+		Android.silderBarListener(percent);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:afd:myaction:afd:jump:afd:'+ percent;
+        window.location = 'anreader:afd:myaction:afd:silderBarListener:afd:'+ percent;
     }    
 },
 onbrightness:function (tempBrightness){
@@ -1190,5 +1179,5 @@ $(document).ready(function() {
                   initDom();
                   initSettings();
                   addListener();
-                  getNativeData();
+                  getNativeDataAndResizePage();
                   });

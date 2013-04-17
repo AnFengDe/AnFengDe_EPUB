@@ -42,3 +42,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20130320 In this release we've fixed some bugs. And we've associated our project with ePub file type. In android you can invoke openBookFromFileExplorer(Intent intent) method and in iOS you can invoke openBookFromSafari:(NSURL*)url method.
+
+=================
+* 20130417 In this release we've fixed some bugs. And we are refactoring our code.

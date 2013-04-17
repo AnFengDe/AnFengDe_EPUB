@@ -3,7 +3,7 @@
 //  Example
 //
 //  Created by kitty on 12-8-1.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2012年 HeFei AnFengDe Info Ltd.. All rights reserved.
 //
 #import "AppDelegate.h"
 

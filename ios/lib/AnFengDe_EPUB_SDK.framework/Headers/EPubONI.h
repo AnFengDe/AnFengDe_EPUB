@@ -13,7 +13,7 @@
 #import "EPubChapter.h"
 #import "EPubSpine.h"
 #import "EPubBookMark.h"
-#import "EPubReadStatus.h"
+#import "EPubReadingStatus.h"
 
 /// EPub ONI interface define
 @interface EPubONI : NSObject {
@@ -158,11 +158,16 @@
 /**
  get last reading status(include last chapter and last percent)
  */
-+ (unsigned int)getEPubReadStatus:(EPubReadStatus *)readstatus Handle:(unsigned int)handle;
++ (unsigned int)getEPubReadingStatus:(EPubReadingStatus *)status Handle:(unsigned int)handle;
 
 /**
  update last reading status(include last chapter and last percent)
  */
++ (unsigned int)updateEPubReadingStatus:(EPubReadingStatus *)status Handle:(unsigned int)handle;
 
-+ (unsigned int)updateEPubReadStatus:(EPubReadStatus *)readstatus Handle:(unsigned int)handle;
+/**
+ check current opened book uncompress still work or not
+ */
++ (int)isUnZipping;
+
 @end

@@ -14,17 +14,17 @@ function getChapter(chapterTitle,level,i,currentChapterIndex){
 	var tempLevel;
     var title = chapterTitle;
 	if (screenWidth>720){
-		tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+		tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     }
     if (screenWidth<720){
-    	tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    	tempLevel = "&nbsp;&nbsp;&nbsp;&nbsp;";
     }
-    if (level !=2){
-        $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>"+tempLevel+title+"</li>");
+    var levelSpaces = "&nbsp";
+    for (var j=1;j<level;j++){
+    	levelSpaces = levelSpaces + "&nbsp;&nbsp;&nbsp;&nbsp;";
     }
-    if (level ==2){
-        $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+tempLevel+title+"</li>");
-    }
+    $("#afd_BTContent").append("<li id='afd_chapter"+i+"'>"+levelSpaces+tempLevel+title+"</li>");
+   
     document.getElementById("afd_chapter"+i+"").addEventListener("click",function(){addChapterListener(i,currentChapterIndex);},false);
     if (currentChapterIndex==i){
     	$("#afd_chapter"+i).css("background","#e4efd1");

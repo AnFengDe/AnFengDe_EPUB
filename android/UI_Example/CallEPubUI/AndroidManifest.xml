@@ -20,6 +20,7 @@
             android:name=".CallEPubUIActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
+            android:clearTaskOnLaunch="true"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

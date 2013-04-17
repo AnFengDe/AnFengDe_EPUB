@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6AFB3815EB44B400409926 /* AnFengDe_EPUB_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */; };
 		4F8BA0B415E5D8B5004B7B96 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */; };
 		4F8BA0B715E5D8BE004B7B96 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */; };
 		4F8BA0B915E5D8CA004B7B96 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */; };
@@ -88,6 +89,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AnFengDe_EPUB_SDK.framework; path = ../lib/AnFengDe_EPUB_SDK.framework; sourceTree = "<group>"; };
 		4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -185,6 +187,7 @@
 				4FD8095615C93E270065448B /* UIKit.framework in Frameworks */,
 				4FD8095815C93E270065448B /* Foundation.framework in Frameworks */,
 				4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */,
+				4F6AFB3815EB44B400409926 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
 				CCB8A61F16DDF6E3000CA6E2 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
 				CCB8A66416DDF6F0000CA6E2 /* AnFengDe_EPUB_UI.framework in Frameworks */,
 			);
@@ -220,6 +223,7 @@
 				4F8BA0B815E5D8C9004B7B96 /* MessageUI.framework */,
 				4F8BA0B615E5D8BE004B7B96 /* SystemConfiguration.framework */,
 				4F8BA0B315E5D8B5004B7B96 /* AudioToolbox.framework */,
+				4F6AFB3715EB44B400409926 /* AnFengDe_EPUB_SDK.framework */,
 				4FD8095515C93E270065448B /* UIKit.framework */,
 				4FD8095715C93E270065448B /* Foundation.framework */,
 				4FD8095915C93E270065448B /* CoreGraphics.framework */,
