@@ -9,7 +9,7 @@ var tempX = 0;
 var currentPage;
 var tempPosition = 0;
 var chapterSize;
-var size; 
+var size;
 var bookSize;
 var chapterSize;
 var chapterTotleNum;
@@ -57,7 +57,7 @@ function injectSpanTag(pArray){
                     var sText = $(spanArray[i]).text();
                     if (i<spanArray.length-1&&sText.length<3)
                         sText = $(spanArray[i+1]).text();
-                    else 
+                    else
                         sText = $(spanArray[i]).text();
                     sText = sText.substring(0,30)+"......";
                     var bookmarkData = new Array();
@@ -87,7 +87,7 @@ function injectSpanTag(pArray){
                     var sText = $(spanArray[i]).text();
                     if (i<spanArray.length-1&&sText.length<3)
                         sText = $(spanArray[i+1]).text();
-                    else 
+                    else
                         sText = $(spanArray[i]).text();
                     sText = sText.substring(0,30)+"......";
                     var bookmarkData = new Array();
@@ -121,7 +121,7 @@ function storeData(bookmarkData){
     if (typeof(localStorage) == 'undefined' ) {
         alert('Your browser does not support HTML5 localStorage. Try upgrading.');
     } else {
-        try {            
+        try {
             var cIndex = bookmarkData[0];
             var pIndex = bookmarkData[1];
             var sIndex = bookmarkData[2];
@@ -140,7 +140,7 @@ function storeData(bookmarkData){
             localStorage.setItem(bookIdentifier,tempBookmark);
         } catch (e) {
             if (e == QUOTA_EXCEEDED_ERR) {
-                alert('Quota exceeded!'); 
+                alert('Quota exceeded!');
             }
         }
     }
@@ -312,9 +312,14 @@ function resizePage(current_percent, pIndex, sIndex, clickBk) {
  * Figure out the total pages
  */
 function getPages() {
-	var layoutLeft = $("#afd_break").position().left;
-	var pagesTemp = layoutLeft / layoutWidth;
-    pagesTemp = parseInt(pagesTemp) + 1;
+	//var layoutLeft1 = $("#afd_break").position().left;
+    var docWidth = document.getElementById("afd_content").scrollWidth;
+    //alert(layoutLeft1+":::::"+layoutLeft+":::::"+layoutWidth);
+	var pagesTemp = docWidth / layoutWidth;
+    
+	if (parseInt(pagesTemp)<pagesTemp){
+        pagesTemp = parseInt(pagesTemp) + 1;
+    }
 	return pagesTemp;
 }
 /** Exit application */
@@ -396,24 +401,24 @@ function deleteBookmark() {
                         lastBookmarkArray.push(i);
                         //refreshBookmark(bookmarkArray,i);
                         return lastBookmarkArray;
-                	}  
+                	}
                 }
             }
         } catch (e) {
             if (e == QUOTA_EXCEEDED_ERR) {
-                alert('Quota exceeded!'); 
+                alert('Quota exceeded!');
             }
         }
-    } 
+    }
     
-} 
+}
 
 /** refresh bookmark data */
 
 function refreshBookmark(lastBookmarkArray){
     var deleteBKIndex = lastBookmarkArray[1];
     var bookmarkArray = lastBookmarkArray[0];
-    bookmarkArray.splice(deleteBKIndex,1);    
+    bookmarkArray.splice(deleteBKIndex,1);
     var tempBookmarkArray = new Array();
     var tempBookmark;
     if (bookmarkArray.length==0){
@@ -434,7 +439,7 @@ function refreshBookmark(lastBookmarkArray){
                 localStorage.setItem(bookIdentifier,tempBookmark);
             } catch (e) {
                 if (e == QUOTA_EXCEEDED_ERR) {
-                    alert('Quota exceeded!'); 
+                    alert('Quota exceeded!');
                 }
             }
         }
@@ -443,7 +448,7 @@ function refreshBookmark(lastBookmarkArray){
 /** Set bookmark image */
 function setBookmarkImg(){
     if ($afd_menu.css("display")=="none"&&$afd_scale_panel.css("display")=="none"){
-        $("#afd_bkImg").attr("src",path+"/image/afd_bookmark.png");	
+        $("#afd_bkImg").attr("src",path+"/image/afd_bookmark.png");
         var pArray = getCurrentElementContent();
         var bookmarkData = injectSpanTag(pArray);
         bookmark = bookmarkData;
@@ -485,7 +490,7 @@ function setBookmarkImg(){
         $afd_bottomMenu.hide();
         $afd_currentPage.show();
         $afd_scale_panel.hide();
-    }	
+    }
     $afd_zoomin.hide();
     $afd_zoomout.hide();
 }
@@ -522,14 +527,14 @@ function replacePText(){
                     $(element).html(pText);
                     setSvgTag(element,svgElements,'svg');
                     setSvgTag(element,canvasElements,'canvas');
-                }                
+                }
             }
         } catch (e) {
             if (e == QUOTA_EXCEEDED_ERR) {
-                alert('Quota exceeded!'); 
+                alert('Quota exceeded!');
             }
         }
-    }    
+    }
 }
 /**
  * Get the size from native code
@@ -546,12 +551,13 @@ function getBookData(tempSize, tempChapterSize, tempBookSize, tempChapterIndex, 
     $("#afd_title").html(title);
     setLayoutImag();
     replacePText();
+    pages = getPages();
 	getReadingPercent();
 }
 
 /** Figure out the percent */
 function getReadingPercent() {
-	pages = getPages();
+	//alert(pages+"::::"+currentPage);
 	var value = (size + chapterSize * (currentPage / pages)) / bookSize;
 	value = parseInt(value * 100 * 10000) / 10000.0;
 	$afd_currentPage.html(value + "%");
@@ -571,13 +577,13 @@ function saveReadingData() {
 function hiddenFontSizeLayout() {
 	$afd_zoomin.toggle();
 	$afd_zoomout.toggle();
-} 
+}
 /** Zoom in font size */
 function fontSizeZoomin() {
 	var fontSize = $afd_content.css("font-size");
     if (parseInt(fontSize)>36) {alert("Maximum"); return;}
 	$afd_content.css("font-size", parseInt(fontSize) + 3 + "px");
-    
+    pages = getPages();
 	getReadingPercent();
 	saveSettingData("fontSize",parseInt(fontSize) + 3);
 	saveReadingData();
@@ -587,12 +593,12 @@ function fontSizeZoomout() {
 	var fontSize = $afd_content.css("font-size");
     if (parseInt(fontSize)<14) {alert("Minimum"); return;}
 	$afd_content.css("font-size", parseInt(fontSize) - 3 + "px");
-    
-    if (currentPage > getPages()){
-        var i = currentPage - getPages();
+    pages = getPages();
+    if (currentPage > pages){
+        var i = currentPage - pages;
         leftPosition = leftPosition + i*layoutWidth;
         tempPosition = leftPosition;
-        currentPage = getPages();
+        currentPage = pages;
         $afd_content.css({
                          "left" : leftPosition + "px"
                          });
@@ -631,7 +637,7 @@ function onStart(ev) {
 	}
     
 	showMenu =1;
-	pages = getPages();
+	//pages = getPages();
 	startX = ev.touches[0].pageX;
 	startY = ev.touches[0].pageY;
 	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
@@ -639,7 +645,7 @@ function onStart(ev) {
 	        showMenu = 0;
 	    }
 	    setTimeout(function(){showMenu=0;},300);
-    } 
+    }
     
 	if (currentPage==1&&startX<layoutWidth/2){
 		preventMove =1;
@@ -650,7 +656,7 @@ function onStart(ev) {
 	leftPosition = $afd_content.position().left;
 	if (tempPosition != leftPosition) {
 		leftPosition = tempPosition;
-	}   
+	}
 	preventMove =0;
 }
 
@@ -811,8 +817,8 @@ function initDom() {
     var twitter = "<div class='afd_shareItem'><a id='afd_twitter_button' target='_blank' href ='#'><span><img/>Twitter</span></a></div>";
     var googleShare = "<div class='afd_shareItem'><a id='afd_gplus' href='#'><span><img/>Google+</span></a></div>";
     $afd_sharingBox = $("#afd_sharingBox");
-    $afd_sharingBox.append(googleShare); 
-    $afd_sharingBox.append(twitter); 
+    $afd_sharingBox.append(googleShare);
+    $afd_sharingBox.append(twitter);
     
 	$body.append(pageturn);
 	
@@ -863,7 +869,7 @@ function initDom() {
     setSvgTag(document.getElementById("afd_content"),svgElements,'svg');
     setSvgTag(document.getElementById("afd_content"),canvasElements,'canvas');
     
-	$afd_content.append("<break id='afd_break'><br/>&#160;</break>");
+	//$afd_content.append("<break id='afd_break'><br/>&#160;</break>");
     $("#afd_content img").css("maxWidth", (layoutWidth - 20) + "px");
 	$("#afd_content audio").css("maxWidth", (layoutWidth - 20) + "px");
 	$("#afd_content video").css("maxWidth", (layoutWidth - 20) + "px");
@@ -933,7 +939,7 @@ init:function (tag){
     var afd_step = this.step;
     var t = this;
     var floatPercent;
-    var currentValue; 
+    var currentValue;
     var barWidth = $(afd_bar).width();
     if (tag=="jumping"){
         floatPercent = parseFloat($afd_currentPage.html());
@@ -1010,11 +1016,11 @@ ondrag:function (value){
 },
 onjump:function (percent){
 	if (navigator.userAgent.match(/Android/i)) {
-		Android.silderBarListener(percent);
+		Android.sliderBarListener(percent);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:afd:myaction:afd:silderBarListener:afd:'+ percent;
-    }    
+        window.location = 'anreader:afd:myaction:afd:sliderBarListener:afd:'+ percent;
+    }
 },
 onbrightness:function (tempBrightness){
     brightness = tempBrightness;
@@ -1023,17 +1029,17 @@ onbrightness:function (tempBrightness){
 }
 function setLayoutImag(){
     $afd_menu.css("background-image","url('"+path+"/image/afd_topmenu.png')");
-    $("#afd_bookshelf img").attr("src",path+"/image/afd_back.png");	
-    $("#afd_TOC img").attr("src",path+"/image/afd_tablecontentsbtn.png");	
-    $("#afd_zoom img").attr("src",path+"/image/afd_fontsize.png");	
-    $("#afd_zoomout img").attr("src",path+"/image/afd_font_zoomout.png");	
-    $("#afd_zoomin img").attr("src",path+"/image/afd_font_zoomin.png");	
-    $("#afd_bookmark img").attr("src",path+"/image/afd_bookmark.png");	
-    $("#afd_precedingChapter img").attr("src",path+"/image/afd_prev.png");	
-    $("#afd_jumping img").attr("src",path+"/image/afd_skip.png");	
-    $("#afd_brightness img").attr("src",path+"/image/afd_bright.png");	
-    $("#afd_setting img").attr("src",path+"/image/afd_setting.png");	
-    $("#afd_nextChapter img").attr("src",path+"/image/afd_next.png");	
+    $("#afd_bookshelf img").attr("src",path+"/image/afd_back.png");
+    $("#afd_TOC img").attr("src",path+"/image/afd_tablecontentsbtn.png");
+    $("#afd_zoom img").attr("src",path+"/image/afd_fontsize.png");
+    $("#afd_zoomout img").attr("src",path+"/image/afd_font_zoomout.png");
+    $("#afd_zoomin img").attr("src",path+"/image/afd_font_zoomin.png");
+    $("#afd_bookmark img").attr("src",path+"/image/afd_bookmark.png");
+    $("#afd_precedingChapter img").attr("src",path+"/image/afd_prev.png");
+    $("#afd_jumping img").attr("src",path+"/image/afd_skip.png");
+    $("#afd_brightness img").attr("src",path+"/image/afd_bright.png");
+    $("#afd_setting img").attr("src",path+"/image/afd_setting.png");
+    $("#afd_nextChapter img").attr("src",path+"/image/afd_next.png");
     $(".afd_divide img").attr("src",path+"/image/afd_divide.png");
     
     $afd_bottomMenu.css("background-image","url('"+path+"/image/afd_topmenu.png')");
@@ -1063,7 +1069,7 @@ function openChapter(i,order){
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
         window.location = 'anreader:afd:myaction:afd:jsOpenChapter:afd:'+i;
-    } 
+    }
 }
 
 function readySettingData(key){
@@ -1074,7 +1080,7 @@ function readySettingData(key){
             return localStorage.getItem(key);
         } catch (e) {
             if (e == QUOTA_EXCEEDED_ERR) {
-                alert('Quota exceeded!'); 
+                alert('Quota exceeded!');
             }
         }
     }
@@ -1088,7 +1094,7 @@ function saveSettingData(key,value){
             localStorage.setItem(key,value);
         } catch (e) {
             if (e == QUOTA_EXCEEDED_ERR) {
-                alert('Quota exceeded!'); 
+                alert('Quota exceeded!');
             }
         }
     }
@@ -1131,7 +1137,7 @@ function showSharingPage(){
     var text = window.getSelection().toString();
     
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.getSelection().empty();                 
+        window.getSelection().empty();
         $("#afd_twitter_button").attr('href',"http://twitter.com/intent/tweet?source=sharethiscom&text="+text);
         $("#afd_twitter_button img").attr('src',path+"/image/twitter_bird_callout.png");
         $("#afd_gplus").attr('href',"https://m.google.com/app/plus/x/aoyapxt82rpw/?v=compose&group=m1c&hideloc=1&content="+text);

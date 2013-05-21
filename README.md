@@ -45,3 +45,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20130417 In this release we've fixed some bugs. And we are refactoring our code.
+
+=================
+* 20130521 In this release we've modified our project. We deleted the add book function. But you can put books in the books folder(in android is the assets/books), and the app will load them when it starts.

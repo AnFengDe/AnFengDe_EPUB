@@ -1,11 +1,25 @@
 var selectAll = 0;
 var isDownloading = false;
 var injectBackJS = "unInjectBackJS";
+var displayAddButton = false;
+
 $(document).ready(function(){
+                  setLayoutLocation(document.body.scrollHeight);
                   getAllBooks();
                   addListener();
+                  showAddButton();
                   });
-
+function showAddButton(){
+    if (!displayAddButton){
+        $("#import").hide();
+        $("#edit").hide();
+    }
+}
+function setLayoutLocation(bodyHeight){
+	$("#afd_bookshelf").height(bodyHeight-86);
+	$("#afd_bookshelf").width($("#container").width()-16);
+	$("#afd_bookshelf_border").height(bodyHeight-70);
+}
 function addListener(){
     $("#quit").bind("click",function(){exit();});
     $("#localbutton").bind("click",function(){androidLocalAddBooks();});
@@ -248,7 +262,7 @@ function setDownLoadButtonStatus(downloadStatus){
 /** the native code invoke this method to create bookshelf */
 function creatBookShelf(id, name, author, coverimage, bookpath)
 {
-    var bookTag ="<ul><li class='li_coverimage'><div class='afd_selectBg'><img class='afd_edit_selectedPng' src='../image/afd_edit_selected.png'/></div><span class='bookname'></span><img class='coverimage' src='"+coverimage+"'/></li><li class='li_baseimage'><img class='baseimage' src='../image/afd_index_bookbase.png'/></li></ul>";
+    var bookTag ="<ul><li class='li_coverimage'><div class='afd_selectBg'><img class='afd_edit_selectedPng' src='../image/afd_edit_selected.png'/></div><span class='bookname'></span><img class='coverimage' src='"+coverimage+"'/></li><li class='li_baseimage'><img class='baseimage' src='../image/afd_bookbase.png'/></li></ul>";
     //alert(""+bookTag);
     $("#afd_books").append(bookTag);
     $(".bookname::last").text(name);
@@ -256,5 +270,6 @@ function creatBookShelf(id, name, author, coverimage, bookpath)
     //alert($("ul::last").attr("value"));
     $(".afd_selectBg::last").bind("click",function(ev){selectBook(ev,this.getElementsByTagName("img")[0]);});
     $(".li_coverimage::last").bind("click",function(){openBook(bookpath);});
+    setLayoutLocation(document.body.scrollHeight);
 }
 

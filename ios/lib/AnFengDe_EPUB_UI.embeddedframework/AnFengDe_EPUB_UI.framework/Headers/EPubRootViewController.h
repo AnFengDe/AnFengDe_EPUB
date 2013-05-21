@@ -1,6 +1,7 @@
 /*!
  * \author qqwang
- * \brief The epub root view definition 
+ * \author chtian
+ * \brief The epub root view definition
  * \file EPubRootViewController.h
  * \version 1.0 
  * \date 2012-07-06
@@ -18,6 +19,7 @@
 #define DOWNLOAD_ERROR_INFO @"Download Error!"
 #define DOWNLOAD_INFO       @"Download Success!"
 
+/// default cover image
 #define DEFAULT_COVERIMG    @"../image/afd_coverimg.png"
 
 @class GADBannerView, GADRequest;
@@ -28,24 +30,42 @@
     GADBannerView   *pAdBanner_;
     /// epub book pointer
     EPubBook        *epubBook;
+    ///current page number
     int             currentPageNum;
+    /// total pages
     int             totalPages;
+    /// TODO:什么意思
     int             pIndex;
+    /// TODO:什么意思
     int             sIndex;
+    /// TODO:什么意思
     int             cIndex;
+    /// TODO:什么意思?这个变量根本就没有用
     int             lastBookNum;
+    /// TODO:点击了返回按钮
     NSString        *clickBk;
+    /// download request
     NSURLRequest	*downloadRequest;
+    /// download connection
 	NSURLConnection	*downloadConnection;
+    /// epub book save path
     NSString        *saveEPubBookPath;
+    /// download received bytes  todo:有必要吗
     float			bytesReceived;
+    /// the expected bytes for download
 	long long		expectedBytes;
+    /// the download operation cancel flag
     Boolean         downloadCancel;
+    /// the flag of downloading
     Boolean         isDownloading;
+    /// simple http server daemon
     MongooseDaemon  *mongooseDaemon;
+    /// TODO: 有必要吗?
     NSString        *lastBookPath;
+    Boolean         displayAd;
 @private
-    UIWebView *afd_webView;
+    /// book main view
+    UIWebView       *afd_webView;
 }
 
 /** The current reading book */
@@ -73,6 +93,10 @@
  */
 - (id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 
+/**
+ \brief open epub book from Safari browser when downloaded
+ \param epubBookPath the epub book path
+ */
 - (void)openBookFromSafari:(NSURL *)epubBookPath;
 
 @end

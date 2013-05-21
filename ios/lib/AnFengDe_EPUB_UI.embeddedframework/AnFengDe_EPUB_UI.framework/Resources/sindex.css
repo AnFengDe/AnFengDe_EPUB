@@ -7,22 +7,35 @@ body{
     margin:0px;
     padding:0px;
     width:100%;
-    background-image:url(../image/afd_index_bg_image.png);
+    /*background-image:url(../image/afd_index_bg_image.png);*/
+    /*background-image:url(../image/afd_bookshelf.png);*/
 }
-
+.afd_bookshelf{
+	position:absolute;
+	width:100%;
+	height:0px;
+}
+#afd_bookshelf{
+	margin-top:8px;
+    margin-left:8px;
+	z-index=-2;
+}
+#afd_bookshelf_border{
+	z-index=-1;
+}
 #mystore{
 	font-size:21px;
 	font-weight:bold;
 	text-decoration:none;
 	width:100%;
 	text-align:center;
-	color:#492D0E;
+	color:black;
 	position:absolute;
 	margin-top:22px;
 }
 
 #storemenu{
-    background:url(../image/afd_topmenu.png);
+    background:url(../image/afd_storemenu.png);
 	width:100%;
 	height:70px;
 }
