@@ -647,7 +647,7 @@ function onStart(ev) {
 	    setTimeout(function(){showMenu=0;},300);
     }
     
-	if (currentPage==1&&startX<layoutWidth/2){
+	if ((currentPage==1&&startX<layoutWidth/2)||(currentPage==pages&&startX>layoutWidth/2)){
 		preventMove =1;
 		return;
 	}
@@ -671,10 +671,11 @@ function onMove(ev){
     $afd_scale_panel.hide();
     $afd_currentPage.show();
     $afd_sharingBox.hide();
-    if (preventMove == 1)
-        return;
     tempX = ev.touches[0].pageX;
     moveTemp = tempX - startX;
+    if (preventMove == 1)
+        return;
+    
     $afd_content.css({
                      "left" : leftPosition + moveTemp + "px"
                      });
@@ -684,6 +685,7 @@ function onMove(ev){
 }
 
 function onEnd(ev){
+    
 	if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
 	    if (multipleTouch ==1){
             $afd_content.animate({
@@ -700,10 +702,18 @@ function onEnd(ev){
     if (showMenu == 1 && startY > $('#afd_menu').height()&&startY<$('#afd_pageturn').height()-$('#afd_bottomMenu').height()) {
         setBookmarkImg();
     }
-    if (preventMove == 1)
-        return;
+    //    if (preventMove == 1)
+    //    {
+    //        //openChapter(chapterIndex,"preceding");
+    //        return;
+    //    }
     var halfWidth = layoutWidth / 2;
     if (startX >= halfWidth) {
+        
+        if (currentPage == pages&& moveTemp < -halfWidth * 0.5){
+            openChapter(chapterIndex,"next");
+            return;
+        }
         if (currentPage < pages && moveTemp < -halfWidth * 0.5) {
             
             tempPosition = leftPosition - layoutWidth;
@@ -719,6 +729,11 @@ function onEnd(ev){
         }
     }
     if (startX < halfWidth) {
+        
+        if (currentPage==1&& moveTemp > halfWidth * 0.5){
+            openChapter(chapterIndex,"preceding");
+            return;
+        }
         if (currentPage > 1 && moveTemp > halfWidth * 0.5) {
             
             tempPosition = leftPosition + layoutWidth;
@@ -767,7 +782,7 @@ function addListener() {
     document.getElementById("afd_brightness").addEventListener("click",function()
                                                                {displayScalepanel("brightness");}, false);
     document.getElementById("afd_precedingChapter").addEventListener("click",
-                                                                     function(){openChapter(chapterIndex,"preceding");}, false);
+                                                                     function(){openChapter(chapterIndex,"preceding","prev");}, false);
     document.getElementById("afd_nextChapter").addEventListener("click",
                                                                 function(){openChapter(chapterIndex,"next");}, false);
 }
@@ -1049,7 +1064,7 @@ function setLayoutImag(){
  * Open the chapter
  * @param i is the chapter index
  */
-function openChapter(i,order){
+function openChapter(i,order,prev){
     if (order=="preceding"){
         if (i==0) {
             alert("The first chapter!");
@@ -1064,11 +1079,14 @@ function openChapter(i,order){
         }
         else i=i+1;
     }
+    if (prev=="prev"){
+        order = "order";
+    }
 	if (navigator.userAgent.match(/Android/i)) {
-        Android.jsOpenChapter(i);
+        Android.jsOpenChapter(i,order);
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:afd:myaction:afd:jsOpenChapter:afd:'+i;
+        window.location = 'anreader:afd:myaction:afd:jsOpenChapter:afd:'+i+':afd:'+order;
     }
 }
 

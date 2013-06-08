@@ -63,6 +63,8 @@
     /// TODO: 有必要吗?
     NSString        *lastBookPath;
     Boolean         displayAd;
+    NSString        *adUnitId;
+    Boolean         *allowToModifyAd;
 @private
     /// book main view
     UIWebView       *afd_webView;
@@ -98,5 +100,10 @@
  \param epubBookPath the epub book path
  */
 - (void)openBookFromSafari:(NSURL *)epubBookPath;
-
+/**
+ \brief customize AdMob
+ \param display display the Admob or not
+ \param adId the Admob adUnitId
+ */
+- (void)customizeAdMob:(Boolean)display adUnitId:(NSString*)adId;
 @end

@@ -36,10 +36,10 @@ function getChapter(chapterTitle,level,i,currentChapterIndex){
  */
 function addChapterListener(i,currentChapterIndex){
 	if (navigator.userAgent.match(/Android/i)) {
-        Android.jsOpenChapter(i);
+        Android.jsOpenChapter(i,"toc");
     }
     if (navigator.userAgent.match(/iPhone/i)||navigator.userAgent.match(/iPad/i)) {
-        window.location = 'anreader:afd:myaction:afd:jsOpenChapter:afd:'+i;
+        window.location = 'anreader:afd:myaction:afd:jsOpenChapter:afd:'+i+':afd:toc';
     } 
     $("#afd_chapter"+currentChapterIndex).css("background","white")
     $("#afd_chapter"+i).css("background","#e4efd1");
