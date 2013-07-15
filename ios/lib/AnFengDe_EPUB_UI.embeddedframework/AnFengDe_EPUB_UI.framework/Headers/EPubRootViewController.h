@@ -64,7 +64,7 @@
     NSString        *lastBookPath;
     Boolean         displayAd;
     NSString        *adUnitId;
-    Boolean         *allowToModifyAd;
+    Boolean         allowToModifyAd;
 @private
     /// book main view
     UIWebView       *afd_webView;

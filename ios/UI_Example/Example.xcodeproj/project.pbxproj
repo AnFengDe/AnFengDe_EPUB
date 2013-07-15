@@ -20,6 +20,7 @@
 		4FD8096615C93E270065448B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096515C93E270065448B /* AppDelegate.m */; };
 		CC16F42D1745D2D100F4633C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC16F42C1745D2D100F4633C /* Default.png */; };
 		CC20E4831740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC20E4811740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub */; };
+		CC32155F1794261F003A4477 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAC174485E100A38745 /* jquery.min.js */; };
 		CC81FFB6174485E100A38745 /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC81FF6E174485E100A38745 /* AnFengDe_EPUB_UI.framework */; };
 		CC81FFB7174485E100A38745 /* afd.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC81FF70174485E100A38745 /* afd.sqlite */; };
 		CC81FFB8174485E100A38745 /* afd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CC81FF71174485E100A38745 /* afd_back.png */; };
@@ -81,7 +82,6 @@
 		CC81FFF0174485E100A38745 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFA9174485E100A38745 /* index.html */; };
 		CC81FFF1174485E100A38745 /* jdb.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAA174485E100A38745 /* jdb.js */; };
 		CC81FFF2174485E100A38745 /* jindex.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAB174485E100A38745 /* jindex.js */; };
-		CC81FFF3174485E100A38745 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAC174485E100A38745 /* jquery.min.js */; };
 		CC81FFF4174485E100A38745 /* jsetting.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAD174485E100A38745 /* jsetting.js */; };
 		CC81FFF5174485E100A38745 /* jtoc.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAE174485E100A38745 /* jtoc.js */; };
 		CC81FFF6174485E100A38745 /* readpage.css in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAF174485E100A38745 /* readpage.css */; };
@@ -414,12 +414,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC32155F1794261F003A4477 /* jquery.min.js in Resources */,
 				4FD8096015C93E270065448B /* InfoPlist.strings in Resources */,
 				CC81FFEB174485E100A38745 /* backpage.js in Resources */,
 				CC81FFEC174485E100A38745 /* control.js in Resources */,
 				CC81FFF1174485E100A38745 /* jdb.js in Resources */,
 				CC81FFF2174485E100A38745 /* jindex.js in Resources */,
-				CC81FFF3174485E100A38745 /* jquery.min.js in Resources */,
 				CC81FFF4174485E100A38745 /* jsetting.js in Resources */,
 				CC81FFF5174485E100A38745 /* jtoc.js in Resources */,
 				CC20E4831740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub in Resources */,
