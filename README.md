@@ -51,3 +51,6 @@ The only requirement is that when you distribute your program you have to indica
 
 =================
 * 20130608 In this release we've added the feature that you can swipe the page to open the chapter.
+
+=================
+* 20131021 In this release we've add mips, x86,armeabi and armeabi-v7a chip support. we also upgrade project setting for ios7 and android 4.3. Because we are focused on developing new UI code, so this version of the UI is not optimized for iOS7.

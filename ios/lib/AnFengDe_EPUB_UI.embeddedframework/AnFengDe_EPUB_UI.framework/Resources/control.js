@@ -1,3 +1,5 @@
+/*  "afdjQuery" is another name of jquery like "$" */
+
 var path;
 var startX;
 var startY;

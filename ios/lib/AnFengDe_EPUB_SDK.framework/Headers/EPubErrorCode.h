@@ -47,6 +47,6 @@
 #define AFD_EPUB_ERR_NO_READING_DATA_FILE	-27
 #define AFD_EPUB_ERR_CHAPTER_NULL       -28
 #define AFD_EPUB_ERR_UNZIP_BUSY         -29
-#define AFD_EPUB_CHECH_SPACE_FAILED     -30
+#define AFD_EPUB_CHECK_SPACE_FAILED     -30
 #define AFD_EPUB_LACK_OF_SPACE          -31
 #endif

@@ -18,9 +18,10 @@
 		4FD8096015C93E270065448B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FD8095E15C93E270065448B /* InfoPlist.strings */; };
 		4FD8096215C93E270065448B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096115C93E270065448B /* main.m */; };
 		4FD8096615C93E270065448B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD8096515C93E270065448B /* AppDelegate.m */; };
+		8B95486318150CBF00398883 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B95486218150CBF00398883 /* Default-568h@2x.png */; };
 		CC16F42D1745D2D100F4633C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC16F42C1745D2D100F4633C /* Default.png */; };
 		CC20E4831740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC20E4811740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub */; };
-		CC32155F1794261F003A4477 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAC174485E100A38745 /* jquery.min.js */; };
+		CC32155617941771003A4477 /* kaist_demo_jul8.epub in Resources */ = {isa = PBXBuildFile; fileRef = CC32155517941771003A4477 /* kaist_demo_jul8.epub */; };
 		CC81FFB6174485E100A38745 /* AnFengDe_EPUB_UI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC81FF6E174485E100A38745 /* AnFengDe_EPUB_UI.framework */; };
 		CC81FFB7174485E100A38745 /* afd.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CC81FF70174485E100A38745 /* afd.sqlite */; };
 		CC81FFB8174485E100A38745 /* afd_back.png in Resources */ = {isa = PBXBuildFile; fileRef = CC81FF71174485E100A38745 /* afd_back.png */; };
@@ -82,6 +83,7 @@
 		CC81FFF0174485E100A38745 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFA9174485E100A38745 /* index.html */; };
 		CC81FFF1174485E100A38745 /* jdb.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAA174485E100A38745 /* jdb.js */; };
 		CC81FFF2174485E100A38745 /* jindex.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAB174485E100A38745 /* jindex.js */; };
+		CC81FFF3174485E100A38745 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAC174485E100A38745 /* jquery.min.js */; };
 		CC81FFF4174485E100A38745 /* jsetting.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAD174485E100A38745 /* jsetting.js */; };
 		CC81FFF5174485E100A38745 /* jtoc.js in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAE174485E100A38745 /* jtoc.js */; };
 		CC81FFF6174485E100A38745 /* readpage.css in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFAF174485E100A38745 /* readpage.css */; };
@@ -91,7 +93,6 @@
 		CC81FFFA174485E100A38745 /* stoc.css in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFB3174485E100A38745 /* stoc.css */; };
 		CC81FFFB174485E100A38745 /* toc.html in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFB4174485E100A38745 /* toc.html */; };
 		CC81FFFC174485E100A38745 /* twitter_bird_callout.png in Resources */ = {isa = PBXBuildFile; fileRef = CC81FFB5174485E100A38745 /* twitter_bird_callout.png */; };
-		CCB8A61F16DDF6E3000CA6E2 /* AnFengDe_EPUB_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB8A61E16DDF6E3000CA6E2 /* AnFengDe_EPUB_SDK.framework */; };
 		CCE978611664BB1400E2461C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE978601664BB1400E2461C /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
@@ -111,8 +112,10 @@
 		4FD8096315C93E270065448B /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
 		4FD8096415C93E270065448B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4FD8096515C93E270065448B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8B95486218150CBF00398883 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CC16F42C1745D2D100F4633C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CC20E4811740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "igpn-28languages-01-EPUB3.epub"; sourceTree = "<group>"; };
+		CC32155517941771003A4477 /* kaist_demo_jul8.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = kaist_demo_jul8.epub; sourceTree = "<group>"; };
 		CC81FF6E174485E100A38745 /* AnFengDe_EPUB_UI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AnFengDe_EPUB_UI.framework; sourceTree = "<group>"; };
 		CC81FF70174485E100A38745 /* afd.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = afd.sqlite; sourceTree = "<group>"; };
 		CC81FF71174485E100A38745 /* afd_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_back.png; sourceTree = "<group>"; };
@@ -168,7 +171,7 @@
 		CC81FFA3174485E100A38745 /* afd_white_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = afd_white_right.png; sourceTree = "<group>"; };
 		CC81FFA4174485E100A38745 /* backpage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = backpage.js; sourceTree = "<group>"; };
 		CC81FFA5174485E100A38745 /* control.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = control.js; sourceTree = "<group>"; };
-		CC81FFA6174485E100A38745 /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file; path = EPubRootViewController.nib; sourceTree = "<group>"; };
+		CC81FFA6174485E100A38745 /* EPubRootViewController.nib */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = EPubRootViewController.nib; sourceTree = "<group>"; };
 		CC81FFA7174485E100A38745 /* gplus_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gplus_64.png; sourceTree = "<group>"; };
 		CC81FFA8174485E100A38745 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CC81FFA9174485E100A38745 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -202,7 +205,6 @@
 				4FD8095815C93E270065448B /* Foundation.framework in Frameworks */,
 				4FD8095A15C93E270065448B /* CoreGraphics.framework in Frameworks */,
 				4F6AFB3815EB44B400409926 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
-				CCB8A61F16DDF6E3000CA6E2 /* AnFengDe_EPUB_SDK.framework in Frameworks */,
 				CC81FFB6174485E100A38745 /* AnFengDe_EPUB_UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +215,7 @@
 		4FD8094615C93E270065448B = {
 			isa = PBXGroup;
 			children = (
+				8B95486218150CBF00398883 /* Default-568h@2x.png */,
 				CC20E4801740BA5600AAC73F /* books */,
 				4FD8095B15C93E270065448B /* Example */,
 				4FD8095415C93E270065448B /* Frameworks */,
@@ -271,6 +274,7 @@
 		CC20E4801740BA5600AAC73F /* books */ = {
 			isa = PBXGroup;
 			children = (
+				CC32155517941771003A4477 /* kaist_demo_jul8.epub */,
 				CC20E4811740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub */,
 			);
 			name = books;
@@ -390,7 +394,7 @@
 		4FD8094815C93E270065448B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 4FD8094B15C93E270065448B /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -414,12 +418,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC32155F1794261F003A4477 /* jquery.min.js in Resources */,
 				4FD8096015C93E270065448B /* InfoPlist.strings in Resources */,
 				CC81FFEB174485E100A38745 /* backpage.js in Resources */,
 				CC81FFEC174485E100A38745 /* control.js in Resources */,
 				CC81FFF1174485E100A38745 /* jdb.js in Resources */,
 				CC81FFF2174485E100A38745 /* jindex.js in Resources */,
+				CC81FFF3174485E100A38745 /* jquery.min.js in Resources */,
 				CC81FFF4174485E100A38745 /* jsetting.js in Resources */,
 				CC81FFF5174485E100A38745 /* jtoc.js in Resources */,
 				CC20E4831740BA5600AAC73F /* igpn-28languages-01-EPUB3.epub in Resources */,
@@ -437,6 +441,7 @@
 				CC81FFC2174485E100A38745 /* afd_delete.png in Resources */,
 				CC81FFC3174485E100A38745 /* afd_deletebg.png in Resources */,
 				CC81FFC4174485E100A38745 /* afd_divide.png in Resources */,
+				8B95486318150CBF00398883 /* Default-568h@2x.png in Resources */,
 				CC81FFC5174485E100A38745 /* afd_drug.png in Resources */,
 				CC81FFC6174485E100A38745 /* afd_edit_all.png in Resources */,
 				CC81FFC7174485E100A38745 /* afd_edit_allorang.png in Resources */,
@@ -487,6 +492,7 @@
 				CC81FFFB174485E100A38745 /* toc.html in Resources */,
 				CC81FFFC174485E100A38745 /* twitter_bird_callout.png in Resources */,
 				CC16F42D1745D2D100F4633C /* Default.png in Resources */,
+				CC32155617941771003A4477 /* kaist_demo_jul8.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,8 +526,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -533,10 +544,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -545,14 +561,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";

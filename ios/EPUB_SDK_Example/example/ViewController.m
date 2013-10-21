@@ -117,12 +117,12 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         [array addObject:@"open successed."];
         [array addObject:[NSString stringWithFormat:@"handle is %d", ret]];
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 }
 
@@ -133,7 +133,7 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         EPubMetadata *tmp = [[EPubMetadata alloc] init];
         [EPubONI getEPubMetadata:tmp Handle:ret];
         if (tmp) {
@@ -145,7 +145,7 @@
         }
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 }
 
@@ -156,11 +156,11 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         [array addObject:[EPubONI getEPubBookRootFolder:ret]];
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 }
 
@@ -171,11 +171,11 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         [array addObject:[NSString stringWithFormat:@"%d", [EPubONI getEPubChapterCount:ret]]];
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 }
 
@@ -186,7 +186,7 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         NSMutableArray *tmp = [[NSMutableArray alloc] init];
         [EPubONI getEPubChapter:tmp Handle:ret];
         int count = 0, count2 = 0;
@@ -204,7 +204,7 @@
         }
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 
 }
@@ -216,12 +216,12 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         [EPubONI cleanEPubBookCache:ret];
         [array addObject:@"clean this book's cache."];
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 }
 
@@ -232,12 +232,12 @@
     NSString *epubFilePath = [bundlePath stringByAppendingString:@"/testBook.epub"];
     NSLog(@"epubFilePath:%@",epubFilePath);
     int ret = [EPubONI openEPubBook:epubFilePath];
-    if (ret > 0) {
+    if (ret != 0) {
         [EPubONI closeEPubBook:ret];
         [array addObject:@"close this book."];
     }
     else 
-        [array addObject:[NSString stringWithFormat:@"error code is %d", ret]];
+        [array addObject:[NSString stringWithFormat:@"error code is %d", [EPubONI getLastError]]];
     [self.myTableView reloadData];
 }
 

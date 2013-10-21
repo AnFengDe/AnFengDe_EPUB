@@ -29,7 +29,8 @@
 /**
   Open a book
   @param bookname is the full path of book
-  @returns if success returns the handle of this book, else returns error code
+  @returns if success returns the handle of this book, else returns 0,
+           the specific error code can be obtained through epub_get_last_error function
  */
 + (int)openEPubBook:(NSString *)bookname;
 /**
@@ -154,6 +155,11 @@
  get error message
  */
 + (NSString *)getErrorMessage:(unsigned int)errorcode;
+
+/**
+ get last error code
+ */
++ (int)getLastError;
 
 /**
  get last reading status(include last chapter and last percent)

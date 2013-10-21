@@ -17,6 +17,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.rootEpubView = [[EPubRootViewController alloc] initWithNibName:@"EPubRootViewController" bundle:nil];
+    //[self.rootEpubView customizeAdMob:NO adUnitId:@"a1503320687e6ad"];
     self.window.rootViewController = self.rootEpubView;
     [self.window makeKeyAndVisible];
     return YES;
