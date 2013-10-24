@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.WindowManager;
 
 public class CallEPubUIActivity extends Activity {
-	public BookView bookView;
+	public BookView bookView;	
 
 	/** Called when the activity is first created. */
 	@Override
@@ -18,7 +18,8 @@ public class CallEPubUIActivity extends Activity {
 				WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		bookView = (BookView) findViewById(R.id.bookView1);
 		bookView.setPath(Constants.CACHE_PAHT);
+		bookView.customizeAdMob(false,"a1502c86e3f3fcf");
 		bookView.initBook();
-		bookView.openShelf();
+		bookView.openShelf(); 
 	}
 }
