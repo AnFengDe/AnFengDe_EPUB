@@ -263,11 +263,9 @@ function setDownLoadButtonStatus(downloadStatus){
 function creatBookShelf(id, name, author, coverimage, bookpath)
 {
     var bookTag ="<ul><li class='li_coverimage'><div class='afd_selectBg'><img class='afd_edit_selectedPng' src='../image/afd_edit_selected.png'/></div><span class='bookname'></span><img class='coverimage' src='"+coverimage+"'/></li><li class='li_baseimage'><img class='baseimage' src='../image/afd_bookbase.png'/></li></ul>";
-    //alert(""+bookTag);
     $("#afd_books").append(bookTag);
     $(".bookname::last").text(name);
     $(".afd_edit_selectedPng::last").attr("value",id);
-    //alert($("ul::last").attr("value"));
     $(".afd_selectBg::last").bind("click",function(ev){selectBook(ev,this.getElementsByTagName("img")[0]);});
     $(".li_coverimage::last").bind("click",function(){openBook(bookpath);});
     setLayoutLocation(document.body.scrollHeight);

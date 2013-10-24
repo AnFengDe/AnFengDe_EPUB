@@ -88,9 +88,9 @@ body{
 #container #afd_books ul li{
     position:relative;
 }
-#container #afd_books ul .coverimage{
+#container #afd_books ul li .coverimage{
     background-color:#666;
-    height:80%;
+    height:5em;
     max-width:80%;
     border:1px solid #000;
     -moz-box-shadow:3px 3px 4px #000;

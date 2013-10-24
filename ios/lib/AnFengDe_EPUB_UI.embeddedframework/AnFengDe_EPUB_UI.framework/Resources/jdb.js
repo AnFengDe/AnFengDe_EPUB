@@ -136,16 +136,3 @@ function deleteBookfromDB(book)
                    });
     
 }
-
-//$(document).ready(function(){
-//	              initDatabase();
-//                  book = new Book()
-//                  book.identifier='311111';
-//                  book.name = '22222';
-//                  book.author = '33333';
-//                  book.coverimage = '44444';
-//                  book.bookpath='55555';
-//                  //deleteBookfromDB(book);
-//                  insertBookToDB(book);
-//                  getBooksFromDB();
-//                  });
